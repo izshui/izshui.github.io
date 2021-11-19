@@ -1,8 +1,8 @@
-title: wu-kan # 站点标题
+title: Manna # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  SYSU第5年<br/>
-  水野爱<br/>
-  田宫例四驱车<br/>
+  玛纳之粮<br/>
+  拓跋煜<br/>
+  天主是爱<br/>
   <a href="mailto:i@wu-kan.cn">
     <i class="fas fa-envelope"></i>
   </a>
@@ -16,7 +16,7 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
     <i class="fab fa-zhihu"></i>
   </a>
   <br/>
-url: https://wu-kan.cn # 你的域名，例如 https://wu-kan.github.io
+url: https://izshui.github.io # 你的域名，例如 https://wu-kan.github.io
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
 defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/front-matter-defaults/>功能进行配置
@@ -162,7 +162,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
               - title: '<i class="fas fa-home fa-fw"></i> 首页'
                 href: /
-              - title: '<i class="fas fa-home fa-fw"></i> 关于'
+              - title: '<i class="fab fa-apple fa-fw"></i> 关于'
                 href: /about/
               - title: '<i class="fas fa-comments fa-fw"></i> 留言'
                 href: /comments/
@@ -308,7 +308,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     document.getElementById("run_time_hour"),
                     document.getElementById("run_time_minute"),
                     document.getElementById("run_time_second"),
-                    "10/04/2017 11:03:56")// 这是我第一篇CSDN博客的时间
+                    "11/15/2021 11:03:56")// 这是我第一篇CSDN博客的时间
                   </script>
                 </div>
               - | # 不蒜子页面统计，看不懂可不改
@@ -346,20 +346,18 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               - | # Copyright声明
                 <div>
                   <i class="fas fa-copyright fa-fw"></i>
-                  2017-2021 WuK
+                  2017-2021 Manna
                 </div>
               - | # 我的备案信息，请你的网站删掉这一项。互联网非法外之地！
                 <div>
                   <i class="fas fa-info-circle fa-fw"></i>
-                  <a href="http://beian.miit.gov.cn">
-                    粤ICP备 20024947号
+                  <a href="http://beian.miit.gov.cn"> 京ICP备 20021689号
                   </a>
                 </div>
               - | # 公安网备信息
                 <div>
                   <img src="https://i.loli.net/2021/03/17/Y47tDZTrcy2xwRa.png" class="fa-fw"></img>
-                  <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34070202000407">
-                    皖公网安备 34070202000407号
+                  <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34070202000407"> 京公网安备 34070202000407号
                   </a>
                 </div>
             wordcount: # 全站字数统计
@@ -629,13 +627,13 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
           append_to_head:
             - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
               <script>
-                var myname = "WuK";
-                var profile = "i@wu-kan.cn";
+                var myname = "Manna";
+                var profile = "jhonguo@126.com";
                 var usage = "payment";
-                var wechat = "wxp://f2f0BhUoIC_9gex7-tC2PRvVuoA486mK5WyC";
-                var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ77zFwQMY-6u57gU%3D_xxx_sign&u=942759535&n=%E8%94%9A";
-                var alipay = "https://qr.alipay.com/fkx02750b5kbplxvudqrx16";
-                var paypal = "https://paypal.me/wukan0621";
+                var wechat = "wxp://f2f0G7oN87FljQmqQw-2usO_3ggQX8Ou-vVMv_AdL-vJctM";
+                var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&a=1&u=986989048&ac=CAEQ-IPR1gMY2q3cjAY%3D_xxx_sign&n=Iohannes&f=wallet";
+                var alipay = "https://qr.alipay.com/fkx15349gabfgnxopjzisf4";
+                var paypal = "https://paypal.me/IohannesG";
                 var multilingual = false;
                 var branding = false;
                 var title = "选择你的支付方式";
