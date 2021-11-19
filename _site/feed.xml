@@ -1,0 +1,1665 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-19T09:42:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">wu-kan</title><subtitle>SYSU第5年&lt;br/&gt;
+水野爱&lt;br/&gt;
+田宫例四驱车&lt;br/&gt;
+&lt;a href=&quot;mailto:i@wu-kan.cn&quot;&gt;
+  &lt;i class=&quot;fas fa-envelope&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+&lt;a href=&quot;https://github.com/wu-kan&quot;&gt;
+  &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+&lt;a href=&quot;https://vjudge.net/user/WuK&quot;&gt;
+  &lt;i class=&quot;fas fa-smile&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+&lt;a href=&quot;https://www.zhihu.com/people/wu.kan/activities&quot;&gt;
+  &lt;i class=&quot;fab fa-zhihu&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+&lt;br/&gt;
+</subtitle><entry><title type="html">计算机组成原理实验课课件</title><link href="http://localhost:4000/2021/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6/" rel="alternate" type="text/html" title="计算机组成原理实验课课件" /><published>2021-11-16T00:00:00+08:00</published><updated>2021-11-16T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6</id><content type="html" xml:base="http://localhost:4000/2021/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6/">&lt;style&gt;
+  .reveal .slides { text-align: left; }
+&lt;/style&gt;
+
+&lt;p&gt;&lt;strong&gt;计算机组成原理实验：RISC-V CPU&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;TA：吴坎&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:wukan3@mail2.sysu.edu.cn&quot;&gt;wukan3[at]mail2.sysu.edu.cn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide --&gt;
+
+&lt;h2 id=&quot;国内计组实验现状&quot;&gt;国内计组实验现状&lt;/h2&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;清华：奋战三星期，造台计算机&lt;/li&gt;
+  &lt;li&gt;国科大：一生一芯&lt;/li&gt;
+  &lt;li&gt;中大：30 多年前的 MIPS CPU&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide --&gt;
+
+&lt;h2 id=&quot;国产-cpu百花齐放&quot;&gt;国产 CPU：百花齐放&lt;/h2&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ARM：飞腾、华为海思、展讯、华芯通&lt;/li&gt;
+  &lt;li&gt;x86：北大众志、兆芯、海光&lt;/li&gt;
+  &lt;li&gt;MIPS：龙芯、君正&lt;/li&gt;
+  &lt;li&gt;Alpha：申威众核&lt;/li&gt;
+  &lt;li&gt;Power：中晟宏芯&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide --&gt;
+
+&lt;h2 id=&quot;why-risc-v&quot;&gt;Why RISC-V&lt;/h2&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;特性&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;x86 or ARM&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;RISC-V&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;架构篇幅&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;数千页&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;少于三百页&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;模块化&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;不支持&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;支持模块化可扩展的指令子集&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;可扩展性&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;不支持&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;支持可扩展定制指令&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;指令数目&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;繁多，不同架构分支彼此不兼容&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;基本指令集仅 40+ 条&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;易实现性&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;复杂度高&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;硬件设计与编译器实现非常简单&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Less is more，把更多工作交给编译器！
+    &lt;ul&gt;
+      &lt;li&gt;仅支持小端模式&lt;/li&gt;
+      &lt;li&gt;规整的指令编码&lt;/li&gt;
+      &lt;li&gt;存储访问指令一次只访问一个元素&lt;/li&gt;
+      &lt;li&gt;去除存储器访问指令的地址自增自减模式&lt;/li&gt;
+      &lt;li&gt;简化的分支跳转指令与静态预测机制&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Less is more，把更多工作交给编译器！
+    &lt;ul&gt;
+      &lt;li&gt;不使用分支延迟槽&lt;/li&gt;
+      &lt;li&gt;不使用指令条件码&lt;/li&gt;
+      &lt;li&gt;运算指令不产生异常&lt;/li&gt;
+      &lt;li&gt;不使用零开销硬件循环&lt;/li&gt;
+      &lt;li&gt;……&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide --&gt;
+
+&lt;h2 id=&quot;你能获得&quot;&gt;你能获得&lt;/h2&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;有情怀、有含金量的项目经历
+    &lt;ul&gt;
+      &lt;li&gt;可自豪地写在简历上&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;与操作系统实验课的梦幻联动
+    &lt;ul&gt;
+      &lt;li&gt;“逸仙 OS” RISC-V 移植化锐意进行中！&lt;/li&gt;
+      &lt;li&gt;在自己的 CPU 上运行自己的操作系统！&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;成果优秀的同学可推荐进入中大超算队
+    &lt;ul&gt;
+      &lt;li&gt;参与下一年实验课改革！&lt;/li&gt;
+      &lt;li&gt;组队参加&lt;a href=&quot;http://cqc.yeeol.com/cybs_home.html?id=9&quot;&gt;逐梦杯&lt;/a&gt;等比赛！&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide --&gt;
+
+&lt;h2 id=&quot;实验要求与时间节点&quot;&gt;实验要求与时间节点&lt;/h2&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;必做：单周期 CPU（60 分），二周~三周
+    &lt;ul&gt;
+      &lt;li&gt;实现 RV32I Base Integer Instructions&lt;/li&gt;
+      &lt;li&gt;除 ebreak 之外的指令集，共 38 条
+        &lt;ul&gt;
+          &lt;li&gt;ecall 作为停机指令&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;见 &lt;a href=&quot;https://github.com/jameslzhu/riscv-card/blob/rel/1.0/riscv-card.pdf&quot;&gt;RISC-V card&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;必做：多（五）周期 CPU（30 分），一周~二周
+    &lt;ul&gt;
+      &lt;li&gt;在单周期 CPU 的基础上修改&lt;/li&gt;
+      &lt;li&gt;在 CU 中增加状态机&lt;/li&gt;
+      &lt;li&gt;各个部件用时钟同步&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;选做：Do what you want to do（10 分，视完成情况）
+    &lt;ul&gt;
+      &lt;li&gt;指令集扩展
+        &lt;ul&gt;
+          &lt;li&gt;RV32M 指令集（整数乘除法）&lt;/li&gt;
+          &lt;li&gt;RV32C 指令集（压缩指令长度）&lt;/li&gt;
+          &lt;li&gt;RV64I 指令集（扩展寻址空间）&lt;/li&gt;
+          &lt;li&gt;……&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;选做：Do what you want to do（10 分，视完成情况）
+    &lt;ul&gt;
+      &lt;li&gt;架构优化
+        &lt;ul&gt;
+          &lt;li&gt;流水线&lt;/li&gt;
+          &lt;li&gt;乱序多发射&lt;/li&gt;
+          &lt;li&gt;……&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide --&gt;
+
+&lt;h2 id=&quot;实验指南&quot;&gt;实验指南&lt;/h2&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/11/16/VcsQERBCn9uN68Y.png&quot; alt=&quot;单周期CPU数据通路和控制线路图&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;实验具体流程
+    &lt;ol&gt;
+      &lt;li&gt;根据线路图实现 CPU 的每个模块，如 CU、ALU&lt;/li&gt;
+      &lt;li&gt;将每个模块组合&lt;/li&gt;
+      &lt;li&gt;将提供的指令转为二进制码并仿真测试&lt;/li&gt;
+      &lt;li&gt;烧板&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;地址（十六进制）&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;汇编程序&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;汇编指令（二进制）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;addi x1,x0,8&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000004&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ori x2,x0,2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000008&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;add x3,x2,x1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x0000000C&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;sub x5,x3,x2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;地址（十六进制）&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;汇编程序&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;汇编指令（二进制）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000010&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;and x4,x5,x2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000014&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;or x8,x4,x2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000018&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;slli x8,x8,1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x0000001C&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;bne x8,x1,-4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;地址（十六进制）&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;汇编程序&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;汇编指令（二进制）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000020&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;slti x6,x2,4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000024&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;slti x7,x6,0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000028&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;addi x7,x7,8&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x0000002C&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;beq x7,x1,-4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;地址（十六进制）&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;汇编程序&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;汇编指令（二进制）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000030&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;sw x2,4(x1)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000034&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;lw x9,4(x1)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000038&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;addi x10,x0,-2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x0000003C&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;addi x10,x10,1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;地址（十六进制）&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;汇编程序&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;汇编指令（二进制）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000040&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;blt x10,x0,-2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000044&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;andi x11,x2,2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000048&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;jal x8,8&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x0000004C&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;or x8,x4,x2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0x00000050&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ecall&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;大部分实现与细节都可参照往年 MIPS CPU
+    &lt;ul&gt;
+      &lt;li&gt;仅调整指令集，需修改指令译码部分&lt;/li&gt;
+      &lt;li&gt;注意实现细节，如
+        &lt;ul&gt;
+          &lt;li&gt;PC 的改变是在时钟上升沿进行的&lt;/li&gt;
+          &lt;li&gt;指令执行的结果总是在时钟下降沿保存到寄存器和存储器中&lt;/li&gt;
+          &lt;li&gt;这样稳定性较好&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide --&gt;
+
+&lt;h2 id=&quot;实验原则&quot;&gt;实验原则&lt;/h2&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;原则：必须原创
+    &lt;ul&gt;
+      &lt;li&gt;第一届冯班，并不要求过高完成度&lt;/li&gt;
+      &lt;li&gt;往届挂科率 20%+，难以一步吃成胖子
+        &lt;ul&gt;
+          &lt;li&gt;如果难以完成 RISC-V，可完成往年 MIPS 实验&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;遇到困难及时在群内反馈！&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;不得抄袭开源设计&lt;/li&gt;
+      &lt;li&gt;不要放卫星&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;原则：反对无意义内卷
+    &lt;ul&gt;
+      &lt;li&gt;实验报告请控制在一万字以内，超过扣分&lt;/li&gt;
+      &lt;li&gt;对每条指令需要有指令执行的波形（截图）&lt;/li&gt;
+      &lt;li&gt;需要对关键信号以文字说明&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;原则：鼓励创新
+    &lt;ul&gt;
+      &lt;li&gt;十分附加分，奖励给探索精神&lt;/li&gt;
+      &lt;li&gt;有难有易的扩展方向可选&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide --&gt;
+
+&lt;h2 id=&quot;参考链接&quot;&gt;参考链接&lt;/h2&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://riscv.org/specifications/&quot;&gt;Specifications - RISC-V International&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;RISC-V 架构文档&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/SI-RISCV/e200_opensource&quot;&gt;手把手教你设计 CPU——RISC-V 处理器篇&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;经典入门书籍&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jameslzhu/riscv-card/blob/rel/1.0/riscv-card.pdf&quot;&gt;RISC-V card&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;一张纸就能写下的 RISC-V 指令表&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- .slide --&gt;
+
+&lt;h2 id=&quot;万丈高楼平地起&quot;&gt;万丈高楼平地起&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;加油 💪！&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">华为昇腾910使用初探</title><link href="http://localhost:4000/2021/03/21/%E5%8D%8E%E4%B8%BA%E6%98%87%E8%85%BE910%E4%BD%BF%E7%94%A8%E5%88%9D%E6%8E%A2/" rel="alternate" type="text/html" title="华为昇腾910使用初探" /><published>2021-03-21T00:00:00+08:00</published><updated>2021-03-21T00:00:00+08:00</updated><id>http://localhost:4000/2021/03/21/%E5%8D%8E%E4%B8%BA%E6%98%87%E8%85%BE910%E4%BD%BF%E7%94%A8%E5%88%9D%E6%8E%A2</id><content type="html" xml:base="http://localhost:4000/2021/03/21/%E5%8D%8E%E4%B8%BA%E6%98%87%E8%85%BE910%E4%BD%BF%E7%94%A8%E5%88%9D%E6%8E%A2/">&lt;p&gt;在本文中，我使用华为 &lt;a href=&quot;https://e.huawei.com/cn/products/cloud-computing-dc/atlas/atlas-800-training-9000&quot;&gt;Atlas 800-9000&lt;/a&gt; 训练服务器上的 &lt;a href=&quot;https://e.huawei.com/cn/products/cloud-computing-dc/atlas/ascend-910&quot;&gt;Ascend 910&lt;/a&gt; AI 加速卡上跑了一个 MatMul 算子，并对调用 AscendCL 接口的地方分别计时，从而大致了解使用 NPU 启动一次计算的流程和各部分耗时情况。&lt;/p&gt;
+
+&lt;h2 id=&quot;实验环境&quot;&gt;实验环境&lt;/h2&gt;
+
+&lt;p&gt;可以看到，机器的配置符合官网上的说明，单机有八张昇腾 910A 加速卡，而单卡空转待机功率接近七十瓦。Ascend 910 似乎有 A、B、Pro 等若干后缀小版本，而它们之间的差异似乎在软件层面是不可见的。&lt;/p&gt;
+
+&lt;p&gt;此外在 npu 面板中可以看到，其中有两个占用：Memory-Usage 和 HBM-Usage。初次看到的时候让我迷惑了一下，后查阅文档得知，Atlas 系列的加速卡上本身就有运行一个 device OS，这使得它可以工作在 EP 模式和 RC 模式下。所谓 EP 模式和我们平时的 GPU 比较类似，由 host 机的 CPU 调度 AICore，Device 上的 CPU 几乎处于不可见状态；而 RC 模式下可以直接通过 Device 上的 AI CPU 启动程序，并且（从代码示例）来看 AI CPU 可以直接对 HBM 进行寻址，无需再走 PCI-E 总线，感觉和 nvidia 之前出的 DPU 有些像，大约可以应用于边缘计算的场景。因此 HBM 接近于我印象中的显存，而另一者就不是今天主要关注的对象了。&lt;/p&gt;
+
+&lt;p&gt;使用自带的算力测试工具 &lt;a href=&quot;https://support.huawei.com/enterprise/zh/doc/EDOC1100164862/bc368639&quot;&gt;&lt;code&gt;ascend-dmi -f&lt;/code&gt;&lt;/a&gt;跑一下，单卡在默认参数下跑出 262 TFLOPS，相对于&lt;a href=&quot;https://e.huawei.com/cn/products/cloud-computing-dc/atlas/ascend-910&quot;&gt;官网&lt;/a&gt;上宣称的 320 TFLOPS 理论值来说可以接受。注意到此时功耗约 240W，离最大功耗 310W 还有一段距离，感觉还有提升的空间。&lt;/p&gt;
+
+&lt;p&gt;服务器的 CPU 也值得单独提一下，共有四块鲲鹏 920，是（我）少见的用于服务器的 arm CPU。另外在官网上看到鲲鹏 920 似乎有 32/48/64 多个版本的配置，而我手上的是 48 核版。就使用体验来看很让我惊喜，arm 在服务端上也可以有 Intel Xeon Gold 同一量级的性能。不过在 &lt;code&gt;/proc/cpuinfo&lt;/code&gt; 中缺失了 CPU 型号相关的信息，有些可惜。&lt;/p&gt;
+
+&lt;p&gt;最后这台服务器实际上是有其他人在用的，（小小吐槽一下）&lt;code&gt;/usr&lt;/code&gt;目录下的软件管理比较混乱，使用时经常报错。因此接下来除驱动外我统一使用自己安装在用户目录下的软件环境。CANN 我统一使用自己下载的 &lt;a href=&quot;https://www.huaweicloud.com/ascend/cann-download&quot;&gt;20.1.rc1_linux-aarch64 社区版&lt;/a&gt;，因为接下来使用到的部分接口（&lt;code&gt;aclopCompileAndExecute&lt;/code&gt;）似乎在新版本的文档中去掉了。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ npu-smi info
++-------------------------------------------------------------------------------------------+
+| npu-smi 1.7.6                        Version: 20.1.0                                      |
++-------------------+-----------------+-----------------------------------------------------+
+| NPU     Name      | Health          | Power(W)        Temp(C)                             |
+| Chip              | Bus-Id          | AICore(%)       Memory-Usage(MB)     HBM-Usage(MB)  |
++===================+=================+=====================================================+
+| 0       910A      | OK              | 68.4            40                                  |
+| 0                 | 0000:C1:00.0    | 0               459  / 15307         0    / 32255   |
++===================+=================+=====================================================+
+| 1       910A      | OK              | 65.5            35                                  |
+| 0                 | 0000:81:00.0    | 0               784  / 15689         0    / 32255   |
++===================+=================+=====================================================+
+| 2       910A      | OK              | 66.8            34                                  |
+| 0                 | 0000:41:00.0    | 0               1098 / 15689         0    / 32255   |
++===================+=================+=====================================================+
+| 3       910A      | OK              | 66.9            40                                  |
+| 0                 | 0000:01:00.0    | 0               2496 / 15601         0    / 32255   |
++===================+=================+=====================================================+
+| 4       910A      | OK              | 66.7            39                                  |
+| 0                 | 0000:C2:00.0    | 0               153  / 15307         0    / 32255   |
++===================+=================+=====================================================+
+| 5       910A      | OK              | 65.0            34                                  |
+| 0                 | 0000:82:00.0    | 0               313  / 15689         0    / 32255   |
++===================+=================+=====================================================+
+| 6       910A      | OK              | 67.5            34                                  |
+| 0                 | 0000:42:00.0    | 0               784  / 15689         0    / 32255   |
++===================+=================+=====================================================+
+| 7       910A      | OK              | 66.3            40                                  |
+| 0                 | 0000:02:00.0    | 0               3276 / 15601         0    / 32255   |
++===================+=================+=====================================================+
+$ ascend-dmi -f
+-----------------------------------------------------------------------------------------
+    Device        Execute Times        Duration(ms)        TFLOPS@FP16        Power(W)
+-----------------------------------------------------------------------------------------
+    0             192,000,000          1536                262.144            239.716
+-----------------------------------------------------------------------------------------
+$ cat /proc/cpuinfo | grep processor | wc -l
+192
+$ cat /proc/cpuinfo | head -n 10
+processor       : 0
+BogoMIPS        : 200.00
+Features        : fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop
+CPU implementer : 0x48
+CPU architecture: 8
+CPU variant     : 0x1
+CPU part        : 0xd01
+CPU revision    : 0
+
+processor       : 1
+$ cat /proc/meminfo
+MemTotal:       803585472 kB
+MemFree:        578641344 kB
+MemAvailable:   704245568 kB
+Buffers:            3136 kB
+Cached:         206471232 kB
+SwapCached:            0 kB
+Active:         12392256 kB
+Inactive:       194916672 kB
+Active(anon):    3918336 kB
+Inactive(anon):  1231232 kB
+Active(file):    8473920 kB
+Inactive(file): 193685440 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:      39063488 kB
+SwapFree:       39063488 kB
+Dirty:               384 kB
+Writeback:             0 kB
+AnonPages:        835008 kB
+Mapped:           132096 kB
+Shmem:           4315072 kB
+Slab:            9605440 kB
+SReclaimable:    6719360 kB
+SUnreclaim:      2886080 kB
+KernelStack:      138560 kB
+PageTables:        17152 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    440856192 kB
+Committed_AS:    5693952 kB
+VmallocTotal:   133009637312 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:     524288 kB
+$ uname -a
+Linux atlas01 4.14.0-115.el7a.0.1.aarch64 #1 SMP Sun Nov 25 20:54:21 UTC 2018 aarch64 aarch64 aarch64 GNU/Linux
+$ spack debug report
+* **Spack:** 0.16.1
+* **Python:** 3.7.5
+* **Platform:** linux-centos7-aarch64
+$ spack unload -a
+$ spack load gcc@7.5.0
+$ spack find --loaded
+==&amp;gt; 6 installed packages
+-- linux-centos7-aarch64 / gcc@4.8.5 ----------------------------
+gcc@7.5.0  gmp@6.1.2  isl@0.18  mpc@1.1.0  mpfr@3.1.6  zlib@1.2.11
+$ which $CXX
+~/spack-0.16.1/opt/spack/linux-centos7-aarch64/gcc-4.8.5/gcc-7.5.0-4euuqqu5srdpm6hxg4kuwhoyjc6crp2t/bin/g++
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;实验结果及分析&quot;&gt;实验结果及分析&lt;/h2&gt;
+
+&lt;p&gt;几个简单总结：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;创建上下文、申请内存、释放内存、释放上下文、去初始化的开销都很大，需要尽量避免&lt;/li&gt;
+  &lt;li&gt;算子首次编译需要 12s 左右的时间，后续运行无需重新编译&lt;/li&gt;
+  &lt;li&gt;Memset 开销远低于 Malloc，应当尽量多复用内存&lt;/li&gt;
+  &lt;li&gt;FP16MatMul 算子运行时间已经低于将矩阵从内存拷贝到设备的开销！&lt;/li&gt;
+  &lt;li&gt;GEMM 算子不支持 FP32&lt;/li&gt;
+  &lt;li&gt;GEMM 算子和使用 FP32 的 MatMul 算子性能很低，鸡肋&lt;/li&gt;
+  &lt;li&gt;切换上下文开销很低
+    &lt;ul&gt;
+      &lt;li&gt;由于创建释放上下文的开销仍然很高，必要时仍要使用 stream&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;经过热身的 MatMul 算子可以在 &lt;code&gt;{m, n, k} == {8192, 8192, 8192}&lt;/code&gt; 问题规模的 FP16 矩阵乘法上跑出接近 200 TFLOPS 的算力，远优于同期发布的 &lt;a href=&quot;https://www.nvidia.cn/data-center/v100/&quot;&gt;NVIDIA V100S&lt;/a&gt; 只有 130TFLOPS 的 FP16 理论算力（使用 Tensor Core）。
+    &lt;ul&gt;
+      &lt;li&gt;当然，一年后发布的 &lt;a href=&quot;https://www.nvidia.cn/data-center/a100/&quot;&gt;NVIDIA A100&lt;/a&gt; 使用 Tensor Core 的理论 FP16 算力达到 312TFLOPS，已经处于同一水平了。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ ./MatMul 8192 8192 8192
+aclInit: 4.422000 ms, 0.000000e+00 FLOPS
+aclrtCreateContext: 351.026000 ms, 0.000000e+00 FLOPS
+aclrtSetCurrentContext: 0.006000 ms, 0.000000e+00 FLOPS
+aclrtMalloc: 198.336000 ms, 0.000000e+00 FLOPS
+aclrtMallocHost: 26.796000 ms, 0.000000e+00 FLOPS
+aclrtMemsetAsync: 77.729000 ms, 0.000000e+00 FLOPS
+aclrtMemcpyAsyncHtoD: 36.260000 ms, 0.000000e+00 FLOPS
+Cast(aclFloat16): 0.498000 ms, 0.000000e+00 FLOPS
+Cast(float): 0.484000 ms, 0.000000e+00 FLOPS
+MatMulV2(aclFloat16): 5.613000 ms, 1.958866e+14 FLOPS
+MatMulV2(float): 1154.355000 ms, 9.524900e+11 FLOPS
+MatMul(aclFloat16): 5.610000 ms, 1.959914e+14 FLOPS
+MatMul(float): 1154.473000 ms, 9.523927e+11 FLOPS
+GEMM(aclFloat16): 202.152000 ms, 5.439034e+12 FLOPS
+aclrtMemcpyAsyncDtoH: 11.689000 ms, 0.000000e+00 FLOPS
+aclrtFree: 59.107000 ms, 0.000000e+00 FLOPS
+aclrtFreeHost: 64.095000 ms, 0.000000e+00 FLOPS
+aclrtDestroyContext: 186.624000 ms, 0.000000e+00 FLOPS
+aclFinalize: 349.656000 ms, 0.000000e+00 FLOPS
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;实验代码-matmulcc&quot;&gt;实验代码 &lt;code&gt;MatMul.cc&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;华为官方提供了一个 &lt;a href=&quot;https://support.huawei.com/enterprise/zh/doc/EDOC1100180745/efaaf049&quot;&gt;gemm 算子示例&lt;/a&gt;，提供了封装后的 GEMM 算子使用方法。但是我在实验中发现，这个封装的 &lt;code&gt;aclblasGemmEx&lt;/code&gt; 接口仍然存在诸多问题：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;使用这个封装后的接口时，居然还需要在程序运行前确定所有可能会遇到的矩阵规模和存储格式，再用 &lt;a href=&quot;https://support.huawei.com/enterprise/zh/doc/EDOC1100164868/a3cf4cee&quot;&gt;ATC&lt;/a&gt; 工具将算子提前编译成二进制文件！诚然，这样固定问题规模的设计，有利于对不同的输入做编译期的优化，但是使用起来无疑是非常不方便的。&lt;/li&gt;
+  &lt;li&gt;截至目前， 接口输入输出矩阵的 LD 只支持 &lt;code&gt;-1&lt;/code&gt;，由输入矩阵的格式推断。这和上面固定问题规模的问题一起，导致不能像 &lt;a href=&quot;https://docs.nvidia.com/cuda/cublas/index.html&quot;&gt;cuBLAS&lt;/a&gt; 一样做到即开即用，使用前基本都需要重新对数据进行打包。&lt;/li&gt;
+  &lt;li&gt;GEMM 算子的性能非常低，在官方示例的基础上各种调整，也最多只能在 &lt;code&gt;{m, n, k} == {20000, 20000, 20000}&lt;/code&gt; 的问题规模上得到不到 10TFLOPS 的算力。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;关于第三点，我找到 Ascend910 对应的&lt;a href=&quot;https://support.huawei.com/enterprise/zh/doc/EDOC1100164829/f96da97d&quot;&gt;达芬奇架构设计图&lt;/a&gt;：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/zTLpgZy3SDJmeCn.png&quot; alt=&quot;达芬奇架构&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;再结合&lt;a href=&quot;https://support.huawei.com/enterprise/zh/doc/EDOC1100164829/9153d09&quot;&gt;文档里&lt;/a&gt;可知，矩阵运算和向量运算属于两条流水队列（共有五条）的，猜测 GEMM 算子内部混合使用了两个运算单元且流水调度做的比较差。而因为文档里的&lt;a href=&quot;https://support.huawei.com/enterprise/zh/doc/EDOC1100164829/1ed5847a&quot;&gt;这句话&lt;/a&gt;说，华为没有开放 Cube 单元和 Vector 单元混合编程的接口，因此没有继续探索手动控制流水线这条不归路了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;当前仅支持用户开发 Vector 算子，由于开发高性能 Cube 算子难度较大，暂由华为交付。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;因此本例中，相较于 GEMM 算子，我运行的是 &lt;a href=&quot;https://support.huawei.com/enterprise/zh/doc/EDOC1100164838&quot;&gt;CANN V100R020C10 算子清单 (训练) 01&lt;/a&gt; 中查到的 MatMul 算子，从而真正发挥 NPU 的算力。&lt;/p&gt;
+
+&lt;p&gt;此外我使用了 20.1.rc1 版本中 fwkacllib 库提供的 &lt;a href=&quot;https://support.huawei.com/enterprise/zh/doc/EDOC1100164875/4dfa293&quot;&gt;&lt;code&gt;aclopCompileAndExecute&lt;/code&gt;&lt;/a&gt; 接口，它可以在运行期异步编译并执行指定的算子。这个接口更适合那些首次启动性能不那么重要的场合（也可以在启动时做热身操作），比如端上的应用。需要注意的是，在&lt;a href=&quot;https://support.huawei.com/enterprise/zh/doc/EDOC1100180745/426cffd9&quot;&gt;后续版本的文档中&lt;/a&gt;移除了这个接口，这个特性可能仍处于开发阶段。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-cpp&quot;&gt;/*
+
+export DDK_PATH=~/Ascend/ascend-toolkit/20.1.rc1/arm64-linux
+
+$CXX -std=c++11 -I$DDK_PATH/fwkacllib/include -L$DDK_PATH/fwkacllib/lib64 \
+-lascendcl -lacl_op_compiler -o MatMul MatMul.cc
+
+./MatMul 8192 8192 8192
+
+*/
+
+#include &amp;lt;acl/acl.h&amp;gt;
+#include &amp;lt;acl/acl_op_compiler.h&amp;gt;
+#include &amp;lt;functional&amp;gt;
+#include &amp;lt;string&amp;gt;
+#include &amp;lt;sys/time.h&amp;gt;
+
+#define ACLCHECK(cmd)                                                          \
+  do {                                                                         \
+    int e = cmd;                                                               \
+    if (e != ACL_ERROR_NONE) {                                                 \
+      fprintf(stderr, &quot;%d&quot;, e);                                                \
+      exit(1);                                                                 \
+    }                                                                          \
+  } while (0)
+
+void WuK_Timer(const char *tag, float flo, const std::function&amp;lt;void()&amp;gt; &amp;amp;kernel,
+               int test_time = 1) {
+  double min_time = 9e99;
+  while (test_time--) {
+    struct timeval start, end;
+    gettimeofday(&amp;amp;start, NULL);
+    kernel();
+    gettimeofday(&amp;amp;end, NULL);
+    min_time = std::min(min_time, (end.tv_sec - start.tv_sec) * 1e3 +
+                                      (end.tv_usec - start.tv_usec) * 1e-3);
+  }
+  fprintf(stdout, &quot;%s: %f ms, %e FLOPS\n&quot;, tag, min_time, flo * 1e3 / min_time);
+}
+
+int main(int argc, char **argv) {
+
+  int64_t m = std::stoi(argv[1]), n = std::stoi(argv[2]),
+          k = std::stoi(argv[3]), dimA[] = {m, k}, dimB[] = {k, n},
+          dimC[] = {m, n}, sAsize = (m * k * sizeof(float) + 63) / 32 * 32,
+          sBsize = (k * n * sizeof(float) + 63) / 32 * 32,
+          sCsize = (m * n * sizeof(float) + 63) / 32 * 32,
+          sALPHAsize = (sizeof(float) + 63) / 32 * 32,
+          sBETAsize = (sizeof(float) + 63) / 32 * 32,
+          hAsize = (m * k * sizeof(aclFloat16) + 63) / 32 * 32,
+          hBsize = (k * n * sizeof(aclFloat16) + 63) / 32 * 32,
+          hCsize = (m * k * sizeof(aclFloat16) + 63) / 32 * 32,
+          hALPHAsize = (sizeof(aclFloat16) + 63) / 32 * 32,
+          hBETAsize = (sizeof(aclFloat16) + 63) / 32 * 32;
+
+  aclTensorDesc
+      *sAdesc = aclCreateTensorDesc(ACL_FLOAT, 2, dimA, ACL_FORMAT_ND),
+      *sBdesc = aclCreateTensorDesc(ACL_FLOAT, 2, dimB, ACL_FORMAT_ND),
+      *sCdesc = aclCreateTensorDesc(ACL_FLOAT, 2, dimC, ACL_FORMAT_ND),
+      *sALPHAdesc = aclCreateTensorDesc(ACL_FLOAT, 0, dimC, ACL_FORMAT_ND),
+      *sBETAdesc = aclCreateTensorDesc(ACL_FLOAT, 0, dimC, ACL_FORMAT_ND),
+      *sDesc[] = {sAdesc, sBdesc, sCdesc, sALPHAdesc, sBETAdesc},
+      *hAdesc = aclCreateTensorDesc(ACL_FLOAT16, 2, dimA, ACL_FORMAT_ND),
+      *hBdesc = aclCreateTensorDesc(ACL_FLOAT16, 2, dimB, ACL_FORMAT_ND),
+      *hCdesc = aclCreateTensorDesc(ACL_FLOAT16, 2, dimC, ACL_FORMAT_ND),
+      *hALPHAdesc = aclCreateTensorDesc(ACL_FLOAT16, 0, dimC, ACL_FORMAT_ND),
+      *hBETAdesc = aclCreateTensorDesc(ACL_FLOAT16, 0, dimC, ACL_FORMAT_ND),
+      *hDesc[] = {hAdesc, hBdesc, hCdesc, hALPHAdesc, hBETAdesc};
+
+  aclopAttr *attrMatMul = aclopCreateAttr(), *attrGEMM = aclopCreateAttr(),
+            *attrCastFp16 = aclopCreateAttr(),
+            *attrCastFp32 = aclopCreateAttr();
+
+  ACLCHECK(aclopSetAttrBool(attrMatMul, &quot;transpose_x1&quot;, 0));
+  ACLCHECK(aclopSetAttrBool(attrMatMul, &quot;transpose_x2&quot;, 0));
+  ACLCHECK(aclopSetAttrBool(attrGEMM, &quot;transpose_a&quot;, 0));
+  ACLCHECK(aclopSetAttrBool(attrGEMM, &quot;transpose_b&quot;, 0));
+  ACLCHECK(aclopSetAttrInt(attrCastFp16, &quot;dst_type&quot;, ACL_FLOAT16));
+  ACLCHECK(aclopSetAttrInt(attrCastFp32, &quot;dst_type&quot;, ACL_FLOAT));
+
+  WuK_Timer(&quot;aclInit&quot;, 0, [&amp;amp;] { ACLCHECK(aclInit(NULL)); });
+
+  aclrtContext HPLAI_ACL_BLASPP_CONTEXT;
+
+  WuK_Timer(&quot;aclrtCreateContext&quot;, 0, [&amp;amp;] {
+    uint32_t deviceId = 0, count = 0;
+    aclrtGetDeviceCount(&amp;amp;count);
+    ACLCHECK(aclrtCreateContext(&amp;amp;HPLAI_ACL_BLASPP_CONTEXT, deviceId % count));
+  });
+
+  WuK_Timer(&quot;aclrtSetCurrentContext&quot;, 0, [&amp;amp;] {
+    ACLCHECK(aclrtSetCurrentContext(HPLAI_ACL_BLASPP_CONTEXT));
+  });
+
+  void *HPLAI_ACL_BLASPP_HOST_BUFFER, *HPLAI_ACL_BLASPP_DEVICE_BUFFER;
+  int64_t HPLAI_ACL_BLASPP_HOST_BUFFER_SIZE =
+              sAsize + sBsize + sCsize + sALPHAsize + sBETAsize,
+          HPLAI_ACL_BLASPP_DEVICE_BUFFER_SIZE =
+              HPLAI_ACL_BLASPP_HOST_BUFFER_SIZE + hAsize + hBsize + hCsize +
+              hALPHAsize + hBETAsize;
+
+  WuK_Timer(&quot;aclrtMalloc&quot;, 0, [&amp;amp;] {
+    ACLCHECK(aclrtMalloc(&amp;amp;HPLAI_ACL_BLASPP_DEVICE_BUFFER,
+                         HPLAI_ACL_BLASPP_DEVICE_BUFFER_SIZE,
+                         ACL_MEM_MALLOC_HUGE_FIRST));
+  });
+
+  WuK_Timer(&quot;aclrtMallocHost&quot;, 0, [&amp;amp;] {
+    ACLCHECK(aclrtMallocHost(&amp;amp;HPLAI_ACL_BLASPP_HOST_BUFFER,
+                             HPLAI_ACL_BLASPP_HOST_BUFFER_SIZE));
+  });
+
+  char *sAdevice = (char *)HPLAI_ACL_BLASPP_DEVICE_BUFFER,
+       *sBdevice = sAdevice + sAsize, *sCdevice = sBdevice + sBsize,
+       *sALPHAdevice = sCdevice + sCsize,
+       *sBETAdevice = sALPHAdevice + sALPHAsize,
+       *hAdevice = sBETAdevice + sBETAsize, *hBdevice = hAdevice + hAsize,
+       *hCdevice = hBdevice + hBsize, *hALPHAdevice = hCdevice + hCsize,
+       *hBETAdevice = hALPHAdevice + hALPHAsize,
+       *sAhost = (char *)HPLAI_ACL_BLASPP_HOST_BUFFER,
+       *sBhost = sAhost + sAsize, *sChost = sBhost + sBsize,
+       *sALPHAhost = sChost + sCsize, *sBETAhost = sALPHAhost + sALPHAsize;
+
+  WuK_Timer(&quot;aclrtMemsetAsync&quot;, 0, [&amp;amp;] {
+    ACLCHECK(aclrtMemsetAsync(HPLAI_ACL_BLASPP_HOST_BUFFER,
+                              HPLAI_ACL_BLASPP_HOST_BUFFER_SIZE, 0,
+                              HPLAI_ACL_BLASPP_HOST_BUFFER_SIZE, NULL));
+    ACLCHECK(aclrtSynchronizeStream(NULL));
+  });
+
+  WuK_Timer(&quot;aclrtMemcpyAsyncHtoD&quot;, 0, [&amp;amp;] {
+    ACLCHECK(aclrtMemcpyAsync(
+        HPLAI_ACL_BLASPP_DEVICE_BUFFER, HPLAI_ACL_BLASPP_DEVICE_BUFFER_SIZE,
+        HPLAI_ACL_BLASPP_HOST_BUFFER, HPLAI_ACL_BLASPP_HOST_BUFFER_SIZE,
+        ACL_MEMCPY_HOST_TO_DEVICE, NULL));
+    ACLCHECK(aclrtSynchronizeStream(NULL));
+  });
+
+  aclDataBuffer *sAdata = aclCreateDataBuffer(sAdevice, sAsize),
+                *sBdata = aclCreateDataBuffer(sBdevice, sBsize),
+                *sCdata = aclCreateDataBuffer(sCdevice, sCsize),
+                *sALPHAdata = aclCreateDataBuffer(sALPHAdevice, sALPHAsize),
+                *sBETAdata = aclCreateDataBuffer(sBETAdevice, sBETAsize),
+                *sData[] = {sAdata, sBdata, sCdata, sALPHAdata, sBETAdata},
+                *hAdata = aclCreateDataBuffer(hAdevice, hAsize),
+                *hBdata = aclCreateDataBuffer(hBdevice, hBsize),
+                *hCdata = aclCreateDataBuffer(hCdevice, hCsize),
+                *hALPHAdata = aclCreateDataBuffer(hALPHAdevice, hALPHAsize),
+                *hBETAdata = aclCreateDataBuffer(hBETAdevice, hBETAsize),
+                *hData[] = {hAdata, hBdata, hCdata, hALPHAdata, hBETAdata};
+
+  WuK_Timer(
+      &quot;Cast(aclFloat16)&quot;, 0,
+      [&amp;amp;] {
+        ACLCHECK(aclopCompileAndExecute(&quot;Cast&quot;, 1, sDesc, sData, 1, hDesc,
+                                        hData, attrCastFp16, ACL_ENGINE_SYS,
+                                        ACL_COMPILE_SYS, NULL, NULL));
+        ACLCHECK(aclrtSynchronizeStream(NULL));
+      },
+      10);
+  WuK_Timer(
+      &quot;Cast(float)&quot;, 0,
+      [&amp;amp;] {
+        ACLCHECK(aclopCompileAndExecute(
+            &quot;Cast&quot;, 1, hDesc + 2, hData + 2, 1, sDesc + 2, sData + 2,
+            attrCastFp32, ACL_ENGINE_SYS, ACL_COMPILE_SYS, NULL, NULL));
+        ACLCHECK(aclrtSynchronizeStream(NULL));
+      },
+      10);
+
+  WuK_Timer(
+      &quot;MatMulV2(aclFloat16)&quot;, 2.0 * m * n * k,
+      [&amp;amp;] {
+        ACLCHECK(aclopCompileAndExecute(
+            &quot;MatMulV2&quot;, 2, hDesc, hData, 1, hDesc + 2, hData + 2, attrMatMul,
+            ACL_ENGINE_SYS, ACL_COMPILE_SYS, NULL, NULL));
+        ACLCHECK(aclrtSynchronizeStream(NULL));
+      },
+      10);
+
+  WuK_Timer(
+      &quot;MatMulV2(float)&quot;, 2.0 * m * n * k,
+      [&amp;amp;] {
+        ACLCHECK(aclopCompileAndExecute(
+            &quot;MatMulV2&quot;, 2, sDesc, sData, 1, sDesc + 2, sData + 2, attrMatMul,
+            ACL_ENGINE_SYS, ACL_COMPILE_SYS, NULL, NULL));
+        ACLCHECK(aclrtSynchronizeStream(NULL));
+      },
+      10);
+
+  WuK_Timer(
+      &quot;MatMul(aclFloat16)&quot;, 2.0 * m * n * k,
+      [&amp;amp;] {
+        ACLCHECK(aclopCompileAndExecute(&quot;MatMul&quot;, 2, hDesc, hData, 1, hDesc + 2,
+                                        hData + 2, attrMatMul, ACL_ENGINE_SYS,
+                                        ACL_COMPILE_SYS, NULL, NULL));
+        ACLCHECK(aclrtSynchronizeStream(NULL));
+      },
+      10);
+
+  WuK_Timer(
+      &quot;MatMul(float)&quot;, 2.0 * m * n * k,
+      [&amp;amp;] {
+        ACLCHECK(aclopCompileAndExecute(&quot;MatMul&quot;, 2, sDesc, sData, 1, sDesc + 2,
+                                        sData + 2, attrMatMul, ACL_ENGINE_SYS,
+                                        ACL_COMPILE_SYS, NULL, NULL));
+        ACLCHECK(aclrtSynchronizeStream(NULL));
+      },
+      10);
+
+  WuK_Timer(
+      &quot;GEMM(aclFloat16)&quot;, 2.0 * m * n * k,
+      [&amp;amp;] {
+        ACLCHECK(aclopCompileAndExecute(&quot;GEMM&quot;, 5, hDesc, hData, 1, hDesc + 2,
+                                        hData + 2, attrGEMM, ACL_ENGINE_SYS,
+                                        ACL_COMPILE_SYS, NULL, NULL));
+        ACLCHECK(aclrtSynchronizeStream(NULL));
+      },
+      10);
+
+  WuK_Timer(&quot;aclrtMemcpyAsyncDtoH&quot;, 0, [&amp;amp;] {
+    ACLCHECK(aclrtMemcpyAsync(sChost, sCsize, sCdevice, sCsize,
+                              ACL_MEMCPY_DEVICE_TO_HOST, NULL));
+    ACLCHECK(aclrtSynchronizeStream(NULL));
+  });
+
+  ACLCHECK(aclDestroyDataBuffer(sAdata));
+  ACLCHECK(aclDestroyDataBuffer(sBdata));
+  ACLCHECK(aclDestroyDataBuffer(sCdata));
+  ACLCHECK(aclDestroyDataBuffer(sALPHAdata));
+  ACLCHECK(aclDestroyDataBuffer(sBETAdata));
+  ACLCHECK(aclDestroyDataBuffer(hAdata));
+  ACLCHECK(aclDestroyDataBuffer(hBdata));
+  ACLCHECK(aclDestroyDataBuffer(hCdata));
+  ACLCHECK(aclDestroyDataBuffer(hALPHAdata));
+  ACLCHECK(aclDestroyDataBuffer(hBETAdata));
+  aclopDestroyAttr(attrCastFp32);
+  aclopDestroyAttr(attrCastFp16);
+  aclopDestroyAttr(attrGEMM);
+  aclopDestroyAttr(attrMatMul);
+
+  WuK_Timer(&quot;aclrtFree&quot;, 0,
+            [&amp;amp;] { ACLCHECK(aclrtFree(HPLAI_ACL_BLASPP_DEVICE_BUFFER)); });
+  WuK_Timer(&quot;aclrtFreeHost&quot;, 0,
+            [&amp;amp;] { ACLCHECK(aclrtFreeHost(HPLAI_ACL_BLASPP_HOST_BUFFER)); });
+
+  WuK_Timer(&quot;aclrtDestroyContext&quot;, 0,
+            [&amp;amp;] { ACLCHECK(aclrtDestroyContext(HPLAI_ACL_BLASPP_CONTEXT)); });
+
+  WuK_Timer(&quot;aclFinalize&quot;, 0, [&amp;amp;] { ACLCHECK(aclFinalize()); });
+}
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">在本文中，我使用华为 Atlas 800-9000 训练服务器上的 Ascend 910 AI 加速卡上跑了一个 MatMul 算子，并对调用 AscendCL 接口的地方分别计时，从而大致了解使用 NPU 启动一次计算的流程和各部分耗时情况。</summary></entry><entry><title type="html">今日此时所想之事（二）</title><link href="http://localhost:4000/2021/02/11/%E4%BB%8A%E6%97%A5%E6%AD%A4%E6%97%B6%E6%89%80%E6%83%B3%E4%B9%8B%E4%BA%8B-%E4%BA%8C-%E6%AD%A3%E5%B8%B8%E7%89%88+%E9%9F%B3%E4%B9%90/" rel="alternate" type="text/html" title="今日此时所想之事（二）" /><published>2021-02-11T00:00:00+08:00</published><updated>2021-02-11T00:00:00+08:00</updated><id>http://localhost:4000/2021/02/11/%E4%BB%8A%E6%97%A5%E6%AD%A4%E6%97%B6%E6%89%80%E6%83%B3%E4%B9%8B%E4%BA%8B(%E4%BA%8C)%E6%AD%A3%E5%B8%B8%E7%89%88+%E9%9F%B3%E4%B9%90</id><content type="html" xml:base="http://localhost:4000/2021/02/11/%E4%BB%8A%E6%97%A5%E6%AD%A4%E6%97%B6%E6%89%80%E6%83%B3%E4%B9%8B%E4%BA%8B-%E4%BA%8C-%E6%AD%A3%E5%B8%B8%E7%89%88+%E9%9F%B3%E4%B9%90/">&lt;h2 id=&quot;1&quot;&gt;1&lt;/h2&gt;
+
+&lt;p&gt;二零二零年的大部分时间，我屏蔽了所有和保研相关的消息，也和家里产生了矛盾。想起高二暑假时的自己，因为想来广东最好的学校，把 SYSU 定成了接下来一年的目标和动力；现在的我又一次处在了相同的阶段。&lt;/p&gt;
+
+&lt;p&gt;一个“成功”的保研人应该拿到一个更好学校的牛导 offer，但我对这一切都很抗拒。我觉得中大真是一所对我相性非常好的学校，有那么一些名气，但也不会让我太过自大。这让我产生了一些割裂感，因为大部分关系好的同学都在校外实习，或是准备其他学校的保研夏令营。无形中我对自己施加了很多压力：我主动选择了做一个“失败者”，被排除在了某一种可能性之外吗？答案很显然是否，但即使在漫长的失眠中思考，我也很难说上原因。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;定义你最终归宿的，一定是你能力和欲望综合的那个真实的你。…残酷的社会压力逼迫我们通过复制所谓的成功道路来获取社会资源，而完全忽视了&lt;strong&gt;人的内在动能才是决定你位置的根本因素&lt;/strong&gt;。&lt;/p&gt;
+
+  &lt;p&gt;这些东西最终会决定你愿意为什么奋斗，最终会决定你对一份事业的热情和责任心，最终会决定你把自己放在什么样的位置是舒服的，最终会决定你人生的意义。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;十二月的一天，我翻到了一个&lt;a href=&quot;https://www.zhihu.com/question/23819007/answer/107332874&quot;&gt;两年前的回答&lt;/a&gt;，终于可以把长时间的这些想法表达出来。比起短跑，我更加喜欢和擅长长跑，我也相信不同人有不同的节拍。那么我可以远离学历上的鄙视链，唯一需要和同龄人比较的只有自己幸福感。我要找到最让自己舒服的位置，我要过的比所有人都快乐。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/12/26/pBT4SyzEKCicJ2O.gif&quot; alt=&quot;我啊，是真的想考音大吗？&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我啊，是真的想考音大吗？&lt;/p&gt;
+
+&lt;h2 id=&quot;2&quot;&gt;2&lt;/h2&gt;
+
+&lt;p&gt;当然，远离攀比也并不意味着我放弃了一切追求。保研前的最后一学期，无论如何我想证明一下自己仍然有和别人卷的能力。我已经提前算过，即使在这个学期把绩点拉满，只要前一名同学没有大的失误，仍然不会被我超过（最后确实只差了 0.13/100 分），因此自己的“内卷”不会影响任何人的保研名额。&lt;/p&gt;
+
+&lt;p&gt;内卷是从选课的时候就要开始的，你要修的学分既不能太多（精力不够）也不能太少（GPA 将受限于一两门课程的给分，过于看脸）。对于数学基础好的同学，应当多选计算量多且难的课程；记忆力强的同学，则应该选要选期末考试且多是理论的课程；再或者像我一样多选实验分数占比高的课程。自己并没有很强的应试能力，那就只好在实验课上多卷一卷：要求给出一个基础版本及至少一个优化版本，我就&lt;a href=&quot;https://wu-kan.cn/_posts/2020-06-16-%E4%BD%BF%E7%94%A8-CUDA-%E4%BC%98%E5%8C%96%E4%BA%8C%E7%BB%B4%E4%BF%A1%E6%81%AF%E7%86%B5%E6%B1%82%E8%A7%A3/#%E8%AF%B7%E7%BB%99%E5%87%BA%E4%B8%80%E4%B8%AA%E5%9F%BA%E7%A1%80%E7%89%88%E6%9C%ACbaseline%E5%8F%8A%E8%87%B3%E5%B0%91%E4%B8%80%E4%B8%AA%E4%BC%98%E5%8C%96%E7%89%88%E6%9C%AC%E5%B9%B6%E5%88%86%E6%9E%90%E8%AF%B4%E6%98%8E%E6%AF%8F%E7%A7%8D%E4%BC%98%E5%8C%96%E5%AF%B9%E6%80%A7%E8%83%BD%E7%9A%84%E5%BD%B1%E5%93%8D&quot;&gt;一共搞出了 15 个版本&lt;/a&gt;；要求识别代码中的实数，我就&lt;a href=&quot;https://wu-kan.cn/_posts/2020-05-14-%E4%BD%BF%E7%94%A8%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90%E5%99%A8-Flex-%E6%8F%90%E5%8F%96%E7%A8%8B%E5%BA%8F%E4%B8%AD%E7%9A%84%E6%95%B4%E6%95%B0%E5%92%8C%E6%B5%AE%E7%82%B9%E6%95%B0/#%E5%AE%9E%E9%AA%8C%E5%8E%9F%E7%90%86&quot;&gt;识别了所有 c 语言标准定义的格式，甚至考虑了排除 UNICODE 扩展中的数字&lt;/a&gt;；不要忘了还要在实验报告结尾提出几个工作量极大的“&lt;a href=&quot;https://wu-kan.cn/_posts/2020-05-14-%E4%BD%BF%E7%94%A8%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90%E5%99%A8-Flex-%E6%8F%90%E5%8F%96%E7%A8%8B%E5%BA%8F%E4%B8%AD%E7%9A%84%E6%95%B4%E6%95%B0%E5%92%8C%E6%B5%AE%E7%82%B9%E6%95%B0/#%E5%AE%9E%E9%AA%8C%E5%BF%83%E5%BE%97&quot;&gt;期待在日后的学习中加以解决的&lt;/a&gt;”问题，这会让老师觉得你对这个实验很有思考！当然也有翻车的地方，某门没有选的课程因为疫情的原因改为线上展示评分了，并且最后给出了人均 95+ 的高分。&lt;/p&gt;
+
+&lt;p&gt;总之一个学期下来效果非常明显，三门计入保研排名的课程有两门都拿到了第一，年级排名也拉到了前五名。这甚至在&lt;a href=&quot;https://wu-kan.cn/_posts/2020-10-04-%E6%8E%A8%E5%85%8D%E7%AD%94%E8%BE%A9/&quot;&gt;推免面试&lt;/a&gt;上让老师（拿着我前三年的成绩单）特别关注了一下：“我看你前两年打了好多比赛，而学业成绩都不如大三的，是不是因为疫情没有比赛打？”当时无以言对，因为从客观上来看确实是这样，但我知道内在心态的转变和驱动才是真正的原因。&lt;/p&gt;
+
+&lt;h2 id=&quot;3&quot;&gt;3&lt;/h2&gt;
+
+&lt;p&gt;说到推免面试，我在英语提问环节拿到了&lt;a href=&quot;http://sdcs.sysu.edu.cn/content/5521&quot;&gt;前一百名里的最低分&lt;/a&gt;。我拿到的问题是，“你为什么喜欢 CS 专业”？我想即使是用中文，我也很难回答这个问题，因为 CS 专业只是我实现自己人生追求的一种手段，并不是喜爱本身。不过，也得到来自一位很棒的老师的肯定，这让我觉得很开心。有些遗憾我在这位老师的课上并不是学的最出彩的同学，但他的课真的非常不错。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/12/26/hw2tKTNW3bPSpnf.png&quot; alt=&quot;离谱&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4&quot;&gt;4&lt;/h2&gt;
+
+&lt;p&gt;二零二零年对我来说是这样的不平淡，值得写上一篇文章纪念一下。我得到了去年这个时候在想的所有东西：侥幸不用考试就能继续有书念；在&lt;a href=&quot;https://wu-kan.github.io/resume/resume.pdf&quot;&gt;简历&lt;/a&gt;上又加了几项经历；作为队员参加的 ASC 20 取消之后，作为 advisor 带队和学弟们重新进了 ASC 21 的决赛；找了一份自己觉得还不错的&lt;a href=&quot;https://wu-kan.cn/_posts/2021-02-02-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E4%B9%A0%E9%9D%A2%E8%AF%95/&quot;&gt;实习&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;总之，我不再想给自己定下&lt;a href=&quot;https://wu-kan.cn/_posts/2020-01-24-%E4%BB%8A%E6%97%A5%E6%AD%A4%E6%97%B6%E6%89%80%E6%83%B3%E4%B9%8B%E4%BA%8B/&quot;&gt;像去年一样&lt;/a&gt;让人压力太大的愿望。今年我想看《佐贺 Ⅱ》，想看《京吹 Ⅲ》；想在生活中发掘更多的“自我”；想在科研上迈出第一步；想在 ASC 决赛拿一个不错的成绩，给在 SYSU 的本科生活画一个漂亮的句号。大二时把这样一句话送给了社团的学弟，现在我想再把它送给自己。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;心有猛虎，细嗅蔷薇。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;嗷呜~&lt;/p&gt;</content><author><name></name></author><category term="随笔" /><summary type="html">1</summary></entry><entry><title type="html">十月九日</title><link href="http://localhost:4000/2020/10/09/%E5%8D%81%E6%9C%88%E4%B9%9D%E6%97%A5/" rel="alternate" type="text/html" title="十月九日" /><published>2020-10-09T00:00:00+08:00</published><updated>2020-10-09T00:00:00+08:00</updated><id>http://localhost:4000/2020/10/09/%E5%8D%81%E6%9C%88%E4%B9%9D%E6%97%A5</id><content type="html" xml:base="http://localhost:4000/2020/10/09/%E5%8D%81%E6%9C%88%E4%B9%9D%E6%97%A5/">&lt;p&gt;一直想要写下来的一些文字，大概还要从一年多以前说起。&lt;/p&gt;
+
+&lt;h2 id=&quot;外公&quot;&gt;外公&lt;/h2&gt;
+
+&lt;p&gt;去年八月份，我还在家的时候，外公抱怨腿疼，家里带外公去医院里做检查。等检查结束之后，医生悄悄告诉我们，时日无多了，预计只能坚持到中秋节。我觉得还没有做好突然接受这样亲近的人离开的准备，倒不如说，甚至有些怀疑医生的诊断结果。我看不出外公身体的异样，每天可以正常走动或者是上微信看新闻；听我说在专业分流选择了超算方向的时候，还能和我讨论超算究竟是什么样的东西。五月份舅舅家刚添了弟弟，妹妹和我也有在好好的念书；外公刚搬到新家还不到一年，正是没有缺憾的时候。我们没有和外公外婆说真实情况，但是久违的请人来拍了一张全家福。&lt;/p&gt;
+
+&lt;p&gt;并不需要瞒住很久，在中秋节前外公真的倒下去了，被送到医院靠点滴维持生命；等到国庆我赶回去的时候，肿瘤已经扩散到了脑中，外公的意识已经进入时常清醒时常模糊的状态；生命在干枯皮肤上的突起血管中肉眼可见的流逝。趁外公清醒的时候，我拿起刚进超算中心拿到的胸牌给外公看。外公盯着我的胸牌看了很久，努力想说些话但是说不出来，最后还是笑了。这让我觉得暑假里做&lt;a href=&quot;https://wu-kan.cn/_posts/2019-07-24-ASC20%E9%80%89%E6%8B%94%E7%BA%AA%E4%BA%8B/&quot;&gt;选拔赛&lt;/a&gt;有了回报。&lt;/p&gt;
+
+&lt;p&gt;十月九号上午，在我返校后外公真的走了。肿瘤已经压迫了脑神经，最后一定没有什么痛苦，因此我并没有特别悲伤或者难过这类心情，毕竟在一个月之前就已经有了预期，只是感觉心里的牵挂少了一些这样的感觉。&lt;/p&gt;
+
+&lt;h2 id=&quot;上低音号&quot;&gt;上低音号&lt;/h2&gt;
+
+&lt;p&gt;病房里面没有稳定的网络，于是在写&lt;a href=&quot;https://wu-kan.cn/_posts/2020-01-24-%E4%BB%8A%E6%97%A5%E6%AD%A4%E6%97%B6%E6%89%80%E6%83%B3%E4%B9%8B%E4%BA%8B/&quot;&gt;十二份大作业&lt;/a&gt;之余，我也提前缓存了几部番剧，用来度过漫长的时间。由于一个月之后就是&lt;a href=&quot;https://wu-kan.cn/_posts/2019-11-04-%E5%86%8D%E8%A7%81-%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/&quot;&gt;退役前的最后一场比赛&lt;/a&gt;（其实我的算法竞赛生涯一共也只有两场重要比赛），我没有追当季新番，而是选择了重温一直想再看一遍的《京吹》。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;当我第一次看《吹响吧！上低音号》的时候，我并没有想太多。但是现在，三年之后，我可以明确地说，这是我就最喜欢的动画，久美子就是我最喜欢的角色。是什么引起了如此戏剧性的变化？为什么动画里个人成长的故事，会与我产生如此强烈的共鸣？在这部视频里，我深入地探讨了《吹响吧！上低音号》是如何改变我的思维方式的，久美子是如何激励我的——那听起来多么温柔！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;和&lt;a href=&quot;https://www.bilibili.com/video/BV15W411r7aR&quot;&gt;这段话&lt;/a&gt;一样，在我第一次看完《京吹》的时候，并没有想到它会在日后的一两年里让我这样感同身受。觉得自己很容易满足于拿到的一些奖，就像最开始的久美子一样满足于拿到的废金。我觉得自己这么做只是因为认识厉害的学长们都在这么做，并且他们最后的出路看起来都很不错。我一直逃避去思考，我真的喜欢 CS 专业，真的就喜欢所谓的打代码吗？我很清楚自己并不喜欢这一切，只是比别人花的精力要多一些，可以作为维持生活的手段。&lt;/p&gt;
+
+&lt;p&gt;我反复回看宇治桥上奔跑的久美子，那种想要变得更好的火热决心和不甘心。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://activity.hdslb.com/blackboard/static/20191121/5efc24ef67f6529d693e71b5f8cf73b9/ADan~Qxq.gif&quot; alt=&quot;想演奏的更好&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/10/03/mMX86e2lfZbh7EB.gif&quot; alt=&quot;想演奏的更好&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;也许受一两个镜头影响就改变了人生目标之类的感觉很愚蠢，可是我觉得自己真的太需要这种「转念的一瞬间」了。如果世界是完美的话，久美子找到了自己对上低音号的爱，能够朝着自己的目标一直坚持下去。&lt;/p&gt;
+
+&lt;h2 id=&quot;超算&quot;&gt;超算&lt;/h2&gt;
+
+&lt;p&gt;半年前，终于&lt;a href=&quot;https://wu-kan.cn/_posts/2020-01-24-%E4%BB%8A%E6%97%A5%E6%AD%A4%E6%97%B6%E6%89%80%E6%83%B3%E4%B9%8B%E4%BA%8B/&quot;&gt;很勉强地修完三十三个学分&lt;/a&gt;的时候，我还没有想好后面到底要怎样。因为众所周知的原因，这个大三下比别的学期有更多的时间用来思考一些虚无缥缈的事。于是这半年我开始很严重的失眠，其时间还要超过前二十年来的总和，最严重的两天里一共只睡了六个小时。&lt;/p&gt;
+
+&lt;p&gt;最多被我想到的问题是，「你为什么要学超算？」依稀记得一年前超算原理的课上，杜总也这么问了我们。当时课堂气氛不是那么沉重，也没有同学真的当场回答这个问题。其实我一开始在专业分流的时候只是觉得「超算」听起来很帅气，而且不用和搞人工智能的那些同学一起卷罢了。既然心里并不喜欢这一切，那我的目标就是找一个小众的方向，学好那些不太容易被代替的技能，让自己能够有时间在生活里做「自己」。&lt;/p&gt;
+
+&lt;p&gt;在这期间，也陆续有被字节、腾讯、虎牙、阿里云的人或者一些猎头联系过，但最后我想起一年前去小马智行参观的时候，有向他们的工程师打听过的情况。小马有十几个 IOI 金牌和 WF 冠军，但是重要的工作仍然是需要研究生以上负责的。那么这是我想要的吗？我也不想一直和业务逻辑打交道，总觉得这样下去，上天赋予每个人的「才华」会被慢慢收回去的。&lt;/p&gt;
+
+&lt;p&gt;这很矛盾，我也觉得上了大学之后人变矫情了很多。高中时候只需要完成老师布置的任务就完事大吉，努力的同学也只要跑到食堂的书店按顺序成套抱回习题自己做就行了。大学里不管你怎么努力总是会卷进一条又一条的赛道里。绩点低的羡慕绩点高的，没论文的羡慕有论文的，银牌的羡慕金牌的，没实习的羡慕有实习的，小厂 offer 羡慕大厂外企，保本校的羡慕清北复交，而后者则又羡慕能出国的。我想在大一刚上学的时候绝对没有想过以后要做一个混吃等死的 five。当然现在我也绝没有把当一个 five 作为人生追求，但是很多时候真的很想直接躺平远离竞争，远离一条又一条的鄙视链。由于显然的原因，今年内卷又达到了一个新的台阶，某些学校更是非年级第一简历连初审都过不了，可笑的目标就此放下。自己的节奏也完全被打乱，本来正在准备的 ASC 从寒假拖到了暑假，然后直接在九月份宣布和下一年的合并。功利性的来说，我现在根本不需要参加这些比赛来证明自己了。&lt;/p&gt;
+
+&lt;p&gt;比较可笑的是，我认识的能够发出反内卷声音的人都已经卷到了鄙视链的高层，而在另外的人眼里我也是这样的人。除了难得的一些知心朋友之外，大家互相之间都是「对面壁者的微笑」：我怎么知道大佬是不是嘴上反内卷，背地里通宵学习呢？这种情况下，你有多优秀，就有多令人讨厌。&lt;/p&gt;
+
+&lt;p&gt;也许我已经被讨厌了，但是现在我只想做我自己，某些东西是不会变的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/10/09/H2oWiB5e7I6zVaS.png&quot; alt=&quot;学姐你不也只是个高中生吗&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;「我还想问你，为什么要装大人」
+「装的好像什么都懂，一心认为只有自己是特别的」
+「学姐你不也只是个高中生吗！」&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+
+&lt;p&gt;配图及部分想法综合了下面的材料，感谢原作者们。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV15W411r7aR&quot;&gt;【熟肉】那听起来多么温柔|为什么《吹响吧！上低音号》是我最喜欢的动画【UTS reviews】_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.bilibili.com/read/cv7501359&quot;&gt;（自娱自乐）三刷京吹观后感 s1e12 - 哔哩哔哩&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="随笔" /><summary type="html">一直想要写下来的一些文字，大概还要从一年多以前说起。</summary></entry><entry><title type="html">搭建自己的GitLab</title><link href="http://localhost:4000/2020/03/26/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84GitLab/" rel="alternate" type="text/html" title="搭建自己的GitLab" /><published>2020-03-26T00:00:00+08:00</published><updated>2020-03-26T00:00:00+08:00</updated><id>http://localhost:4000/2020/03/26/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84GitLab</id><content type="html" xml:base="http://localhost:4000/2020/03/26/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84GitLab/">&lt;h2 id=&quot;实验环境&quot;&gt;实验环境&lt;/h2&gt;
+
+&lt;p&gt;自己购买的 1C2G 腾讯云服务器。&lt;/p&gt;
+
+&lt;p&gt;CentOS 7.6。&lt;/p&gt;
+
+&lt;h2 id=&quot;实验过程&quot;&gt;实验过程&lt;/h2&gt;
+
+&lt;p&gt;以下操作均在 root 账号下进行。&lt;/p&gt;
+
+&lt;h3 id=&quot;修改宿主的-ssh-端口&quot;&gt;修改宿主的 SSH 端口&lt;/h3&gt;
+
+&lt;p&gt;修改宿主的 SSH 端口，使用非 22  端口，这样以后从自建 gitlab 上拉取代码可以少费些功夫了。此外，管理用的宿主 SSH 端口改成别的也更安全。&lt;/p&gt;
+
+&lt;p&gt;修改 SSHD 配置文件 &lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;，将其中的  &lt;code&gt;#Port 22&lt;/code&gt; 去掉注释并改为其它端口号（比如我改成&lt;code&gt;Port 2222&lt;/code&gt;）。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;service sshd restart
+semanage port -m -t ssh_port_t -p tcp 2222 # 未安装semanage可忽略
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;配置-swap-交换分区&quot;&gt;配置 SWAP 交换分区&lt;/h3&gt;
+
+&lt;p&gt;由于 GitLab 较为消耗资源，我们需要先创建交换分区，以降低物理内存的压力。在实际生产环境中，如果服务器配置够高，则不必配置交换分区。（我 好 穷 啊&lt;/p&gt;
+
+&lt;p&gt;新建 8 GB 大小的交换分区（一般来说 2 GB 就够了，可以自己改下面的大小）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;dd if=/dev/zero of=/root/swapfile bs=1M count=8192
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;使用 SWAP 分区专用的格式化命令&lt;code&gt;mkswap&lt;/code&gt;，对新建的主分区进行格式化操作：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;mkswap /root/swapfile
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;swapon /root/swapfile
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;为了能够让新的交换分区设备在重启后依然生效，需要将相关信息写入到配置文件中。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;echo &quot;/root/swapfile swap swap defaults 0 0&quot; &amp;gt;&amp;gt; /etc/fstab
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;安装-docker&quot;&gt;安装 docker&lt;/h3&gt;
+
+&lt;p&gt;参考 &lt;a href=&quot;https://www.runoob.com/docker/centos-docker-install.html&quot;&gt;CentOS Docker 安装&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;yum update -y
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum install -y docker-ce
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;systemctl start docker
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;运行下面指令，拉取 gitlab 镜像并运行。为了方便日后备份维护，这里把三个重要的目录挂载进容器。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker pull gitlab/gitlab-ce
+docker run \
+    --detach \
+    --hostname gitlab.wu-kan.cn \
+    --name gitlab-ce \
+    --restart always \
+    --publish 443:443 \
+    --publish 80:80 \
+    --publish 22:22 \
+    --volume /root/gitlab/etc/gitlab:/etc/gitlab \
+    --volume /root/gitlab/var/log/gitlab:/var/log/gitlab \
+    --volume /root/gitlab/var/opt/gitlab:/var/opt/gitlab \
+    --env GITLAB_OMNIBUS_CONFIG=\
+&quot;external_url &apos;https://gitlab.wu-kan.cn/&apos;
+letsencrypt[&apos;enable&apos;] = true
+letsencrypt[&apos;contact_emails&apos;] = [&apos;i@wu-kan.cn&apos;]
+gitlab_pages[&apos;enable&apos;] = true
+pages_external_url &apos;http://gitlab-pages.wu-kan.cn/&apos;&quot; \
+    gitlab/gitlab-ce
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;运行 &lt;code&gt;docker container ls&lt;/code&gt;，可以看到下面容器的状态是&lt;code&gt;(health: starting)&lt;/code&gt;。等这个状态变成 &lt;code&gt;(healthy)&lt;/code&gt; 时则说明已经部署完成，可以访问了。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS                                 PORTS
+                                                       NAMES
+1a6c9c5ea464        gitlab/gitlab-ce    &quot;/assets/wrapper&quot;   About a minute ago   Up About a minute (health: starting)   0.0.0.0:22-&amp;gt;22/tcp, 0.0.0.0:80-&amp;gt;80/tcp, 0.0.0.0:443-&amp;gt;443/tcp   gitlab-ce
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;运行的时候配置过低的话（比如我），会出现终端卡死。进入云服务商的监控页可以看到 CPU 和内存都是爆满的，建议喝一杯茶再回来看。&lt;/p&gt;
+
+&lt;p&gt;如果持续出现 &lt;code&gt;unhealthy&lt;/code&gt; 的状态，可以考虑重启 docker 服务。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;service docker restart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;gitlab-runner&quot;&gt;gitlab-runner&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker run \
+    -d \
+    --name gitlab-runner\
+    --restart always \
+    -v /root/gitlab-runner/etc/gitlab-runner:/etc/gitlab-runner \
+    -v /root/gitlab-runner/var/run/docker.sock:/var/run/docker.sock \
+    gitlab/gitlab-runner
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;接下来进行注册操作。相关信息可以在&lt;a href=&quot;https://gitlab.wu-kan.cn/admin/runners&quot;&gt;https://gitlab.wu-kan.cn/admin/runners&lt;/a&gt;获取。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker exec -it gitlab-runner gitlab-runner register
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><category term="Linux" /><summary type="html">实验环境</summary></entry><entry><title type="html">去掉github仓库的fork标记</title><link href="http://localhost:4000/2020/03/04/%E5%8E%BB%E6%8E%89github%E4%BB%93%E5%BA%93%E7%9A%84fork%E6%A0%87%E8%AE%B0/" rel="alternate" type="text/html" title="去掉github仓库的fork标记" /><published>2020-03-04T00:00:00+08:00</published><updated>2020-03-04T00:00:00+08:00</updated><id>http://localhost:4000/2020/03/04/%E5%8E%BB%E6%8E%89github%E4%BB%93%E5%BA%93%E7%9A%84fork%E6%A0%87%E8%AE%B0</id><content type="html" xml:base="http://localhost:4000/2020/03/04/%E5%8E%BB%E6%8E%89github%E4%BB%93%E5%BA%93%E7%9A%84fork%E6%A0%87%E8%AE%B0/">&lt;p&gt;博客写了一年多，现在有了不少 Star ，嘻嘻。最近遇到一个问题，这个博客原来是直接在 &lt;a href=&quot;https://github.com/poole/lanyon&quot;&gt;poole/lanyon&lt;/a&gt; 基础上开发的，因此 Github 显示的标签上会显示原始仓库。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;data:image/webp;base64,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&quot; alt=&quot;orgin&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3.1.0 版本之后，我对整个博客进行了重构，将博客内容和博客的主题文件分离，因此，从某种意义上来说这个仓库和原仓库的 Fork 关系已经不成立了。如果重新删除这个仓库重新建新的仓库的话原来的 Star 数量就都没有了。&lt;/p&gt;
+
+&lt;p&gt;在 GitHub 的官方帮助页面 &lt;a href=&quot;https://help.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile#commit-was-made-in-a-fork&quot;&gt;Commit was made in a fork&lt;/a&gt; 中，有这一段话：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To detach the fork and turn it into a standalone repository on GitHub, contact &lt;a href=&quot;https://support.github.com/contact&quot;&gt;GitHub Support&lt;/a&gt; or &lt;a href=&quot;https://help.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile#commit-was-made-in-a-fork&quot;&gt;GitHub Premium Support&lt;/a&gt;. If the fork has forks of its own, let support know if the forks should move with your repository into a new network or remain in the current network. For more information, see “About forks.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;也就是说，Github 上是不能通过自己的操作来断开 Fork 联系的（但是 Gitlab 似乎支持）。毕竟如果随意就能断开的话，开源的一方就非常容易失去对源码的控制权，这很不利于开源社区的贡献。&lt;/p&gt;
+
+&lt;p&gt;所以需要按照上面说的，进入 &lt;a href=&quot;https://support.github.com/contact&quot;&gt;GitHub Support&lt;/a&gt; 在里面填写需求，要求 GitHub 官方支持人员手动断开 Fork 关联。以下是我填写的内容（可怜的英语写作水平），可用作模板。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;I&apos;m the author of [wu-kan/wu-kan.github.io](https://github.com/wu-kan.github.io), which is a fork of [poole/lanyon](https://github.com/poole/lanyon). [poole/lanyon](https://github.com/poole/lanyon) has already stopped maintenance, and the relevant codes has been removed from my repository after refactoring.
+
+However, [poole/lanyon](https://github.com/poole/lanyon) has a huge fork network, so I can not see my own network on &amp;lt;https://github.com/wu-kan/wu-kan.github.io/network/members&amp;gt;. Moreover, commits made in this repository did not count toward my contributions, [because the repository is a fork](https://help.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile#commit-was-made-in-a-fork).
+
+I had already made some releases for my repository, so detach the fork and turn the repository into a standalone repository may help a lot. What&apos;s more, the forks of [wu-kan/wu-kan.github.io](https://github.com/wu-kan.github.io) need to move with the repository into a new network.
+
+Thanks!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;不到四个小时就收到了回复，还是很快的！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;data:image/webp;base64,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&quot; alt=&quot;reply&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">博客写了一年多，现在有了不少 Star ，嘻嘻。最近遇到一个问题，这个博客原来是直接在 poole/lanyon 基础上开发的，因此 Github 显示的标签上会显示原始仓库。</summary></entry><entry><title type="html">Jekyll Theme Wuk</title><link href="http://localhost:4000/2020/02/22/jekyll-theme-WuK/" rel="alternate" type="text/html" title="Jekyll Theme Wuk" /><published>2020-02-22T00:00:00+08:00</published><updated>2020-02-22T00:00:00+08:00</updated><id>http://localhost:4000/2020/02/22/jekyll-theme-WuK</id><content type="html" xml:base="http://localhost:4000/2020/02/22/jekyll-theme-WuK/"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">个人网站优化之旅</title><link href="http://localhost:4000/2020/02/06/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E4%B9%8B%E6%97%85/" rel="alternate" type="text/html" title="个人网站优化之旅" /><published>2020-02-06T00:00:00+08:00</published><updated>2020-02-06T00:00:00+08:00</updated><id>http://localhost:4000/2020/02/06/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E4%B9%8B%E6%97%85</id><content type="html" xml:base="http://localhost:4000/2020/02/06/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E4%B9%8B%E6%97%85/">&lt;p&gt;一年前我转投 Github Pages，开始了自己的新博客生活（详见&lt;a href=&quot;https://wu-kan.cn/_posts/2019-01-18-%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/&quot;&gt;一年前的一篇博客&lt;/a&gt;。由于 github page 原生支持 jekyll，在部署博客方面比较省心，我们只需要专注自己的博客内容即可。&lt;/p&gt;
+
+&lt;p&gt;然而，时间一长，还是有很多需求得不到满足：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;由于众所周知的原因，博客部署在国外服务器上，访问速度很慢&lt;/li&gt;
+  &lt;li&gt;网站没有备案，导致在百度搜索引擎上的排名不高&lt;/li&gt;
+  &lt;li&gt;想使用更加简短更加个性的域名（即我现在用的&lt;code&gt;wu-kan.cn&lt;/code&gt;），也有利于 SEO&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;本文记录了我为了解决上述问题，是如何从一个坑掉进一堆更深的坑里去的。&lt;/p&gt;
+
+&lt;h2 id=&quot;购买域名&quot;&gt;购买域名&lt;/h2&gt;
+
+&lt;p&gt;这一步是万恶之源…&lt;/p&gt;
+
+&lt;p&gt;国内比较大的域名服务商有阿里云和腾讯云等，我经过挑选最后在腾讯云上购买了这个新域名。域名的价格没有想象中的贵，就一口气买了十年。不过毕竟是 &lt;code&gt;.cn&lt;/code&gt; 域名，非常贫穷的我要吃很长时间的土了…&lt;/p&gt;
+
+&lt;p&gt;买了域名之后，在&lt;a href=&quot;https://console.cloud.tencent.com/cns&quot;&gt;腾讯云的控制台&lt;/a&gt;中将 &lt;code&gt;wu-kan.cn&lt;/code&gt;的&lt;code&gt;@&lt;/code&gt;记录用 CNAME 解析到&lt;code&gt;wu-kan.github.io&lt;/code&gt;，然后回到 GitHub 的 Setting 拉到下面找到 Github Pages 相关选项，将 Custom domain 改成 &lt;code&gt;wu-kan.cn&lt;/code&gt;，随后我的新网址就可以访问了。&lt;/p&gt;
+
+&lt;p&gt;有了自己的域名之后还可以做很多有意思的事情，比如将邮箱记录解析到腾讯企业邮箱，这样就可以获得自己域名的邮箱了（比如我自己的&lt;code&gt;i@wu-kan.cn&lt;/code&gt;，是不是又短又好记）。另外，平时校内作业要通过难记的 ip 提交到 ftp 网盘上，现在也可以用好记的域名来代替了。&lt;/p&gt;
+
+&lt;p&gt;唯一不好的是，换了新域名之后之前不蒜子的五万访问量统计清零了，有点心痛…又要从头开始了…&lt;/p&gt;
+
+&lt;h2 id=&quot;部署-gitlab-镜像&quot;&gt;部署 Gitlab 镜像&lt;/h2&gt;
+
+&lt;p&gt;然而，半个月之后，我发现自己的网站在百度上根本搜不到。打开&lt;a href=&quot;https://ziyuan.baidu.com/crawltools/&quot;&gt;百度抓取诊断工具&lt;/a&gt;，发现可以正常访问博客的 ip，但是返回&lt;code&gt;403 Forbidden&lt;/code&gt;。查了一下，这是由于之前的利用百度统计导致的针对 Github 的 DDos 攻击事件，Github 屏蔽了百度蜘蛛对于 Github Pages 的爬取收录。&lt;/p&gt;
+
+&lt;p&gt;但是之前为啥直接使用&lt;a href=&quot;https://wu-kan.github.io&quot;&gt;https://wu-kan.github.io&lt;/a&gt;的博客就可以正常被收录呢？我猜测，百度的爬虫在针对&lt;code&gt;github.io&lt;/code&gt;的二级域名进行爬取的时候会修改自己的 UA，而通过自己域名解析过去的页面爬取的时候则没有修改 UA。&lt;/p&gt;
+
+&lt;p&gt;那么如何解决呢？我选择利用 &lt;a href=&quot;https://gitlab.com/wu-kan/wu-kan-github-io&quot;&gt;Gitlab 提供的 CI 服务自动部署镜像站&lt;/a&gt;。也可以使用别的代码托管平台，例如国内的码云 gitee 等，但是他们不能自动和我的 Github 仓库同步，需要针对 git 的 push 添加多个源。&lt;/p&gt;
+
+&lt;p&gt;在经过一番摸索之后，终于成功部署了 Gitlab 上的 CI 服务，于是现在单独把搜索引擎的流量解析到&lt;wu-kan.gitlab.io&gt;就好了。&lt;/wu-kan.gitlab.io&gt;&lt;/p&gt;
+
+&lt;p&gt;可能有人要问，为啥不直接用 gitlab pages 或者别的平台呢？因为我体感上 Githab pages 提供的服务器更快一些。此外，我的项目已经在 Github 上混了一百多个 Star 了，也不好随随便便就迁移是不是…&lt;/p&gt;
+
+&lt;h2 id=&quot;网站备案nginx-反代&quot;&gt;网站备案+nginx 反代&lt;/h2&gt;
+
+&lt;p&gt;备案要求有一台国内服务器…我又买了 99 一年的 1C2G 腾讯云学生机…&lt;/p&gt;
+
+&lt;p&gt;感觉自己往奇怪的方向走远了…&lt;/p&gt;
+
+&lt;p&gt;备案要求网站闭站一个月…&lt;/p&gt;
+
+&lt;p&gt;期间腾讯云给我打了两次电话…&lt;/p&gt;
+
+&lt;p&gt;一个月好久啊…&lt;/p&gt;
+
+&lt;p&gt;终于过了…&lt;/p&gt;
+
+&lt;p&gt;接下来在自己的服务器上安装 nginx，通过代理访问原来的站点。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;yum install -y nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在&lt;code&gt;/etc/nginx/nginx.conf&lt;/code&gt;的适当位置添加如下内容：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;http {
+    server {
+        server_name wu-kan.cn;
+
+        listen       80 default_server;
+        listen       [::]:80 default_server;
+        listen       443 ssl http2 default_server;
+        listen       [::]:443 ssl http2 default_server;
+
+        if ($scheme = http ) {
+            return 301 https://$host$request_uri;
+        }
+
+        ssl_certificate &quot;crt/1_wu-kan.cn_bundle.crt&quot;;
+        ssl_certificate_key &quot;crt/2_wu-kan.cn.key&quot;;
+        ssl_session_cache shared:SSL:1m;
+        ssl_session_timeout  10m;
+        ssl_ciphers HIGH:!aNULL:!MD5;
+        ssl_prefer_server_ciphers on;
+
+        location / {
+            proxy_pass https://wu-kan.gitlab.io;
+            proxy_redirect     off;
+            proxy_set_header   User-Agent &quot;Mozilla/5.0&quot;;
+            proxy_set_header   Host                        $host;
+            proxy_set_header   X-Real-IP                $remote_addr;
+            proxy_set_header   X-Forwarded-For    $proxy_add_x_forwarded_for;
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中&lt;code&gt;ssl_certificate&lt;/code&gt;和&lt;code&gt;ssl_certificate_key&lt;/code&gt;的内容指向 https 加密密钥的位置。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;service nginx restart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;成了…我突然发现，通过 nginx 反向代理修改 UA 的方式也可以解决百度爬虫 403 的问题…又白搞了…好气人啊。&lt;/p&gt;
+
+&lt;h3 id=&quot;在-nginx-反代之外我还尝试过哪些骚操作&quot;&gt;在 nginx 反代之外我还尝试过哪些骚操作&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在自己的服务器上&lt;a href=&quot;https://wu-kan.cn/_posts/2020-03-26-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84GitLab/&quot;&gt;搭建自己的 Gitlab&lt;/a&gt;，然后开启 Gitlab Page…过程非常曲折，而且最后终于部署成功了却发现免费的 gitlab-ce 不支持自动镜像功能…淦&lt;/li&gt;
+  &lt;li&gt;直接在自己的服务器上&lt;code&gt;bundle exec jekyll serve -p 80&lt;/code&gt;，同时后台定时一个小时执行一次&lt;code&gt;git pull&lt;/code&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这些操作都违背了我一开始的无后端服务器写博客的初衷。如果要这样的话我干嘛不用 wordpress 呐…&lt;/p&gt;
+
+&lt;h2 id=&quot;部署-cdn-加速&quot;&gt;部署 CDN 加速&lt;/h2&gt;
+
+&lt;p&gt;由于贫穷的我购买的服务器带宽只有 1M，因此我的博客同时访问人数就会被限制。好在腾讯云 cdn 每个月提供了 10GB 的免费流量（cdn 要求域名备案）。于是我绕开了自己的服务器，直接对 wu-kan.gitlab.io 这个域名部署 CDN，前一步 nginx 反代又白做了…&lt;/p&gt;
+
+&lt;p&gt;强势提醒，为了防止一觉醒来自己房子变成麻花疼的，切记一定要在设置里给带宽封顶…&lt;/p&gt;
+
+&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
+
+&lt;p&gt;一套搞下来是身心俱疲，总之还是学到了一点东西不是毫无收获吧…想着专注于博文内容，结果在奇奇怪怪的地方花的精力更多了。&lt;/p&gt;
+
+&lt;p&gt;（完）&lt;/p&gt;</content><author><name></name></author><category term="博客搭建" /><summary type="html">一年前我转投 Github Pages，开始了自己的新博客生活（详见一年前的一篇博客。由于 github page 原生支持 jekyll，在部署博客方面比较省心，我们只需要专注自己的博客内容即可。</summary></entry><entry><title type="html">这一年的一点感想</title><link href="http://localhost:4000/2019/07/18/%E8%BF%99%E4%B8%80%E5%B9%B4%E7%9A%84%E4%B8%80%E7%82%B9%E6%84%9F%E6%83%B3/" rel="alternate" type="text/html" title="这一年的一点感想" /><published>2019-07-18T00:00:00+08:00</published><updated>2019-07-18T00:00:00+08:00</updated><id>http://localhost:4000/2019/07/18/%E8%BF%99%E4%B8%80%E5%B9%B4%E7%9A%84%E4%B8%80%E7%82%B9%E6%84%9F%E6%83%B3</id><content type="html" xml:base="http://localhost:4000/2019/07/18/%E8%BF%99%E4%B8%80%E5%B9%B4%E7%9A%84%E4%B8%80%E7%82%B9%E6%84%9F%E6%83%B3/">&lt;blockquote&gt;
+  &lt;p&gt;出生时，不是一个个体，而是无限个个体，在无限个相同的世界里。「意识」，你个体的认识，被无限个你共享。&lt;/p&gt;
+
+  &lt;p&gt;…可供替代的可能性被接受或被拒绝。婴儿的头不是转向左边或者右边，而是两边都转了。一个无限可能的世界变成两个、四个，然后八个，等等，呈指数级地扩散开来。&lt;/p&gt;
+
+  &lt;p&gt;但是基本的意识连接着所有不同的可能性。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;本来想用「选择」作为标题的，可是想了一想，一个普通的大二学生，实在是没有可以在这方面七嘴八舌的底气。每做出一次选择，就有一个无限的集合从无限里减去了，而剩下的依然是无限。我永远是早上醒来的那个人，只是能感受到的世界越来越少了。&lt;/p&gt;
+
+&lt;h2 id=&quot;这一天的一点感想&quot;&gt;这一天的一点感想&lt;/h2&gt;
+
+&lt;p&gt;今天 4+2 前四场结束。看了一下汇总排名，一年前比自己强的那些依然比自己强。早就预见到这个结果了，所以并没有什么可以说的。天份和努力完全不够，好好打完下个赛季，然后就退役吧。&lt;/p&gt;
+
+&lt;p&gt;早上十一点出门前依稀看到京都火灾的新闻，下午打完比赛再开机后才发现火着在了京阿尼。想到以后会少了很多本来会很不错的番，本来平静的心情就有点难过了。&lt;/p&gt;
+
+&lt;h2 id=&quot;这一月的一点感想&quot;&gt;这一月的一点感想&lt;/h2&gt;
+
+&lt;p&gt;勉强活过考试周和 4+2 前四场。关于期末考试，寒假里下定决心不去刷绩点了，于是贯彻了快乐复习的方针。&lt;/p&gt;
+
+&lt;p&gt;参观&lt;a href=&quot;https://www.pony.ai/zh/&quot;&gt;pony.ai&lt;/a&gt;，第一次坐上无人驾驶的车，超级稳。这是几年前的自己完全没有想过的，而且是和本专业（CS）非常相关的前沿科技。只是觉得自己在大学里面学到的东西真的太有限了，对毕业之后自己有没有足够的水平去做一些有用的东西，心里还是很没底，所以选课的时候把下学期能选的课都选上了。目前是选了 11 门专选，希望自己下学期可以活下来。&lt;/p&gt;
+
+&lt;p&gt;做完社团里面最后一点该做的事情，成功把任务转给下一届小朋友了。跟其他部门比，有更多人愿意留下来，非常高兴。&lt;/p&gt;
+
+&lt;p&gt;过了一个还算是比较开心的二十岁生日。&lt;/p&gt;
+
+&lt;h2 id=&quot;这一年的一点感想&quot;&gt;这一年的一点感想&lt;/h2&gt;
+
+&lt;p&gt;跟相对顺风顺水的大一比起来，这个大二这一年过的算比较正常、符合真实水平的。不过，感觉自己一直在啃老本，也一直拿不出什么像样的成绩。身边的人，原来因为自己在大学之前有一点代码基础、凭一点小聪明超过的，现在基本上都追上来了，果然厉害的人做什么都会闪光。认识的大部分人都已经有了自己的选择，有潜心学习刷绩点的，有进实验室努力做科研的，有在 Github 上参加各种开源项目的，还有搞 ACM 的一群大佬。已经难以想象这只是一个三流大学的大二了，再一想到清北那些同龄人中的 top 在做什么，就有点让人有点迷茫，对自己究竟想怎么样或者是能怎么样一直看不清楚。&lt;/p&gt;
+
+&lt;p&gt;话说回来，这一年我也做了不少选择，但是心里没多少后悔。即使后来回想，当初的自己多冲动，但是当时的自己，就是这个水平，也不能以现在的心态去做当时的决定。现在这个认知能力更强大、掌握信息更全面的自己，永远都能为过去找到一个更优解。&lt;/p&gt;
+
+&lt;p&gt;罗里吧嗦说了这么多，其实就是想说，不管做了什么选择，我已经不想回头去看了，反正人生才过去$\frac{1}{8}$不是嘛。&lt;/p&gt;
+
+&lt;h2 id=&quot;这篇笨拙文章的最后&quot;&gt;这篇笨拙文章的最后&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://music.163.com/#/song?id=547976253&quot;&gt;致未来的人&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.99lib.net/article/11871.htm&quot;&gt;无限之隔&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="随笔" /><summary type="html">出生时，不是一个个体，而是无限个个体，在无限个相同的世界里。「意识」，你个体的认识，被无限个你共享。 …可供替代的可能性被接受或被拒绝。婴儿的头不是转向左边或者右边，而是两边都转了。一个无限可能的世界变成两个、四个，然后八个，等等，呈指数级地扩散开来。 但是基本的意识连接着所有不同的可能性。</summary></entry><entry><title type="html">基于Jekyll搭建个人博客</title><link href="http://localhost:4000/2019/01/18/%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="alternate" type="text/html" title="基于Jekyll搭建个人博客" /><published>2019-01-18T00:00:00+08:00</published><updated>2019-01-18T00:00:00+08:00</updated><id>http://localhost:4000/2019/01/18/%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2</id><content type="html" xml:base="http://localhost:4000/2019/01/18/%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">&lt;p&gt;最开始我是在&lt;a href=&quot;https://blog.csdn.net/w_weilan&quot;&gt;CSDN&lt;/a&gt;上写博客的。博客写了一年多，访问量勉强破万，感觉其中至少有三成是自己贡献的。而且 CSDN 上的广告是越来越多，网页编辑器也是越来越不好用。&lt;/p&gt;
+
+&lt;p&gt;十一月份，在青岛的 ICPC 区域赛失利之后，想要重新开始，和过去告别。也从此转移自己写博客的阵地。考虑过转投暂时还比较干净而且可以部分定义页面的&lt;a href=&quot;https://www.cnblogs.com/wu-kan/&quot;&gt;博客园&lt;/a&gt;，但是最终还是决定在&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;上搭建属于自己的博客。&lt;/p&gt;
+
+&lt;p&gt;然后，翻了一些网上的教程，用&lt;a href=&quot;https://hexo.io/zh-cn/&quot;&gt;Hexo&lt;/a&gt;框架和&lt;a href=&quot;https://github.com/theme-next/hexo-theme-next&quot;&gt;NexT&lt;/a&gt;主题搭了一个比较素雅的符合个人审美的博客。然而，Hexo 搭建的博客需要先在本地生成博客页面然后再上传到服务器上，每次发博客都需要在电脑重新生成页面并上传，感觉没有那么方便。在不同电脑上想要发博客更是十分困难，感觉如果胡乱操作后本地部署的文件发生了一定的错乱，恢复起来会十分麻烦。&lt;/p&gt;
+
+&lt;p&gt;后来发现，Github Pages 原生支持&lt;a href=&quot;https://www.jekyll.com.cn/&quot;&gt;Jekyll&lt;/a&gt;，因此如果只需要推送文章可以直接在 github 的仓库里做。于是决定在期末考试后用 Jekyll 重新搭建个人博客。原来的博客不再维护。&lt;/p&gt;
+
+&lt;h2 id=&quot;构思&quot;&gt;构思&lt;/h2&gt;
+
+&lt;p&gt;目前博客的 demo 如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wu-kan.github.io/jekyll-theme-WuK/screenshot.png&quot; alt=&quot;demo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;想搭建一个足够干净、页面几乎不要有多余元素的博客，同时博客的功能还要足够丰富，满足我以下的需求：&lt;/p&gt;
+
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;用 Markdown 写博客&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;支持 Latex 公式&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;支持 mermaid 等插件&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;个性化 Live2D&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;分享一些我在其他网站的个人账号&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;移动端适配&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;足够快的加载速度&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;访问量统计，评论互动&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;需求是会逐渐增长的！&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;其中，Live2D 是我某次访问别人的博客初次见到的，感觉非常吸引人。最终的目标是去掉网页上所有多余的元素，只剩下博文和 Live2D 看板娘，看板娘本身还可以作为博客访问的导航，感觉会十分有新意。&lt;/p&gt;
+
+&lt;h2 id=&quot;搭建过程不定期更新&quot;&gt;搭建过程（不定期更新）&lt;/h2&gt;
+
+&lt;p&gt;我目前读的专业是计科超算方向，所以软件工程专业相关方面的基础几乎为 0😌，大部分的内容都是参考网上教程慢慢摸索的，假如对某些过程有意见和建议欢迎向我提出！&lt;/p&gt;
+
+&lt;h3 id=&quot;开发环境&quot;&gt;开发环境&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;我的博客使用 bundle 作为版本管理！如果你的环境里已经有 bundle 了，可以跳过此步！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这个学期选了一门 Linux 相关的公选课，感觉还不错，因此直接把开发环境是搭建在 Windows Subsystem for Linux（简称 WSL）上了，Windows 下也可以直接访问其中的环境，详见&lt;a href=&quot;https://wu-kan.cn/_posts/2018-12-14-Windows-Subsystem-for-Linux/&quot;&gt;这篇博客&lt;/a&gt;。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt install -y ruby ruby-dev make gcc g++ zlib1g-dev
+# gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+sudo gem install bundler
+# bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;jekyll 博客是基于 ruby 语言开发的，要先将 ruby 装进来。此外，国内访问一些资源可能会很慢，推荐去掉上面的注释，使用国内镜像。&lt;/p&gt;
+
+&lt;h3 id=&quot;在本地运行博客&quot;&gt;在本地运行博客&lt;/h3&gt;
+
+&lt;p&gt;依次执行下述指令，可以自动下载并部署我博客的所有依赖。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;git clone https://github.com/wu-kan/wu-kan.github.io
+cd wu-kan.github.io
+bundle install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果不想下载我的博文和图片，可以根据这个&lt;a href=&quot;https://github.com/wu-kan/wu-kan.github.io/issues/7&quot;&gt;issue&lt;/a&gt;，使用 svn 代替 git，从而快速下载必要的文件。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;svn checkout https://github.com/wu-kan/wu-kan.github.io/trunk/ --depth=files
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;github 上的 jekyll 和普通的 jekyll 是有一点点区别的，比如说只支持特定的插件。我希望与 github 保持兼容，因此配置的依赖是直接引入了 github 版本的 jekyll，安装时间略久。&lt;/p&gt;
+
+&lt;p&gt;我在一个全新的 Linux 中安装了一遍，需要的依赖已经在上面的「开发环境中列出来的」。如果&lt;code&gt;bundle install&lt;/code&gt;在你的机器上还是报错，要看报错信息，缺啥装啥。&lt;/p&gt;
+
+&lt;p&gt;运行下述指令，检验（我自己做的时候遇到了一个很奇怪的问题&lt;code&gt;jekyll 3.8.5 | Error: Operation not permitted @ apply2files&lt;/code&gt;，重开 WSL 终端就好了）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;bundle exec jekyll s
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;由于我的博客已经达到了三百篇以上，在本地生成网页的速度有些慢，在我的机器上要跑三分钟（关掉配置项中的侧边栏总字数统计就快了，可达 25s）。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;看到如上内容时就成功了，本地访问&lt;a href=&quot;http://127.0.0.1:4000/&quot;&gt;http://127.0.0.1:4000/&lt;/a&gt;即可查看效果。&lt;/p&gt;
+
+&lt;h3 id=&quot;定制&quot;&gt;定制&lt;/h3&gt;
+
+&lt;p&gt;我把博客实现的的插件基本上都封装起来了，可以直接在浏览器按 F12 查看我是怎么引入的。如果你想增加新的渲染规则，可以新建&lt;code&gt;_layouts&lt;/code&gt;目录，将你自己的渲染规则放进去，见&lt;a href=&quot;http://jekyllcn.com/docs/structure/&quot;&gt;目录结构 -Jekyll&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h4 id=&quot;加入-live2d-看板娘&quot;&gt;加入 Live2D 看板娘&lt;/h4&gt;
+
+&lt;p&gt;参考了：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.fghrsh.net/post/123.html&quot;&gt;网页添加 Live2D 看板娘&lt;/a&gt;。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://zhangshuqiao.org/2018-07/%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%E6%B7%BB%E5%8A%A0Live2D%E7%9C%8B%E6%9D%BF%E5%A8%98&quot;&gt;在网页中添加 Live2D 看板娘&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://paugram.com/coding/add-poster-girl-with-plugin.html&quot;&gt;给你的博客增加动态看板娘&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;由于 live2d 的协议是 GPL，这里我不把它的源码拷贝到自己的博客项目了，直接用链接引入。在 html 的任意位置，或是我博客对应的&lt;code&gt;append&lt;/code&gt;选项下插入下述 html 代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;link
+  rel=&quot;stylesheet&quot;
+  href=&quot;https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css&quot;
+/&amp;gt;
+&amp;lt;script
+  defer=&quot;defer&quot;
+  src=&quot;https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js&quot;
+&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script
+  defer=&quot;defer&quot;
+  src=&quot;https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.js&quot;
+  onload=&apos;
+    if (screen.width &amp;gt; screen.height)
+    {
+      let pio_container = document.createElement(&quot;div&quot;);
+      pio_container.classList.add(&quot;pio-container&quot;);
+      pio_container.classList.add(&quot;right&quot;);
+      document.body.insertAdjacentElement(&quot;beforeend&quot;, pio_container);
+      let pio_action = document.createElement(&quot;div&quot;);
+      pio_action.classList.add(&quot;pio-action&quot;);
+      pio_container.insertAdjacentElement(&quot;beforeend&quot;, pio_action);
+      let pio_canvas = document.createElement(&quot;canvas&quot;);
+      pio_canvas.id = &quot;pio&quot;;
+      pio_canvas.style.width = &quot;14rem&quot;;
+      pio_canvas.width = &quot;600&quot;;
+      pio_canvas.height = &quot;800&quot;;
+      pio_container.insertAdjacentElement(&quot;beforeend&quot;, pio_canvas);
+      let pio = new Paul_Pio({
+        &quot;mode&quot;: &quot;draggable&quot;,
+        &quot;hidden&quot;: true,
+        &quot;content&quot;: {
+          &quot;skin&quot;: [&quot;要换成我的朋友吗？&quot;, &quot;让她放个假吧~&quot;],
+          &quot;custom&quot;: [{
+            &quot;selector&quot;: &quot;a&quot;,
+            &quot;type&quot;: &quot;link&quot;,
+          }, {
+            &quot;selector&quot;: &quot;.sidebar-toggle&quot;,
+            &quot;text&quot;: &quot;打开侧边栏叭~&quot;
+          }, {
+            &quot;selector&quot;: &quot;.effect-info&quot;,
+            &quot;text&quot;: &quot;哇，你发现了什么！&quot;
+          }, {
+            &quot;selector&quot;: &quot;#sidebar-search-input&quot;,
+            &quot;text&quot;: &quot;想搜索什么呢？很多干货哦！&quot;
+          }, {
+            &quot;selector&quot;: &quot;#toc&quot;,
+            &quot;text&quot;: &quot;这是目录~&quot;
+          }, {
+            &quot;selector&quot;: &quot;.page-title&quot;,
+            &quot;text&quot;: &quot;这是标题~&quot;
+          }, {
+            &quot;selector&quot;: &quot;.v&quot;,
+            &quot;text&quot;: &quot;评论没有审核，要对自己的发言负责哦~&quot;
+          }]
+        },
+        &quot;model&quot;: [
+          &quot;https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/33/model.2018.bls-winter.json&quot;,
+          &quot;https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/platelet-2/model.json&quot;,
+          &quot;https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/xiaomai/xiaomai.model.json&quot;,
+          &quot;https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/mashiro/seifuku.model.json&quot;,
+          &quot;https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/seele/model.json&quot;,
+          &quot;https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/Violet/14.json&quot;,
+          &quot;https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/Kobayaxi/Kobayaxi.model.json&quot;,
+          &quot;https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/mikoto/mikoto.model.json&quot;,
+          &quot;https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/uiharu/uiharu.model.json&quot;]
+      });
+    }&apos;
+&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;自定义参数见&lt;a href=&quot;https://github.com/Dreamer-Paul/Pio&quot;&gt;Dreamer-Paul/Pio&lt;/a&gt;，模型收集自&lt;a href=&quot;https://github.com/imuncle/live2d&quot;&gt;imuncle/live2d&lt;/a&gt;和&lt;a href=&quot;https://github.com/xiaoski/live2d_models_collection&quot;&gt;xiaoski/live2d_models_collection&lt;/a&gt;，。&lt;/p&gt;
+
+&lt;h4 id=&quot;katex&quot;&gt;$\KaTeX$&lt;/h4&gt;
+
+&lt;p&gt;参考：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/f2b28954d902&quot;&gt;使用 KaTeX 代替 MathJax 渲染公式&lt;/a&gt;。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://katex.org/docs/autorender.html&quot;&gt;Auto-render Extension · Katex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;link
+  rel=&quot;stylesheet&quot;
+  href=&quot;//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css&quot;
+/&amp;gt;
+&amp;lt;script
+  src=&quot;//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js&quot;
+  defer=&quot;defer&quot;
+&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script
+  src=&quot;//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js&quot;
+  defer=&quot;defer&quot;
+  onload=&apos;renderMathInElement(document.body, { delimiters: [{left: &quot;$$&quot;, right: &quot;$$&quot;, display: true}, { left: &quot;$&quot;, right: &quot;$&quot;, display: false }, {left: &quot;\\(&quot;, right: &quot;\\)&quot;, display: false}, {left: &quot;\\[&quot;, right: &quot;\\]&quot;, display: true}]})&apos;
+&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;不过这样仅能显示 $E=mc^2$ 这样的行间公式，行内公式是没有办法显示的（&lt;a href=&quot;https://github.com/wu-kan/wu-kan.github.io/issues/1&quot;&gt;issue&lt;/a&gt;）。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-tex&quot;&gt;$$
+E=mc^2
+$$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;一种方法是引入 mathjax 进行渲染，但是这样做就失去了用 katex 的初心了。后来我发现 katex 有对应的插件可以解决这一问题。在上面代码后补充如下代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;script
+  src=&quot;//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/mathtex-script-type.min.js&quot;
+  defer=&quot;defer&quot;
+&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;效果如下。&lt;/p&gt;
+
+\[E=mc^2\]
+
+&lt;p&gt;可以在&lt;a href=&quot;https://katex.org/docs/libs.html&quot;&gt;这个页面&lt;/a&gt;查看一些别的插件，比如化学方程式的插件等等，都是可以引入的。&lt;/p&gt;
+
+&lt;h4 id=&quot;mermaid-图&quot;&gt;mermaid 图&lt;/h4&gt;
+
+&lt;p&gt;我希望自己能按照 markdown 代码块扩展的规则来写 mermaid 流程图：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;```mermaid
+sequenceDiagram
+Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&amp;gt;&amp;gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&amp;gt;&amp;gt;Alice: Great!
+John-&amp;gt;&amp;gt;Bob: How about you?
+Bob--&amp;gt;&amp;gt;John: Jolly good!
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其效果如下。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;sequenceDiagram
+Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&amp;gt;&amp;gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&amp;gt;&amp;gt;Alice: Great!
+John-&amp;gt;&amp;gt;Bob: How about you?
+Bob--&amp;gt;&amp;gt;John: Jolly good!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;因此需要插入如下内容（将代码块隐藏，并在原位置插入 mermaid 图）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;style&amp;gt;
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+&amp;lt;/style&amp;gt;
+&amp;lt;script
+  src=&quot;https://cdn.jsdelivr.net/npm/mermaid@8.7.0/dist/mermaid.min.js&quot;
+  defer=&quot;defer&quot;
+  onload=&apos;
+    for(let x of document.getElementsByClassName(&quot;language-mermaid&quot;))
+      if(x.nodeName==&quot;CODE&quot;)
+      {
+        let m = document.createElement(&quot;div&quot;);
+        m.classList.add(&quot;mermaid&quot;);
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement(&quot;beforebegin&quot;, m);
+      }&apos;
+&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;prism-代码高亮&quot;&gt;prism 代码高亮&lt;/h4&gt;
+
+&lt;p&gt;默认的代码高亮器&lt;code&gt;rouge&lt;/code&gt;渲染出来的效果一般，同时代码行号效果非常差。这里使用了 prismjs 来进行代码渲染。它的好处是模块化程度非常高，且支持自定义插件。&lt;/p&gt;
+
+&lt;p&gt;这里我引入了四个插件（代码行号、动态代码高亮、工具栏、括号匹配，且自己写了一个选中全部代码的按钮）作为例子，也可以像我一样自己定制。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;link
+  rel=&quot;stylesheet&quot;
+  href=&quot;https://cdn.jsdelivr.net/combine/npm/prismjs@1.21.0/plugins/line-numbers/prism-line-numbers.min.css,npm/prismjs@1.21.0/plugins/toolbar/prism-toolbar.min.css,npm/prismjs@1.21.0/plugins/match-braces/prism-match-braces.min.css,npm/prism-themes@1.4.0/themes/prism-nord.min.css&quot;
+/&amp;gt;
+&amp;lt;script
+  src=&quot;https://cdn.jsdelivr.net/combine/npm/prismjs@1.21.0/components/prism-core.min.js,npm/prismjs@1.21.0/plugins/autoloader/prism-autoloader.min.js,npm/prismjs@1.21.0/plugins/line-numbers/prism-line-numbers.min.js,npm/prismjs@1.21.0/plugins/toolbar/prism-toolbar.min.js,npm/prismjs@1.21.0/plugins/match-braces/prism-match-braces.min.js&quot;
+  async=&quot;async&quot;
+  data-autoloader-path=&quot;https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/&quot;
+  onload=&apos;
+    document.body.classList.add(&quot;line-numbers&quot;,&quot;match-braces&quot;);
+    Prism.plugins.toolbar.registerButton(&quot;select-code&quot;, function (env) {
+      let button = document.createElement(&quot;button&quot;);
+      button.textContent = &quot;select this &quot; + env.language;
+      button.addEventListener(&quot;click&quot;, function () {
+        if (document.body.createTextRange) {
+          let range = document.body.createTextRange();
+          range.moveToElementText(env.element);
+          range.select();
+        } else if (window.getSelection) {
+          let selection = window.getSelection();
+          let range = document.createRange();
+          range.selectNodeContents(env.element);
+          selection.removeAllRanges();
+          selection.addRange(range);
+        }
+      });
+      return button;
+    })&apos;
+&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;评论系统&quot;&gt;评论系统&lt;/h4&gt;
+
+&lt;p&gt;配置详见&lt;a href=&quot;https://utteranc.es/&quot;&gt;https://utteranc.es/&lt;/a&gt;。请使用你自己的 repo！&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;script
+  repo=&quot;wu-kan/utterances-storage&quot;
+  src=&quot;https://utteranc.es/client.js&quot;
+  issue-term=&quot;url&quot;
+  theme=&quot;github-light&quot;
+  crossorigin=&quot;anonymous&quot;
+  async=&quot;async&quot;
+&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;下一步计划&quot;&gt;下一步计划&lt;/h2&gt;
+
+&lt;p&gt;详细的开发计划及建站内容详见&lt;a href=&quot;https://jekyll-theme-WuK.wu-kan.cn/&quot;&gt;主题详情页&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;从&lt;a href=&quot;https://magical-girl.site/&quot;&gt;这个页面&lt;/a&gt;得到的灵感，目标是博客上除了文章和作为导航的 Live2D 之外不出现其他的模块，尽量的干净、快速。&lt;/p&gt;
+
+&lt;h2 id=&quot;参考资料&quot;&gt;参考资料&lt;/h2&gt;
+
+&lt;p&gt;大部分的参考链接已在原文给出，同时搭建本博客的过程中还参考了以下内容，感谢作者们：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/9f198d5779e6&quot;&gt;Jekyll + Github Pages 博客搭建入门&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/ds19991999/article/details/81516568&quot;&gt;Jekyll 博客 Next 主题超深度配置&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/bb184f61c9ae&quot;&gt;【应用软件】Jekyll 配置&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="博客搭建" /><summary type="html">最开始我是在CSDN上写博客的。博客写了一年多，访问量勉强破万，感觉其中至少有三成是自己贡献的。而且 CSDN 上的广告是越来越多，网页编辑器也是越来越不好用。</summary></entry></feed>
