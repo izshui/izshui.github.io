@@ -3,16 +3,16 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
   玛纳之粮<br/>
   拓跋煜<br/>
   天主是爱<br/>
-  <a href="mailto:i@wu-kan.cn">
+  <a href="mailto:jhonguo@126.com">
     <i class="fas fa-envelope"></i>
   </a>
-  <a href="https://github.com/wu-kan">
+  <a href="https://github.com/izshui">
     <i class="fab fa-github"></i>
   </a>
-  <a href="https://vjudge.net/user/WuK">
+  <a href="https://vjudge.net/user/yan">
     <i class="fas fa-smile"></i>
   </a>
-  <a href="https://www.zhihu.com/people/wu.kan/activities">
+  <a href="https://www.zhihu.com/people/leftyan">
     <i class="fab fa-zhihu"></i>
   </a>
   <br/>
@@ -158,12 +158,10 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             disable: false # 是否不显示sidebar
             avatar: # 侧边栏显示的头像
               enable: true
-              img: https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320 # 头像的地址
+              img: https://i.loli.net/2021/11/19/JnVUc9WhjAbQkOu.png # 头像的地址
             nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
               - title: '<i class="fas fa-home fa-fw"></i> 首页'
                 href: /
-              - title: '<i class="fab fa-apple fa-fw"></i> 关于'
-                href: /about/
               - title: '<i class="fas fa-comments fa-fw"></i> 留言'
                 href: /comments/
               - title: '<i class="fas fa-tags fa-fw"></i> 标签'
@@ -339,8 +337,8 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               - | # 觉得我的主题好用的话，让更多的人知道它吧！
                 <div>
                   <i class="fas fa-thumbs-up fa-fw"></i>
-                  <a href="https://jekyll-theme-WuK.wu-kan.cn">
-                    jekyll-theme-WuK
+                  <a href="https://izshui.github.io">
+                    Manna
                   </a>
                 </div>
               - | # Copyright声明
@@ -553,7 +551,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     "hidden": true,
                     "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
                     "content": {
-                      "link": ["https:\/\/jekyll-theme-WuK.wu-kan.cn"],
+                      "link": ["https:\/\/izshui.github.io"],
                       "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
                       "hidden": true,
                       "custom": [{
