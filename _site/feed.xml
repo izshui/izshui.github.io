@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-19T17:16:42+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Manna</title><subtitle>玛纳之粮&lt;br/&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-20T14:29:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Manna</title><subtitle>玛纳之粮&lt;br/&gt;
 拓跋煜&lt;br/&gt;
 天主是爱&lt;br/&gt;
 &lt;a href=&quot;mailto:jhonguo@126.com&quot;&gt;
@@ -7,14 +7,302 @@
 &lt;a href=&quot;https://github.com/izshui&quot;&gt;
   &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt;
 &lt;/a&gt;
-&lt;a href=&quot;https://vjudge.net/user/yan&quot;&gt;
-  &lt;i class=&quot;fas fa-smile&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://izshui.github.io/home&quot;&gt;
+  &lt;i class=&quot;fas fa-church&quot;&gt;&lt;/i&gt;
 &lt;/a&gt;
 &lt;a href=&quot;https://www.zhihu.com/people/leftyan&quot;&gt;
   &lt;i class=&quot;fab fa-zhihu&quot;&gt;&lt;/i&gt;
 &lt;/a&gt;
 &lt;br/&gt;
-</subtitle><entry><title type="html">晚祷词</title><link href="http://localhost:4000/2021/11/19/%E6%99%9A%E7%A5%B7%E8%AF%8D/" rel="alternate" type="text/html" title="晚祷词" /><published>2021-11-19T00:00:00+08:00</published><updated>2021-11-19T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/19/%E6%99%9A%E7%A5%B7%E8%AF%8D</id><content type="html" xml:base="http://localhost:4000/2021/11/19/%E6%99%9A%E7%A5%B7%E8%AF%8D/">&lt;p&gt;▲&lt;strong&gt;夜祷词&lt;/strong&gt;&lt;/p&gt;
+</subtitle><entry><title type="html">黑苹果双系统读写NTFS格式的磁盘</title><link href="http://localhost:4000/2021/11/20/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%AF%BB%E5%86%99NTFS%E6%A0%BC%E5%BC%8F%E7%9A%84%E7%A3%81%E7%9B%98/" rel="alternate" type="text/html" title="黑苹果双系统读写NTFS格式的磁盘" /><published>2021-11-20T00:00:00+08:00</published><updated>2021-11-20T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/20/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%AF%BB%E5%86%99NTFS%E6%A0%BC%E5%BC%8F%E7%9A%84%E7%A3%81%E7%9B%98</id><content type="html" xml:base="http://localhost:4000/2021/11/20/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%AF%BB%E5%86%99NTFS%E6%A0%BC%E5%BC%8F%E7%9A%84%E7%A3%81%E7%9B%98/">&lt;style&gt;
+  .reveal .slides { text-align: left; }
+&lt;/style&gt;
+
+&lt;p&gt;&lt;strong&gt;1、打开终端 输入&lt;code&gt;diskutil list&lt;/code&gt; 回车&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2、&lt;code&gt;sudo nano /etc/fstab&lt;/code&gt; 复制到终端 回车,然后输入你管理员密码(开机密码)回车&lt;/strong&gt;&lt;/p&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;p&gt;&lt;strong&gt;3、出现编辑页面&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;键入&lt;/strong&gt;
+&lt;strong&gt;&lt;code&gt;LABEL=分区名 none ntfs rw,auto,nobrowse&lt;/code&gt;&lt;/strong&gt;
+&lt;strong&gt;想挂几个就写几条&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4、ctrl+x 出现提示问你yes还是no,点Y确认,再回车&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;接下来使用mac自带的磁盘工具,在启动台里找,点卸载,然后点装载,使配置生效&lt;/strong&gt;&lt;/p&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;p&gt;&lt;strong&gt;5、接下来在这个访达里shift+win+G,在弹出的前往文件夹中输入/Volumes回车,这时候你就能看到你能这几个磁盘分区了，在这几个磁盘分区的页面输入shift+win+T把Volumes固定到侧栏,以后用到分区直接点它就好。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6、这时候已经成功的可以操作NTFS格式的磁盘了,到这里就结束了,U盘/移动硬盘也是同样的道理,给U盘移动硬盘命名然后添加进配置文件,在Volumes就能看到。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;!-- .slide --&gt;
+
+&lt;h2 id=&quot;轻松实现上述功能&quot;&gt;轻松实现上述功能&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;加油 💪！&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="黑苹果" /><summary type="html">1、打开终端 输入diskutil list 回车</summary></entry><entry><title type="html">清晨祷词</title><link href="http://localhost:4000/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D/" rel="alternate" type="text/html" title="清晨祷词" /><published>2021-11-19T00:00:00+08:00</published><updated>2021-11-19T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D</id><content type="html" xml:base="http://localhost:4000/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D/">&lt;p&gt;▲&lt;strong&gt;早祷词&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  天主将我从睡梦中唤醒，我要怀着喜悦的心情，来迎接这又一天的开始，向天主呈献我的赞美。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;圣号经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  因父，及子，及圣神之名。阿们。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;▲开始工作祷词&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  天主，我们求祢，以祢的圣宠，指导我们的工作能顺利进行，愿我们祈祷和行为，是为爱主而开始，又以荣主而结束。以上所求是靠我们的主基督，阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;小悔罪经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  天主耶稣基利斯督。我重罪人，得罪于天主。而今为天主，又为爱天主万有之上。一心痛悔我之罪过。定心再不敢得罪于天主，望天主赦我之罪。阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;早晨祈祷&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  上主，我们的天主，求祢恩赐我们在平安中，在快乐中度过这一天，不要让我们遭受创伤，不要让我们沾染罪污。让我们克服一切烦恼的困扰，并远离罪恶的诱惑，能使我们今晚欢欣的向祢讴歌赞颂。上主，我们的天主，祢是照顾万物的慈父，愿祢永远受赞美。阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;赞主曲（路一 68~79）（可唱）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  1、请赞美上主，以色列的天主，因为他眷顾了他的子民，拯救了他的民族；&lt;/p&gt;
+
+&lt;p&gt;  2、他在自己仆人达味的家中，为我们兴起了一位大能的救主。&lt;/p&gt;
+
+&lt;p&gt;  3、正如他曾藉众圣者的口说过，就是藉他历代的先知所作的许诺，&lt;/p&gt;
+
+&lt;p&gt;  4、一位救主将救我们脱离敌手，使我们摆脱仇人的掌握。&lt;/p&gt;
+
+&lt;p&gt;  5、他向我们的祖先广施仁慈，他常念及他的神圣盟约。&lt;/p&gt;
+
+&lt;p&gt;  6、他曾向我们的先祖亚巴郎立誓，赐我们脱离敌手，无忧无惧。&lt;/p&gt;
+
+&lt;p&gt;  7、生活圣洁，行为正直。虔诚事主，终身不渝。&lt;/p&gt;
+
+&lt;p&gt;  8、至于你、我儿。你将称为至高者的先知。你要作主的前驱，为他预备道路。&lt;/p&gt;
+
+&lt;p&gt;  9、使他的百姓认识救恩，使他们的罪得到宽恕。&lt;/p&gt;
+
+&lt;p&gt;  10、这是出于我们天主的慈怀，令旭日从高天向我们照耀。&lt;/p&gt;
+
+&lt;p&gt;  11、光照那坐在黑暗中，死影下的人群、引领我们的脚步走上平安的道路。&lt;/p&gt;
+
+&lt;p&gt;  12、愿光荣归于父、及子、及圣神；起初如何，今日亦然，直到永远。阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;信德经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  我主，我天主。我信祢是永远不会有错的真天主。并全信祢的教会所训诲的一切道理。求祢坚固我的信德。阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;望德经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  耶稣，祢曾说过：“你们求，就可得到”。所以我全心依赖祢、望祢赐给我现世灵魂肉身的一切需要和死后的常生。求祢增加我的望德。阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;爱德经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  仁慈的天主，祢是纯洁美善、完整无缺的。祢不舍弃我们罪人，派遣了祢的圣子降生成人，救赎了我们，又用祂的圣体圣血养育我们的灵魂。我今大胆到祢面前，许下将尽心竭力，在言语行为上做些爱祢的事，而且我只为爱祢而生活。求祢激发我的爱德。阿们。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;▲伏求圣神降临经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  伏求圣神降临，从天射光，充满我的心，你是贫乏人的恩主，孤独人的慈父，灵性的光辉，忧患人的安乐，痛苦人的安慰，劳苦人的安息，涕泣人的欢乐，我心灵的嘉宾。&lt;/p&gt;
+
+&lt;p&gt;  伏求圣神降临，求你清洁我的心污，灌溉我的心枯，医治我的心病，和顺我的心硬，温暖我的心寒，指引我的道路。&lt;/p&gt;
+
+&lt;p&gt;  请大家祈祷，天主你以圣神充满信徒的心，赐给我们以圣神的光辉，增长智慧常享安乐，因我们的主基督。阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;天主经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  我们的天父，愿你的名受显扬；愿你的国来临；愿你的旨意奉行在人间，如同在天上。求你今天赏给我们日用的食粮；求你宽恕我们的罪过，如同我们宽恕别人一样；不要让我们陷于诱惑；但救我们免于凶恶。阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;圣母经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  万福玛利亚，你充满圣宠，主与你同在，你在妇女中受赞颂，你的亲子耶稣同受赞颂。天主圣母玛利亚，求你现在和我们临终时，为我们罪人祈求天主。阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;圣三光荣经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  愿光荣归于父、及子、及圣神；起初如何，今日亦然，直到永远。阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;信经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  我信全能的天主父，天地万物的创造者。我信父的唯一子，我们的主耶稣基督。我信他因圣神降孕，由童贞玛利亚诞生。我信他在比拉多执政时蒙难，被钉在十字架上，死而安葬。我信他下降阴府，第三日从死者中复活。我信他升了天，坐在全能天主父的右边。我信他要从天降来，审判生者死者。我信圣神，我信圣而公教会，诸圣的相通。我信罪过的赦免，我信肉身的复活，我信永恒的生命。阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;三钟经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  启：主的天使向玛利亚报告。&lt;/p&gt;
+
+&lt;p&gt;  应：她因圣神受孕。（圣母经一遍）&lt;/p&gt;
+
+&lt;p&gt;  启：我是主的婢女。&lt;/p&gt;
+
+&lt;p&gt;  应：请依照祢的话，在我身上成就。（圣母经一遍）&lt;/p&gt;
+
+&lt;p&gt;  启：天主圣子降生成人。&lt;/p&gt;
+
+&lt;p&gt;  应：居住在我们中间。（圣母经一遍）&lt;/p&gt;
+
+&lt;p&gt;  启：天主圣母，请为我们祈求。&lt;/p&gt;
+
+&lt;p&gt;  应：使我们堪当承受基督的恩许。&lt;/p&gt;
+
+&lt;p&gt;  （请大家祈祷）天主，求你把你的圣宠注入我们心中，我们即因天使的预报，得知祢的圣子降生成人，亦愿赖着他的苦难，及他的十字圣架，获享复活的光荣，因我们的主基督。阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;母后万福经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  母后万福！仁慈的母亲，我们的生命，我们的甘贻，我们的希望。厄娃子孙，在此尘世，向祢哀呼。在这涕泣之谷，向祢叹息哭求。我们的主保，求祢回顾，怜视我们。一旦流亡期满，使我们得见祢的圣子、万民称颂的耶稣。童贞玛利亚，您是宽仁的、慈悲的、甘饴的。天主圣母，请为我们祈求，使我们堪受基督的恩许。阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;耶稣圣名祷文&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  启：天主矜怜我等  应：基利斯督矜怜我等，天主矜怜我等&lt;/p&gt;
+
+&lt;p&gt;  启：基利斯督俯听我等   应：基利斯督垂允我等&lt;/p&gt;
+
+&lt;p&gt;  启：在天天主父者  应：矜怜我等&lt;/p&gt;
+
+&lt;p&gt;    赎世天主子者&lt;/p&gt;
+
+&lt;p&gt;    圣神天主者&lt;/p&gt;
+
+&lt;p&gt;    三位一体天主者&lt;/p&gt;
+
+&lt;p&gt;    耶稣活天主子者&lt;/p&gt;
+
+&lt;p&gt;    耶稣圣父之光辉者&lt;/p&gt;
+
+&lt;p&gt;    耶稣永光之耀者&lt;/p&gt;
+
+&lt;p&gt;    耶稣荣福之帝者&lt;/p&gt;
+
+&lt;p&gt;    耶稣义德之日者&lt;/p&gt;
+
+&lt;p&gt;    耶稣童贞玛利亚之子者&lt;/p&gt;
+
+&lt;p&gt;    耶稣宜爱者&lt;/p&gt;
+
+&lt;p&gt;    耶稣可奇者&lt;/p&gt;
+
+&lt;p&gt;    耶稣至毅之天主者&lt;/p&gt;
+
+&lt;p&gt;    耶稣后世之父者&lt;/p&gt;
+
+&lt;p&gt;    耶稣宏谋之宗师者&lt;/p&gt;
+
+&lt;p&gt;    耶稣至能者&lt;/p&gt;
+
+&lt;p&gt;    耶稣极忍耐者&lt;/p&gt;
+
+&lt;p&gt;    耶稣极顺命者&lt;/p&gt;
+
+&lt;p&gt;    耶稣良善而心谦者&lt;/p&gt;
+
+&lt;p&gt;    耶稣爱洁德者&lt;/p&gt;
+
+&lt;p&gt;    耶稣极爱吾人者&lt;/p&gt;
+
+&lt;p&gt;    耶稣安和之天主者&lt;/p&gt;
+
+&lt;p&gt;    耶稣生活之源者&lt;/p&gt;
+
+&lt;p&gt;    耶稣诸德之表者&lt;/p&gt;
+
+&lt;p&gt;    耶稣最热切救人灵魂者&lt;/p&gt;
+
+&lt;p&gt;    耶稣吾天主者&lt;/p&gt;
+
+&lt;p&gt;    耶稣我等荫庇者&lt;/p&gt;
+
+&lt;p&gt;    耶稣贫乏之父者&lt;/p&gt;
+
+&lt;p&gt;    耶稣诸信友之宝藏者&lt;/p&gt;
+
+&lt;p&gt;    耶稣善牧者&lt;/p&gt;
+
+&lt;p&gt;    耶稣真光者&lt;/p&gt;
+
+&lt;p&gt;    耶稣无始无终上智者&lt;/p&gt;
+
+&lt;p&gt;    耶稣无穷善德者&lt;/p&gt;
+
+&lt;p&gt;    耶稣吾侪(&lt;strong&gt;chái&lt;/strong&gt;)之路与生活者&lt;/p&gt;
+
+&lt;p&gt;    耶稣诸天神之乐者&lt;/p&gt;
+
+&lt;p&gt;    耶稣诸圣祖之皇者&lt;/p&gt;
+
+&lt;p&gt;    耶稣诸宗徒之师者&lt;/p&gt;
+
+&lt;p&gt;    耶稣诸圣史之傅者&lt;/p&gt;
+
+&lt;p&gt;    耶稣诸致命之毅者&lt;/p&gt;
+
+&lt;p&gt;    耶稣诸精修之光者&lt;/p&gt;
+
+&lt;p&gt;    耶稣诸童身之洁者&lt;/p&gt;
+
+&lt;p&gt;    耶稣诸圣人之冠者&lt;/p&gt;
+
+&lt;p&gt;  启：望耶稣垂怜   应：耶稣赦我等&lt;/p&gt;
+
+&lt;p&gt;  启：望耶稣垂怜  应：耶稣允我等&lt;/p&gt;
+
+&lt;p&gt;  启：于诸凶恶    应：耶稣救我等&lt;/p&gt;
+
+&lt;p&gt;    于诸罪过&lt;/p&gt;
+
+&lt;p&gt;    于主义怒&lt;/p&gt;
+
+&lt;p&gt;    于魔阴计&lt;/p&gt;
+
+&lt;p&gt;    于邪淫之魔&lt;/p&gt;
+
+&lt;p&gt;    于永死&lt;/p&gt;
+
+&lt;p&gt;    于怠忽主之默牖(&lt;strong&gt;yǒu&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;p&gt;    为主圣降孕为人之奥&lt;/p&gt;
+
+&lt;p&gt;    为主圣诞&lt;/p&gt;
+
+&lt;p&gt;    为主圣婴时&lt;/p&gt;
+
+&lt;p&gt;    为主天主者之度生&lt;/p&gt;
+
+&lt;p&gt;    为主诸苦劳&lt;/p&gt;
+
+&lt;p&gt;    为主忧闷至死及主受难&lt;/p&gt;
+
+&lt;p&gt;    为主十字架及被弃无聊之苦&lt;/p&gt;
+
+&lt;p&gt;    为主孱弱&lt;/p&gt;
+
+&lt;p&gt;    为主死且葬&lt;/p&gt;
+
+&lt;p&gt;    为主复活&lt;/p&gt;
+
+&lt;p&gt;    为主升天&lt;/p&gt;
+
+&lt;p&gt;    为主建立圣体&lt;/p&gt;
+
+&lt;p&gt;    为主忻(&lt;strong&gt;xīn&lt;/strong&gt;)乐&lt;/p&gt;
+
+&lt;p&gt;    为主荣福&lt;/p&gt;
+
+&lt;p&gt;  启：除免世罪的天主羔羊   应：耶稣赦我等&lt;/p&gt;
+
+&lt;p&gt;    除免世罪的天主羔羊     耶稣允我等&lt;/p&gt;
+
+&lt;p&gt;    除免世罪的天主羔羊     耶稣怜我等&lt;/p&gt;
+
+&lt;p&gt;  启：耶稣俯听我等  应：耶稣垂允我等&lt;/p&gt;
+
+&lt;p&gt;  众：请众同祷，吾主耶稣基利斯督，尔昔有言曰：人求则授，人寻则得，人叩则开。今求主赐我等，尔至圣爱之情，使我等全心，以言以行爱慕尔，并顷刻无间赞美尔。&lt;/p&gt;
+
+&lt;p&gt;  主，赐我等敬畏爱慕尔之圣名，恒常不变。因凡蒙主佑，坚心爱尔者，永不乏尔照顾，乃生乃王世世，阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;圣号经&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  因父，及子，及圣神之名。阿们。&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">▲早祷词</summary></entry><entry><title type="html">晚祷词</title><link href="http://localhost:4000/2021/11/19/%E6%99%9A%E7%A5%B7%E8%AF%8D/" rel="alternate" type="text/html" title="晚祷词" /><published>2021-11-19T00:00:00+08:00</published><updated>2021-11-19T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/19/%E6%99%9A%E7%A5%B7%E8%AF%8D</id><content type="html" xml:base="http://localhost:4000/2021/11/19/%E6%99%9A%E7%A5%B7%E8%AF%8D/">&lt;p&gt;▲&lt;strong&gt;夜祷词&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;  天主的爱使我们团聚一堂，在这夜幕低垂的时刻，我们虔诚的祈祷。&lt;/p&gt;
 
@@ -310,263 +598,7 @@
 
 &lt;p&gt;▲&lt;strong&gt;圣号经&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;  因父，及子，及圣神之名。阿们。&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">▲夜祷词</summary></entry><entry><title type="html">清晨祷词</title><link href="http://localhost:4000/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D/" rel="alternate" type="text/html" title="清晨祷词" /><published>2021-11-19T00:00:00+08:00</published><updated>2021-11-19T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D</id><content type="html" xml:base="http://localhost:4000/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D/">&lt;p&gt;▲&lt;strong&gt;早祷词&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  天主将我从睡梦中唤醒，我要怀着喜悦的心情，来迎接这又一天的开始，向天主呈献我的赞美。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;圣号经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  因父，及子，及圣神之名。阿们。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;▲开始工作祷词&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  天主，我们求祢，以祢的圣宠，指导我们的工作能顺利进行，愿我们祈祷和行为，是为爱主而开始，又以荣主而结束。以上所求是靠我们的主基督，阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;小悔罪经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  天主耶稣基利斯督。我重罪人，得罪于天主。而今为天主，又为爱天主万有之上。一心痛悔我之罪过。定心再不敢得罪于天主，望天主赦我之罪。阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;早晨祈祷&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  上主，我们的天主，求祢恩赐我们在平安中，在快乐中度过这一天，不要让我们遭受创伤，不要让我们沾染罪污。让我们克服一切烦恼的困扰，并远离罪恶的诱惑，能使我们今晚欢欣的向祢讴歌赞颂。上主，我们的天主，祢是照顾万物的慈父，愿祢永远受赞美。阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;赞主曲（路一 68~79）（可唱）&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  1、请赞美上主，以色列的天主，因为他眷顾了他的子民，拯救了他的民族；&lt;/p&gt;
-
-&lt;p&gt;  2、他在自己仆人达味的家中，为我们兴起了一位大能的救主。&lt;/p&gt;
-
-&lt;p&gt;  3、正如他曾藉众圣者的口说过，就是藉他历代的先知所作的许诺，&lt;/p&gt;
-
-&lt;p&gt;  4、一位救主将救我们脱离敌手，使我们摆脱仇人的掌握。&lt;/p&gt;
-
-&lt;p&gt;  5、他向我们的祖先广施仁慈，他常念及他的神圣盟约。&lt;/p&gt;
-
-&lt;p&gt;  6、他曾向我们的先祖亚巴郎立誓，赐我们脱离敌手，无忧无惧。&lt;/p&gt;
-
-&lt;p&gt;  7、生活圣洁，行为正直。虔诚事主，终身不渝。&lt;/p&gt;
-
-&lt;p&gt;  8、至于你、我儿。你将称为至高者的先知。你要作主的前驱，为他预备道路。&lt;/p&gt;
-
-&lt;p&gt;  9、使他的百姓认识救恩，使他们的罪得到宽恕。&lt;/p&gt;
-
-&lt;p&gt;  10、这是出于我们天主的慈怀，令旭日从高天向我们照耀。&lt;/p&gt;
-
-&lt;p&gt;  11、光照那坐在黑暗中，死影下的人群、引领我们的脚步走上平安的道路。&lt;/p&gt;
-
-&lt;p&gt;  12、愿光荣归于父、及子、及圣神；起初如何，今日亦然，直到永远。阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;信德经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  我主，我天主。我信祢是永远不会有错的真天主。并全信祢的教会所训诲的一切道理。求祢坚固我的信德。阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;望德经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  耶稣，祢曾说过：“你们求，就可得到”。所以我全心依赖祢、望祢赐给我现世灵魂肉身的一切需要和死后的常生。求祢增加我的望德。阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;爱德经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  仁慈的天主，祢是纯洁美善、完整无缺的。祢不舍弃我们罪人，派遣了祢的圣子降生成人，救赎了我们，又用祂的圣体圣血养育我们的灵魂。我今大胆到祢面前，许下将尽心竭力，在言语行为上做些爱祢的事，而且我只为爱祢而生活。求祢激发我的爱德。阿们。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;▲伏求圣神降临经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  伏求圣神降临，从天射光，充满我的心，你是贫乏人的恩主，孤独人的慈父，灵性的光辉，忧患人的安乐，痛苦人的安慰，劳苦人的安息，涕泣人的欢乐，我心灵的嘉宾。&lt;/p&gt;
-
-&lt;p&gt;  伏求圣神降临，求你清洁我的心污，灌溉我的心枯，医治我的心病，和顺我的心硬，温暖我的心寒，指引我的道路。&lt;/p&gt;
-
-&lt;p&gt;  请大家祈祷，天主你以圣神充满信徒的心，赐给我们以圣神的光辉，增长智慧常享安乐，因我们的主基督。阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;天主经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  我们的天父，愿你的名受显扬；愿你的国来临；愿你的旨意奉行在人间，如同在天上。求你今天赏给我们日用的食粮；求你宽恕我们的罪过，如同我们宽恕别人一样；不要让我们陷于诱惑；但救我们免于凶恶。阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;圣母经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  万福玛利亚，你充满圣宠，主与你同在，你在妇女中受赞颂，你的亲子耶稣同受赞颂。天主圣母玛利亚，求你现在和我们临终时，为我们罪人祈求天主。阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;圣三光荣经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  愿光荣归于父、及子、及圣神；起初如何，今日亦然，直到永远。阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;信经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  我信全能的天主父，天地万物的创造者。我信父的唯一子，我们的主耶稣基督。我信他因圣神降孕，由童贞玛利亚诞生。我信他在比拉多执政时蒙难，被钉在十字架上，死而安葬。我信他下降阴府，第三日从死者中复活。我信他升了天，坐在全能天主父的右边。我信他要从天降来，审判生者死者。我信圣神，我信圣而公教会，诸圣的相通。我信罪过的赦免，我信肉身的复活，我信永恒的生命。阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;三钟经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  启：主的天使向玛利亚报告。&lt;/p&gt;
-
-&lt;p&gt;  应：她因圣神受孕。（圣母经一遍）&lt;/p&gt;
-
-&lt;p&gt;  启：我是主的婢女。&lt;/p&gt;
-
-&lt;p&gt;  应：请依照祢的话，在我身上成就。（圣母经一遍）&lt;/p&gt;
-
-&lt;p&gt;  启：天主圣子降生成人。&lt;/p&gt;
-
-&lt;p&gt;  应：居住在我们中间。（圣母经一遍）&lt;/p&gt;
-
-&lt;p&gt;  启：天主圣母，请为我们祈求。&lt;/p&gt;
-
-&lt;p&gt;  应：使我们堪当承受基督的恩许。&lt;/p&gt;
-
-&lt;p&gt;  （请大家祈祷）天主，求你把你的圣宠注入我们心中，我们即因天使的预报，得知祢的圣子降生成人，亦愿赖着他的苦难，及他的十字圣架，获享复活的光荣，因我们的主基督。阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;母后万福经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  母后万福！仁慈的母亲，我们的生命，我们的甘贻，我们的希望。厄娃子孙，在此尘世，向祢哀呼。在这涕泣之谷，向祢叹息哭求。我们的主保，求祢回顾，怜视我们。一旦流亡期满，使我们得见祢的圣子、万民称颂的耶稣。童贞玛利亚，您是宽仁的、慈悲的、甘饴的。天主圣母，请为我们祈求，使我们堪受基督的恩许。阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;耶稣圣名祷文&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  启：天主矜怜我等  应：基利斯督矜怜我等，天主矜怜我等&lt;/p&gt;
-
-&lt;p&gt;  启：基利斯督俯听我等   应：基利斯督垂允我等&lt;/p&gt;
-
-&lt;p&gt;  启：在天天主父者  应：矜怜我等&lt;/p&gt;
-
-&lt;p&gt;    赎世天主子者&lt;/p&gt;
-
-&lt;p&gt;    圣神天主者&lt;/p&gt;
-
-&lt;p&gt;    三位一体天主者&lt;/p&gt;
-
-&lt;p&gt;    耶稣活天主子者&lt;/p&gt;
-
-&lt;p&gt;    耶稣圣父之光辉者&lt;/p&gt;
-
-&lt;p&gt;    耶稣永光之耀者&lt;/p&gt;
-
-&lt;p&gt;    耶稣荣福之帝者&lt;/p&gt;
-
-&lt;p&gt;    耶稣义德之日者&lt;/p&gt;
-
-&lt;p&gt;    耶稣童贞玛利亚之子者&lt;/p&gt;
-
-&lt;p&gt;    耶稣宜爱者&lt;/p&gt;
-
-&lt;p&gt;    耶稣可奇者&lt;/p&gt;
-
-&lt;p&gt;    耶稣至毅之天主者&lt;/p&gt;
-
-&lt;p&gt;    耶稣后世之父者&lt;/p&gt;
-
-&lt;p&gt;    耶稣宏谋之宗师者&lt;/p&gt;
-
-&lt;p&gt;    耶稣至能者&lt;/p&gt;
-
-&lt;p&gt;    耶稣极忍耐者&lt;/p&gt;
-
-&lt;p&gt;    耶稣极顺命者&lt;/p&gt;
-
-&lt;p&gt;    耶稣良善而心谦者&lt;/p&gt;
-
-&lt;p&gt;    耶稣爱洁德者&lt;/p&gt;
-
-&lt;p&gt;    耶稣极爱吾人者&lt;/p&gt;
-
-&lt;p&gt;    耶稣安和之天主者&lt;/p&gt;
-
-&lt;p&gt;    耶稣生活之源者&lt;/p&gt;
-
-&lt;p&gt;    耶稣诸德之表者&lt;/p&gt;
-
-&lt;p&gt;    耶稣最热切救人灵魂者&lt;/p&gt;
-
-&lt;p&gt;    耶稣吾天主者&lt;/p&gt;
-
-&lt;p&gt;    耶稣我等荫庇者&lt;/p&gt;
-
-&lt;p&gt;    耶稣贫乏之父者&lt;/p&gt;
-
-&lt;p&gt;    耶稣诸信友之宝藏者&lt;/p&gt;
-
-&lt;p&gt;    耶稣善牧者&lt;/p&gt;
-
-&lt;p&gt;    耶稣真光者&lt;/p&gt;
-
-&lt;p&gt;    耶稣无始无终上智者&lt;/p&gt;
-
-&lt;p&gt;    耶稣无穷善德者&lt;/p&gt;
-
-&lt;p&gt;    耶稣吾侪(&lt;strong&gt;chái&lt;/strong&gt;)之路与生活者&lt;/p&gt;
-
-&lt;p&gt;    耶稣诸天神之乐者&lt;/p&gt;
-
-&lt;p&gt;    耶稣诸圣祖之皇者&lt;/p&gt;
-
-&lt;p&gt;    耶稣诸宗徒之师者&lt;/p&gt;
-
-&lt;p&gt;    耶稣诸圣史之傅者&lt;/p&gt;
-
-&lt;p&gt;    耶稣诸致命之毅者&lt;/p&gt;
-
-&lt;p&gt;    耶稣诸精修之光者&lt;/p&gt;
-
-&lt;p&gt;    耶稣诸童身之洁者&lt;/p&gt;
-
-&lt;p&gt;    耶稣诸圣人之冠者&lt;/p&gt;
-
-&lt;p&gt;  启：望耶稣垂怜   应：耶稣赦我等&lt;/p&gt;
-
-&lt;p&gt;  启：望耶稣垂怜  应：耶稣允我等&lt;/p&gt;
-
-&lt;p&gt;  启：于诸凶恶    应：耶稣救我等&lt;/p&gt;
-
-&lt;p&gt;    于诸罪过&lt;/p&gt;
-
-&lt;p&gt;    于主义怒&lt;/p&gt;
-
-&lt;p&gt;    于魔阴计&lt;/p&gt;
-
-&lt;p&gt;    于邪淫之魔&lt;/p&gt;
-
-&lt;p&gt;    于永死&lt;/p&gt;
-
-&lt;p&gt;    于怠忽主之默牖(&lt;strong&gt;yǒu&lt;/strong&gt;)&lt;/p&gt;
-
-&lt;p&gt;    为主圣降孕为人之奥&lt;/p&gt;
-
-&lt;p&gt;    为主圣诞&lt;/p&gt;
-
-&lt;p&gt;    为主圣婴时&lt;/p&gt;
-
-&lt;p&gt;    为主天主者之度生&lt;/p&gt;
-
-&lt;p&gt;    为主诸苦劳&lt;/p&gt;
-
-&lt;p&gt;    为主忧闷至死及主受难&lt;/p&gt;
-
-&lt;p&gt;    为主十字架及被弃无聊之苦&lt;/p&gt;
-
-&lt;p&gt;    为主孱弱&lt;/p&gt;
-
-&lt;p&gt;    为主死且葬&lt;/p&gt;
-
-&lt;p&gt;    为主复活&lt;/p&gt;
-
-&lt;p&gt;    为主升天&lt;/p&gt;
-
-&lt;p&gt;    为主建立圣体&lt;/p&gt;
-
-&lt;p&gt;    为主忻(&lt;strong&gt;xīn&lt;/strong&gt;)乐&lt;/p&gt;
-
-&lt;p&gt;    为主荣福&lt;/p&gt;
-
-&lt;p&gt;  启：除免世罪的天主羔羊   应：耶稣赦我等&lt;/p&gt;
-
-&lt;p&gt;    除免世罪的天主羔羊     耶稣允我等&lt;/p&gt;
-
-&lt;p&gt;    除免世罪的天主羔羊     耶稣怜我等&lt;/p&gt;
-
-&lt;p&gt;  启：耶稣俯听我等  应：耶稣垂允我等&lt;/p&gt;
-
-&lt;p&gt;  众：请众同祷，吾主耶稣基利斯督，尔昔有言曰：人求则授，人寻则得，人叩则开。今求主赐我等，尔至圣爱之情，使我等全心，以言以行爱慕尔，并顷刻无间赞美尔。&lt;/p&gt;
-
-&lt;p&gt;  主，赐我等敬畏爱慕尔之圣名，恒常不变。因凡蒙主佑，坚心爱尔者，永不乏尔照顾，乃生乃王世世，阿们。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;圣号经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;  因父，及子，及圣神之名。阿们。&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">▲早祷词</summary></entry><entry><title type="html">计算机组成原理实验课课件</title><link href="http://localhost:4000/2020/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6/" rel="alternate" type="text/html" title="计算机组成原理实验课课件" /><published>2020-11-16T00:00:00+08:00</published><updated>2020-11-16T00:00:00+08:00</updated><id>http://localhost:4000/2020/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6</id><content type="html" xml:base="http://localhost:4000/2020/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6/">&lt;style&gt;
+&lt;p&gt;  因父，及子，及圣神之名。阿们。&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">▲夜祷词</summary></entry><entry><title type="html">计算机组成原理实验课课件</title><link href="http://localhost:4000/2020/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6/" rel="alternate" type="text/html" title="计算机组成原理实验课课件" /><published>2020-11-16T00:00:00+08:00</published><updated>2020-11-16T00:00:00+08:00</updated><id>http://localhost:4000/2020/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6</id><content type="html" xml:base="http://localhost:4000/2020/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6/">&lt;style&gt;
   .reveal .slides { text-align: left; }
 &lt;/style&gt;
 
@@ -1053,122 +1085,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;加油 💪！&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">个人网站优化之旅</title><link href="http://localhost:4000/2020/07/07/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E4%B9%8B%E6%97%85/" rel="alternate" type="text/html" title="个人网站优化之旅" /><published>2020-07-07T00:00:00+08:00</published><updated>2020-07-07T00:00:00+08:00</updated><id>http://localhost:4000/2020/07/07/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E4%B9%8B%E6%97%85</id><content type="html" xml:base="http://localhost:4000/2020/07/07/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E4%B9%8B%E6%97%85/">&lt;p&gt;一年前我转投 Github Pages，开始了自己的新博客生活（详见&lt;a href=&quot;https://wu-kan.cn/_posts/2019-01-18-%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/&quot;&gt;一年前的一篇博客&lt;/a&gt;。由于 github page 原生支持 jekyll，在部署博客方面比较省心，我们只需要专注自己的博客内容即可。&lt;/p&gt;
-
-&lt;p&gt;然而，时间一长，还是有很多需求得不到满足：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;由于众所周知的原因，博客部署在国外服务器上，访问速度很慢&lt;/li&gt;
-  &lt;li&gt;网站没有备案，导致在百度搜索引擎上的排名不高&lt;/li&gt;
-  &lt;li&gt;想使用更加简短更加个性的域名（即我现在用的&lt;code&gt;wu-kan.cn&lt;/code&gt;），也有利于 SEO&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;本文记录了我为了解决上述问题，是如何从一个坑掉进一堆更深的坑里去的。&lt;/p&gt;
-
-&lt;h2 id=&quot;购买域名&quot;&gt;购买域名&lt;/h2&gt;
-
-&lt;p&gt;这一步是万恶之源…&lt;/p&gt;
-
-&lt;p&gt;国内比较大的域名服务商有阿里云和腾讯云等，我经过挑选最后在腾讯云上购买了这个新域名。域名的价格没有想象中的贵，就一口气买了十年。不过毕竟是 &lt;code&gt;.cn&lt;/code&gt; 域名，非常贫穷的我要吃很长时间的土了…&lt;/p&gt;
-
-&lt;p&gt;买了域名之后，在&lt;a href=&quot;https://console.cloud.tencent.com/cns&quot;&gt;腾讯云的控制台&lt;/a&gt;中将 &lt;code&gt;wu-kan.cn&lt;/code&gt;的&lt;code&gt;@&lt;/code&gt;记录用 CNAME 解析到&lt;code&gt;wu-kan.github.io&lt;/code&gt;，然后回到 GitHub 的 Setting 拉到下面找到 Github Pages 相关选项，将 Custom domain 改成 &lt;code&gt;wu-kan.cn&lt;/code&gt;，随后我的新网址就可以访问了。&lt;/p&gt;
-
-&lt;p&gt;有了自己的域名之后还可以做很多有意思的事情，比如将邮箱记录解析到腾讯企业邮箱，这样就可以获得自己域名的邮箱了（比如我自己的&lt;code&gt;i@wu-kan.cn&lt;/code&gt;，是不是又短又好记）。另外，平时校内作业要通过难记的 ip 提交到 ftp 网盘上，现在也可以用好记的域名来代替了。&lt;/p&gt;
-
-&lt;p&gt;唯一不好的是，换了新域名之后之前不蒜子的五万访问量统计清零了，有点心痛…又要从头开始了…&lt;/p&gt;
-
-&lt;h2 id=&quot;部署-gitlab-镜像&quot;&gt;部署 Gitlab 镜像&lt;/h2&gt;
-
-&lt;p&gt;然而，半个月之后，我发现自己的网站在百度上根本搜不到。打开&lt;a href=&quot;https://ziyuan.baidu.com/crawltools/&quot;&gt;百度抓取诊断工具&lt;/a&gt;，发现可以正常访问博客的 ip，但是返回&lt;code&gt;403 Forbidden&lt;/code&gt;。查了一下，这是由于之前的利用百度统计导致的针对 Github 的 DDos 攻击事件，Github 屏蔽了百度蜘蛛对于 Github Pages 的爬取收录。&lt;/p&gt;
-
-&lt;p&gt;但是之前为啥直接使用&lt;a href=&quot;https://wu-kan.github.io&quot;&gt;https://wu-kan.github.io&lt;/a&gt;的博客就可以正常被收录呢？我猜测，百度的爬虫在针对&lt;code&gt;github.io&lt;/code&gt;的二级域名进行爬取的时候会修改自己的 UA，而通过自己域名解析过去的页面爬取的时候则没有修改 UA。&lt;/p&gt;
-
-&lt;p&gt;那么如何解决呢？我选择利用 &lt;a href=&quot;https://gitlab.com/wu-kan/wu-kan-github-io&quot;&gt;Gitlab 提供的 CI 服务自动部署镜像站&lt;/a&gt;。也可以使用别的代码托管平台，例如国内的码云 gitee 等，但是他们不能自动和我的 Github 仓库同步，需要针对 git 的 push 添加多个源。&lt;/p&gt;
-
-&lt;p&gt;在经过一番摸索之后，终于成功部署了 Gitlab 上的 CI 服务，于是现在单独把搜索引擎的流量解析到&lt;wu-kan.gitlab.io&gt;就好了。&lt;/wu-kan.gitlab.io&gt;&lt;/p&gt;
-
-&lt;p&gt;可能有人要问，为啥不直接用 gitlab pages 或者别的平台呢？因为我体感上 Githab pages 提供的服务器更快一些。此外，我的项目已经在 Github 上混了一百多个 Star 了，也不好随随便便就迁移是不是…&lt;/p&gt;
-
-&lt;h2 id=&quot;网站备案nginx-反代&quot;&gt;网站备案+nginx 反代&lt;/h2&gt;
-
-&lt;p&gt;备案要求有一台国内服务器…我又买了 99 一年的 1C2G 腾讯云学生机…&lt;/p&gt;
-
-&lt;p&gt;感觉自己往奇怪的方向走远了…&lt;/p&gt;
-
-&lt;p&gt;备案要求网站闭站一个月…&lt;/p&gt;
-
-&lt;p&gt;期间腾讯云给我打了两次电话…&lt;/p&gt;
-
-&lt;p&gt;一个月好久啊…&lt;/p&gt;
-
-&lt;p&gt;终于过了…&lt;/p&gt;
-
-&lt;p&gt;接下来在自己的服务器上安装 nginx，通过代理访问原来的站点。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;yum install -y nginx
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;在&lt;code&gt;/etc/nginx/nginx.conf&lt;/code&gt;的适当位置添加如下内容：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;http {
-    server {
-        server_name wu-kan.cn;
-
-        listen       80 default_server;
-        listen       [::]:80 default_server;
-        listen       443 ssl http2 default_server;
-        listen       [::]:443 ssl http2 default_server;
-
-        if ($scheme = http ) {
-            return 301 https://$host$request_uri;
-        }
-
-        ssl_certificate &quot;crt/1_wu-kan.cn_bundle.crt&quot;;
-        ssl_certificate_key &quot;crt/2_wu-kan.cn.key&quot;;
-        ssl_session_cache shared:SSL:1m;
-        ssl_session_timeout  10m;
-        ssl_ciphers HIGH:!aNULL:!MD5;
-        ssl_prefer_server_ciphers on;
-
-        location / {
-            proxy_pass https://wu-kan.gitlab.io;
-            proxy_redirect     off;
-            proxy_set_header   User-Agent &quot;Mozilla/5.0&quot;;
-            proxy_set_header   Host                        $host;
-            proxy_set_header   X-Real-IP                $remote_addr;
-            proxy_set_header   X-Forwarded-For    $proxy_add_x_forwarded_for;
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;其中&lt;code&gt;ssl_certificate&lt;/code&gt;和&lt;code&gt;ssl_certificate_key&lt;/code&gt;的内容指向 https 加密密钥的位置。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;service nginx restart
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;成了…我突然发现，通过 nginx 反向代理修改 UA 的方式也可以解决百度爬虫 403 的问题…又白搞了…好气人啊。&lt;/p&gt;
-
-&lt;h3 id=&quot;在-nginx-反代之外我还尝试过哪些骚操作&quot;&gt;在 nginx 反代之外我还尝试过哪些骚操作&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;在自己的服务器上&lt;a href=&quot;https://wu-kan.cn/_posts/2020-03-26-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84GitLab/&quot;&gt;搭建自己的 Gitlab&lt;/a&gt;，然后开启 Gitlab Page…过程非常曲折，而且最后终于部署成功了却发现免费的 gitlab-ce 不支持自动镜像功能…淦&lt;/li&gt;
-  &lt;li&gt;直接在自己的服务器上&lt;code&gt;bundle exec jekyll serve -p 80&lt;/code&gt;，同时后台定时一个小时执行一次&lt;code&gt;git pull&lt;/code&gt;…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;这些操作都违背了我一开始的无后端服务器写博客的初衷。如果要这样的话我干嘛不用 wordpress 呐…&lt;/p&gt;
-
-&lt;h2 id=&quot;部署-cdn-加速&quot;&gt;部署 CDN 加速&lt;/h2&gt;
-
-&lt;p&gt;由于贫穷的我购买的服务器带宽只有 1M，因此我的博客同时访问人数就会被限制。好在腾讯云 cdn 每个月提供了 10GB 的免费流量（cdn 要求域名备案）。于是我绕开了自己的服务器，直接对 wu-kan.gitlab.io 这个域名部署 CDN，前一步 nginx 反代又白做了…&lt;/p&gt;
-
-&lt;p&gt;强势提醒，为了防止一觉醒来自己房子变成麻花疼的，切记一定要在设置里给带宽封顶…&lt;/p&gt;
-
-&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
-
-&lt;p&gt;一套搞下来是身心俱疲，总之还是学到了一点东西不是毫无收获吧…想着专注于博文内容，结果在奇奇怪怪的地方花的精力更多了。&lt;/p&gt;
-
-&lt;p&gt;（完）&lt;/p&gt;</content><author><name></name></author><category term="博客搭建" /><summary type="html">一年前我转投 Github Pages，开始了自己的新博客生活（详见一年前的一篇博客。由于 github page 原生支持 jekyll，在部署博客方面比较省心，我们只需要专注自己的博客内容即可。</summary></entry><entry><title type="html">去掉github仓库的fork标记</title><link href="http://localhost:4000/2020/07/07/%E5%8E%BB%E6%8E%89github%E4%BB%93%E5%BA%93%E7%9A%84fork%E6%A0%87%E8%AE%B0/" rel="alternate" type="text/html" title="去掉github仓库的fork标记" /><published>2020-07-07T00:00:00+08:00</published><updated>2020-07-07T00:00:00+08:00</updated><id>http://localhost:4000/2020/07/07/%E5%8E%BB%E6%8E%89github%E4%BB%93%E5%BA%93%E7%9A%84fork%E6%A0%87%E8%AE%B0</id><content type="html" xml:base="http://localhost:4000/2020/07/07/%E5%8E%BB%E6%8E%89github%E4%BB%93%E5%BA%93%E7%9A%84fork%E6%A0%87%E8%AE%B0/">&lt;p&gt;博客写了一年多，现在有了不少 Star ，嘻嘻。最近遇到一个问题，这个博客原来是直接在 &lt;a href=&quot;https://github.com/poole/lanyon&quot;&gt;poole/lanyon&lt;/a&gt; 基础上开发的，因此 Github 显示的标签上会显示原始仓库。&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Jekyll Theme Wuk</title><link href="http://localhost:4000/2020/07/07/jekyll-theme-WuK/" rel="alternate" type="text/html" title="Jekyll Theme Wuk" /><published>2020-07-07T00:00:00+08:00</published><updated>2020-07-07T00:00:00+08:00</updated><id>http://localhost:4000/2020/07/07/jekyll-theme-WuK</id><content type="html" xml:base="http://localhost:4000/2020/07/07/jekyll-theme-WuK/"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">去掉github仓库的fork标记</title><link href="http://localhost:4000/2020/07/07/%E5%8E%BB%E6%8E%89github%E4%BB%93%E5%BA%93%E7%9A%84fork%E6%A0%87%E8%AE%B0/" rel="alternate" type="text/html" title="去掉github仓库的fork标记" /><published>2020-07-07T00:00:00+08:00</published><updated>2020-07-07T00:00:00+08:00</updated><id>http://localhost:4000/2020/07/07/%E5%8E%BB%E6%8E%89github%E4%BB%93%E5%BA%93%E7%9A%84fork%E6%A0%87%E8%AE%B0</id><content type="html" xml:base="http://localhost:4000/2020/07/07/%E5%8E%BB%E6%8E%89github%E4%BB%93%E5%BA%93%E7%9A%84fork%E6%A0%87%E8%AE%B0/">&lt;p&gt;博客写了一年多，现在有了不少 Star ，嘻嘻。最近遇到一个问题，这个博客原来是直接在 &lt;a href=&quot;https://github.com/poole/lanyon&quot;&gt;poole/lanyon&lt;/a&gt; 基础上开发的，因此 Github 显示的标签上会显示原始仓库。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;data:image/webp;base64,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&quot; alt=&quot;orgin&quot; /&gt;&lt;/p&gt;
 
@@ -1632,19 +1549,143 @@ pages_external_url &apos;http://gitlab-pages.wu-kan.cn/&apos;&quot; \
 &lt;p&gt;接下来进行注册操作。相关信息可以在&lt;a href=&quot;https://gitlab.wu-kan.cn/admin/runners&quot;&gt;https://gitlab.wu-kan.cn/admin/runners&lt;/a&gt;获取。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker exec -it gitlab-runner gitlab-runner register
-&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><category term="Linux" /><summary type="html">实验环境</summary></entry><entry><title type="html">Jekyll Theme Wuk</title><link href="http://localhost:4000/2020/07/07/jekyll-theme-WuK/" rel="alternate" type="text/html" title="Jekyll Theme Wuk" /><published>2020-07-07T00:00:00+08:00</published><updated>2020-07-07T00:00:00+08:00</updated><id>http://localhost:4000/2020/07/07/jekyll-theme-WuK</id><content type="html" xml:base="http://localhost:4000/2020/07/07/jekyll-theme-WuK/"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">404</title><link href="http://localhost:4000/404" rel="alternate" type="text/html" title="404" /><published>1999-06-21T00:00:00+08:00</published><updated>1999-06-21T00:00:00+08:00</updated><id>http://localhost:4000/404</id><content type="html" xml:base="http://localhost:4000/404"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">留言</title><link href="http://localhost:4000/comments/" rel="alternate" type="text/html" title="留言" /><published>1999-06-21T00:00:00+08:00</published><updated>1999-06-21T00:00:00+08:00</updated><id>http://localhost:4000/comments</id><content type="html" xml:base="http://localhost:4000/comments/">&lt;p&gt;交换友链可以在评论区留言~&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><category term="Linux" /><summary type="html">实验环境</summary></entry><entry><title type="html">个人网站优化之旅</title><link href="http://localhost:4000/2020/07/07/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E4%B9%8B%E6%97%85/" rel="alternate" type="text/html" title="个人网站优化之旅" /><published>2020-07-07T00:00:00+08:00</published><updated>2020-07-07T00:00:00+08:00</updated><id>http://localhost:4000/2020/07/07/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E4%B9%8B%E6%97%85</id><content type="html" xml:base="http://localhost:4000/2020/07/07/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E4%B9%8B%E6%97%85/">&lt;p&gt;一年前我转投 Github Pages，开始了自己的新博客生活（详见&lt;a href=&quot;https://wu-kan.cn/_posts/2019-01-18-%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/&quot;&gt;一年前的一篇博客&lt;/a&gt;。由于 github page 原生支持 jekyll，在部署博客方面比较省心，我们只需要专注自己的博客内容即可。&lt;/p&gt;
+
+&lt;p&gt;然而，时间一长，还是有很多需求得不到满足：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/w_weilan&quot;&gt;w_weilan&lt;/a&gt;：旧的 CSDN 博客&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/D5__J9&quot;&gt;刻苦驴啊&lt;/a&gt;：大哥+本科舍友，很耐心的解决我很多问题~&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://shadw3002.github.io&quot;&gt;shadw3002&lt;/a&gt;：同学+基友，常在一起交流技 ♂ 术&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://yorkking.github.io&quot;&gt;水唐&lt;/a&gt;：同学+基友+研究生舍友，热爱数学（自称为「紧跟大佬的菜鸡挣扎者」&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ender-coder.github.io&quot;&gt;Ender&lt;/a&gt;：可 ♂ 爱的学弟&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://reeeeeeeeeein.github.io/&quot;&gt;reeeeeeeeeein&lt;/a&gt;：&lt;a href=&quot;https://wu-kan.cn/_posts/2019-11-04-%E5%86%8D%E8%A7%81-%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/&quot;&gt;专 业 演 员&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://datealive.top/&quot;&gt;datealive&lt;/a&gt;：&lt;a href=&quot;https://wu-kan.cn/_posts/2019-01-18-%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/#5ea53249b93ada00086d5e08&quot;&gt;喜欢星空的学弟&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://eartchen.cn&quot;&gt;Eartchen&lt;/a&gt;：游戏爱好者&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://scc.sysu.tech/Members/&quot;&gt;SYSU-SCC&lt;/a&gt;: 超算队同学们&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.asmodeus.cn/&quot;&gt;子灵&lt;/a&gt;：莉玥姐姐&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://howardlau.me/&quot;&gt;CodeTalks&lt;/a&gt;：我忘不掉白白了&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.xcmyz.xyz/&quot;&gt;Zhengxi Liu&lt;/a&gt;：星辰漫游者&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">交换友链可以在评论区留言~</summary></entry></feed>
+  &lt;li&gt;由于众所周知的原因，博客部署在国外服务器上，访问速度很慢&lt;/li&gt;
+  &lt;li&gt;网站没有备案，导致在百度搜索引擎上的排名不高&lt;/li&gt;
+  &lt;li&gt;想使用更加简短更加个性的域名（即我现在用的&lt;code&gt;wu-kan.cn&lt;/code&gt;），也有利于 SEO&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;本文记录了我为了解决上述问题，是如何从一个坑掉进一堆更深的坑里去的。&lt;/p&gt;
+
+&lt;h2 id=&quot;购买域名&quot;&gt;购买域名&lt;/h2&gt;
+
+&lt;p&gt;这一步是万恶之源…&lt;/p&gt;
+
+&lt;p&gt;国内比较大的域名服务商有阿里云和腾讯云等，我经过挑选最后在腾讯云上购买了这个新域名。域名的价格没有想象中的贵，就一口气买了十年。不过毕竟是 &lt;code&gt;.cn&lt;/code&gt; 域名，非常贫穷的我要吃很长时间的土了…&lt;/p&gt;
+
+&lt;p&gt;买了域名之后，在&lt;a href=&quot;https://console.cloud.tencent.com/cns&quot;&gt;腾讯云的控制台&lt;/a&gt;中将 &lt;code&gt;wu-kan.cn&lt;/code&gt;的&lt;code&gt;@&lt;/code&gt;记录用 CNAME 解析到&lt;code&gt;wu-kan.github.io&lt;/code&gt;，然后回到 GitHub 的 Setting 拉到下面找到 Github Pages 相关选项，将 Custom domain 改成 &lt;code&gt;wu-kan.cn&lt;/code&gt;，随后我的新网址就可以访问了。&lt;/p&gt;
+
+&lt;p&gt;有了自己的域名之后还可以做很多有意思的事情，比如将邮箱记录解析到腾讯企业邮箱，这样就可以获得自己域名的邮箱了（比如我自己的&lt;code&gt;i@wu-kan.cn&lt;/code&gt;，是不是又短又好记）。另外，平时校内作业要通过难记的 ip 提交到 ftp 网盘上，现在也可以用好记的域名来代替了。&lt;/p&gt;
+
+&lt;p&gt;唯一不好的是，换了新域名之后之前不蒜子的五万访问量统计清零了，有点心痛…又要从头开始了…&lt;/p&gt;
+
+&lt;h2 id=&quot;部署-gitlab-镜像&quot;&gt;部署 Gitlab 镜像&lt;/h2&gt;
+
+&lt;p&gt;然而，半个月之后，我发现自己的网站在百度上根本搜不到。打开&lt;a href=&quot;https://ziyuan.baidu.com/crawltools/&quot;&gt;百度抓取诊断工具&lt;/a&gt;，发现可以正常访问博客的 ip，但是返回&lt;code&gt;403 Forbidden&lt;/code&gt;。查了一下，这是由于之前的利用百度统计导致的针对 Github 的 DDos 攻击事件，Github 屏蔽了百度蜘蛛对于 Github Pages 的爬取收录。&lt;/p&gt;
+
+&lt;p&gt;但是之前为啥直接使用&lt;a href=&quot;https://wu-kan.github.io&quot;&gt;https://wu-kan.github.io&lt;/a&gt;的博客就可以正常被收录呢？我猜测，百度的爬虫在针对&lt;code&gt;github.io&lt;/code&gt;的二级域名进行爬取的时候会修改自己的 UA，而通过自己域名解析过去的页面爬取的时候则没有修改 UA。&lt;/p&gt;
+
+&lt;p&gt;那么如何解决呢？我选择利用 &lt;a href=&quot;https://gitlab.com/wu-kan/wu-kan-github-io&quot;&gt;Gitlab 提供的 CI 服务自动部署镜像站&lt;/a&gt;。也可以使用别的代码托管平台，例如国内的码云 gitee 等，但是他们不能自动和我的 Github 仓库同步，需要针对 git 的 push 添加多个源。&lt;/p&gt;
+
+&lt;p&gt;在经过一番摸索之后，终于成功部署了 Gitlab 上的 CI 服务，于是现在单独把搜索引擎的流量解析到&lt;wu-kan.gitlab.io&gt;就好了。&lt;/wu-kan.gitlab.io&gt;&lt;/p&gt;
+
+&lt;p&gt;可能有人要问，为啥不直接用 gitlab pages 或者别的平台呢？因为我体感上 Githab pages 提供的服务器更快一些。此外，我的项目已经在 Github 上混了一百多个 Star 了，也不好随随便便就迁移是不是…&lt;/p&gt;
+
+&lt;h2 id=&quot;网站备案nginx-反代&quot;&gt;网站备案+nginx 反代&lt;/h2&gt;
+
+&lt;p&gt;备案要求有一台国内服务器…我又买了 99 一年的 1C2G 腾讯云学生机…&lt;/p&gt;
+
+&lt;p&gt;感觉自己往奇怪的方向走远了…&lt;/p&gt;
+
+&lt;p&gt;备案要求网站闭站一个月…&lt;/p&gt;
+
+&lt;p&gt;期间腾讯云给我打了两次电话…&lt;/p&gt;
+
+&lt;p&gt;一个月好久啊…&lt;/p&gt;
+
+&lt;p&gt;终于过了…&lt;/p&gt;
+
+&lt;p&gt;接下来在自己的服务器上安装 nginx，通过代理访问原来的站点。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;yum install -y nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在&lt;code&gt;/etc/nginx/nginx.conf&lt;/code&gt;的适当位置添加如下内容：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;http {
+    server {
+        server_name wu-kan.cn;
+
+        listen       80 default_server;
+        listen       [::]:80 default_server;
+        listen       443 ssl http2 default_server;
+        listen       [::]:443 ssl http2 default_server;
+
+        if ($scheme = http ) {
+            return 301 https://$host$request_uri;
+        }
+
+        ssl_certificate &quot;crt/1_wu-kan.cn_bundle.crt&quot;;
+        ssl_certificate_key &quot;crt/2_wu-kan.cn.key&quot;;
+        ssl_session_cache shared:SSL:1m;
+        ssl_session_timeout  10m;
+        ssl_ciphers HIGH:!aNULL:!MD5;
+        ssl_prefer_server_ciphers on;
+
+        location / {
+            proxy_pass https://wu-kan.gitlab.io;
+            proxy_redirect     off;
+            proxy_set_header   User-Agent &quot;Mozilla/5.0&quot;;
+            proxy_set_header   Host                        $host;
+            proxy_set_header   X-Real-IP                $remote_addr;
+            proxy_set_header   X-Forwarded-For    $proxy_add_x_forwarded_for;
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中&lt;code&gt;ssl_certificate&lt;/code&gt;和&lt;code&gt;ssl_certificate_key&lt;/code&gt;的内容指向 https 加密密钥的位置。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;service nginx restart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;成了…我突然发现，通过 nginx 反向代理修改 UA 的方式也可以解决百度爬虫 403 的问题…又白搞了…好气人啊。&lt;/p&gt;
+
+&lt;h3 id=&quot;在-nginx-反代之外我还尝试过哪些骚操作&quot;&gt;在 nginx 反代之外我还尝试过哪些骚操作&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在自己的服务器上&lt;a href=&quot;https://wu-kan.cn/_posts/2020-03-26-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84GitLab/&quot;&gt;搭建自己的 Gitlab&lt;/a&gt;，然后开启 Gitlab Page…过程非常曲折，而且最后终于部署成功了却发现免费的 gitlab-ce 不支持自动镜像功能…淦&lt;/li&gt;
+  &lt;li&gt;直接在自己的服务器上&lt;code&gt;bundle exec jekyll serve -p 80&lt;/code&gt;，同时后台定时一个小时执行一次&lt;code&gt;git pull&lt;/code&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这些操作都违背了我一开始的无后端服务器写博客的初衷。如果要这样的话我干嘛不用 wordpress 呐…&lt;/p&gt;
+
+&lt;h2 id=&quot;部署-cdn-加速&quot;&gt;部署 CDN 加速&lt;/h2&gt;
+
+&lt;p&gt;由于贫穷的我购买的服务器带宽只有 1M，因此我的博客同时访问人数就会被限制。好在腾讯云 cdn 每个月提供了 10GB 的免费流量（cdn 要求域名备案）。于是我绕开了自己的服务器，直接对 wu-kan.gitlab.io 这个域名部署 CDN，前一步 nginx 反代又白做了…&lt;/p&gt;
+
+&lt;p&gt;强势提醒，为了防止一觉醒来自己房子变成麻花疼的，切记一定要在设置里给带宽封顶…&lt;/p&gt;
+
+&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
+
+&lt;p&gt;一套搞下来是身心俱疲，总之还是学到了一点东西不是毫无收获吧…想着专注于博文内容，结果在奇奇怪怪的地方花的精力更多了。&lt;/p&gt;
+
+&lt;p&gt;（完）&lt;/p&gt;</content><author><name></name></author><category term="博客搭建" /><summary type="html">一年前我转投 Github Pages，开始了自己的新博客生活（详见一年前的一篇博客。由于 github page 原生支持 jekyll，在部署博客方面比较省心，我们只需要专注自己的博客内容即可。</summary></entry><entry><title type="html">关于</title><link href="http://localhost:4000/1999/06/21/about/" rel="alternate" type="text/html" title="关于" /><published>1999-06-21T00:00:00+08:00</published><updated>1999-06-21T00:00:00+08:00</updated><id>http://localhost:4000/1999/06/21/about</id><content type="html" xml:base="http://localhost:4000/1999/06/21/about/">&lt;h2 id=&quot;1&quot;&gt;1&lt;/h2&gt;
+
+&lt;p&gt;本页为测试页面；&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;定义你最终归宿的，一定是你能力和欲望综合的那个真实的你。…残酷的社会压力逼迫我们通过复制所谓的成功道路来获取社会资源，而完全忽视了&lt;strong&gt;人的内在动能才是决定你位置的根本因素&lt;/strong&gt;。&lt;/p&gt;
+
+  &lt;p&gt;这些东西最终会决定你愿意为什么奋斗，最终会决定你对一份事业的热情和责任心，最终会决定你把自己放在什么样的位置是舒服的，最终会决定你人生的意义。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;十二月的一天，我翻到了一个&lt;a href=&quot;https://www.zhihu.com/question/23819007/answer/107332874&quot;&gt;两年前的回答&lt;/a&gt;；&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/11/19/sW7ReJlS1mChbp3.jpg&quot; alt=&quot;manazhiliang&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我啊，是真的想考音大吗？&lt;/p&gt;
+
+&lt;h2 id=&quot;2&quot;&gt;2&lt;/h2&gt;
+
+&lt;p&gt;我就&lt;a href=&quot;https://wu-kan.cn/_posts/2020-06-16-%E4%BD%BF%E7%94%A8-CUDA-%E4%BC%98%E5%8C%96%E4%BA%8C%E7%BB%B4%E4%BF%A1%E6%81%AF%E7%86%B5%E6%B1%82%E8%A7%A3/#%E8%AF%B7%E7%BB%99%E5%87%BA%E4%B8%80%E4%B8%AA%E5%9F%BA%E7%A1%80%E7%89%88%E6%9C%ACbaseline%E5%8F%8A%E8%87%B3%E5%B0%91%E4%B8%80%E4%B8%AA%E4%BC%98%E5%8C%96%E7%89%88%E6%9C%AC%E5%B9%B6%E5%88%86%E6%9E%90%E8%AF%B4%E6%98%8E%E6%AF%8F%E7%A7%8D%E4%BC%98%E5%8C%96%E5%AF%B9%E6%80%A7%E8%83%BD%E7%9A%84%E5%BD%B1%E5%93%8D&quot;&gt;一共搞出了 15 个版本&lt;/a&gt;；要求识别代码中的实数，我就&lt;a href=&quot;https://wu-kan.cn/_posts/2020-05-14-%E4%BD%BF%E7%94%A8%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90%E5%99%A8-Flex-%E6%8F%90%E5%8F%96%E7%A8%8B%E5%BA%8F%E4%B8%AD%E7%9A%84%E6%95%B4%E6%95%B0%E5%92%8C%E6%B5%AE%E7%82%B9%E6%95%B0/#%E5%AE%9E%E9%AA%8C%E5%8E%9F%E7%90%86&quot;&gt;识别了所有 c 语言标准定义的格式，甚至考虑了排除 UNICODE 扩展中的数字&lt;/a&gt;；不要忘了还要在实验报告结尾提出几个工作量极大的“&lt;a href=&quot;https://wu-kan.cn/_posts/2020-05-14-%E4%BD%BF%E7%94%A8%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90%E5%99%A8-Flex-%E6%8F%90%E5%8F%96%E7%A8%8B%E5%BA%8F%E4%B8%AD%E7%9A%84%E6%95%B4%E6%95%B0%E5%92%8C%E6%B5%AE%E7%82%B9%E6%95%B0/#%E5%AE%9E%E9%AA%8C%E5%BF%83%E5%BE%97&quot;&gt;期待在日后的学习中加以解决的&lt;/a&gt;”问题，这会让老师觉得你对这个实验很有思考！当然也有翻车的地方，某门没有选的课程因为疫情的原因改为线上展示评分了，并且最后给出了人均 95+ 的高分。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;心有猛虎，细嗅蔷薇。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;嗷呜~&lt;/p&gt;</content><author><name></name></author><summary type="html">1</summary></entry></feed>
