@@ -493,7 +493,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 }
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
-                    background-image: url(/img/71932901_p0.webp);
+                    background-image: url(/https://izshui.github.io/img/71932901_p0.webp);
                   }
                 }
               </style>
