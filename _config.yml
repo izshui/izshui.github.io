@@ -16,7 +16,7 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
     <i class="fab fa-zhihu"></i>
   </a>
   <br/>
-url: https://izshui.github.io # 你的域名，例如 https://wu-kan.github.io
+url: https://izshui.github.io # 你的域名，例如 https://izshui.github.io
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
 defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/front-matter-defaults/>功能进行配置
@@ -489,11 +489,11 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             - | # 网站背景图片，分竖屏、宽屏；改链接即可，不想用可以把这一项全删掉；要换壁纸图片的话可把url内的部分换成你自己的，比如你放在 /assets/image/background.jpg，那就改成 url(/assets/image/background.jpg)
               <style>
                 .warp {
-                  background-image: url(/img/71932901_p0.webp);
+                  background-image: url(https://izshui.github.io/img/71932901_p1.webp);
                 }
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
-                    background-image: url(/https://izshui.github.io/img/71932901_p0.webp);
+                    background-image: url(https://izshui.github.io/img/71932901_p0.webp);
                   }
                 }
               </style>
