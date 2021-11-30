@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-22T15:03:47+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Manna</title><subtitle>玛纳之粮&lt;br/&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-30T11:19:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Manna</title><subtitle>玛纳之粮&lt;br/&gt;
 拓跋煜&lt;br/&gt;
 天主是爱&lt;br/&gt;
 &lt;a href=&quot;mailto:jhonguo@126.com&quot;&gt;
@@ -395,7 +395,39 @@
 
 &lt;p&gt;4．扩大你的个人范畴，同时你的可控领域也得到了拓宽。&lt;/p&gt;
 
-&lt;p&gt;逃避问题不会使人生活富裕。想要拥有更多金钱的人，就应该为自己列一个长长的问题清单。&lt;/p&gt;</content><author><name></name></author><category term="随笔" /><summary type="html">第一本：富爸爸，穷爸爸！</summary></entry><entry><title type="html">将程序作为服务启动的思路脚本</title><link href="http://localhost:4000/2021/11/20/%E5%B0%86%E7%A8%8B%E5%BA%8F%E4%BD%9C%E4%B8%BA%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E7%9A%84%E6%80%9D%E8%B7%AF%E8%84%9A%E6%9C%AC/" rel="alternate" type="text/html" title="将程序作为服务启动的思路脚本" /><published>2021-11-20T00:00:00+08:00</published><updated>2021-11-20T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/20/%E5%B0%86%E7%A8%8B%E5%BA%8F%E4%BD%9C%E4%B8%BA%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E7%9A%84%E6%80%9D%E8%B7%AF%E8%84%9A%E6%9C%AC</id><content type="html" xml:base="http://localhost:4000/2021/11/20/%E5%B0%86%E7%A8%8B%E5%BA%8F%E4%BD%9C%E4%B8%BA%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E7%9A%84%E6%80%9D%E8%B7%AF%E8%84%9A%E6%9C%AC/">&lt;h2 id=&quot;将程序作为服务启动的思路脚本&quot;&gt;&lt;strong&gt;将程序作为服务启动的思路脚本&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;逃避问题不会使人生活富裕。想要拥有更多金钱的人，就应该为自己列一个长长的问题清单。&lt;/p&gt;</content><author><name></name></author><category term="随笔" /><summary type="html">第一本：富爸爸，穷爸爸！</summary></entry><entry><title type="html">黑苹果双系统读写NTFS格式的磁盘</title><link href="http://localhost:4000/2021/11/20/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%AF%BB%E5%86%99NTFS%E6%A0%BC%E5%BC%8F%E7%9A%84%E7%A3%81%E7%9B%98/" rel="alternate" type="text/html" title="黑苹果双系统读写NTFS格式的磁盘" /><published>2021-11-20T00:00:00+08:00</published><updated>2021-11-20T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/20/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%AF%BB%E5%86%99NTFS%E6%A0%BC%E5%BC%8F%E7%9A%84%E7%A3%81%E7%9B%98</id><content type="html" xml:base="http://localhost:4000/2021/11/20/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%AF%BB%E5%86%99NTFS%E6%A0%BC%E5%BC%8F%E7%9A%84%E7%A3%81%E7%9B%98/">&lt;style&gt;
+  .reveal .slides { text-align: left; }
+&lt;/style&gt;
+
+&lt;p&gt;&lt;strong&gt;1、打开终端 输入&lt;code&gt;diskutil list&lt;/code&gt; 回车&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2、&lt;code&gt;sudo nano /etc/fstab&lt;/code&gt; 复制到终端 回车,然后输入你管理员密码(开机密码)回车&lt;/strong&gt;&lt;/p&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;p&gt;&lt;strong&gt;3、出现编辑页面&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;键入&lt;/strong&gt;
+&lt;strong&gt;&lt;code&gt;LABEL=分区名 none ntfs rw,auto,nobrowse&lt;/code&gt;&lt;/strong&gt;
+&lt;strong&gt;想挂几个就写几条&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4、ctrl+x 出现提示问你yes还是no,点Y确认,再回车&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;接下来使用mac自带的磁盘工具,在启动台里找,点卸载,然后点装载,使配置生效&lt;/strong&gt;&lt;/p&gt;
+
+&lt;!-- .slide vertical=true --&gt;
+
+&lt;p&gt;&lt;strong&gt;5、接下来在这个访达里shift+win+G,在弹出的前往文件夹中输入/Volumes回车,这时候你就能看到你能这几个磁盘分区了，在这几个磁盘分区的页面输入shift+win+T把Volumes固定到侧栏,以后用到分区直接点它就好。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6、这时候已经成功的可以操作NTFS格式的磁盘了,到这里就结束了,U盘/移动硬盘也是同样的道理,给U盘移动硬盘命名然后添加进配置文件,在Volumes就能看到。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;!-- .slide --&gt;
+
+&lt;h2 id=&quot;轻松实现上述功能&quot;&gt;轻松实现上述功能&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;加油 💪！&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="黑苹果" /><summary type="html">1、打开终端 输入diskutil list 回车</summary></entry><entry><title type="html">将程序作为服务启动的思路脚本</title><link href="http://localhost:4000/2021/11/20/%E5%B0%86%E7%A8%8B%E5%BA%8F%E4%BD%9C%E4%B8%BA%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E7%9A%84%E6%80%9D%E8%B7%AF%E8%84%9A%E6%9C%AC/" rel="alternate" type="text/html" title="将程序作为服务启动的思路脚本" /><published>2021-11-20T00:00:00+08:00</published><updated>2021-11-20T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/20/%E5%B0%86%E7%A8%8B%E5%BA%8F%E4%BD%9C%E4%B8%BA%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E7%9A%84%E6%80%9D%E8%B7%AF%E8%84%9A%E6%9C%AC</id><content type="html" xml:base="http://localhost:4000/2021/11/20/%E5%B0%86%E7%A8%8B%E5%BA%8F%E4%BD%9C%E4%B8%BA%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E7%9A%84%E6%80%9D%E8%B7%AF%E8%84%9A%E6%9C%AC/">&lt;h2 id=&quot;将程序作为服务启动的思路脚本&quot;&gt;&lt;strong&gt;将程序作为服务启动的思路脚本&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;`安装　instsrv ServiceName C:\Windows\System32\srvany.exe` 
 `卸载　instsrv ServiceName remove`
@@ -448,39 +480,7 @@ rem 添加注册表语法: reg add 注册表路径 /v 项名称 /t 值类型 /d 
 `cd /d %~dp0`
 `call uninstall.bat SVNCheckServer`
 `pause` 
-&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><category term="windows" /><summary type="html">将程序作为服务启动的思路脚本</summary></entry><entry><title type="html">黑苹果双系统读写NTFS格式的磁盘</title><link href="http://localhost:4000/2021/11/20/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%AF%BB%E5%86%99NTFS%E6%A0%BC%E5%BC%8F%E7%9A%84%E7%A3%81%E7%9B%98/" rel="alternate" type="text/html" title="黑苹果双系统读写NTFS格式的磁盘" /><published>2021-11-20T00:00:00+08:00</published><updated>2021-11-20T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/20/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%AF%BB%E5%86%99NTFS%E6%A0%BC%E5%BC%8F%E7%9A%84%E7%A3%81%E7%9B%98</id><content type="html" xml:base="http://localhost:4000/2021/11/20/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%AF%BB%E5%86%99NTFS%E6%A0%BC%E5%BC%8F%E7%9A%84%E7%A3%81%E7%9B%98/">&lt;style&gt;
-  .reveal .slides { text-align: left; }
-&lt;/style&gt;
-
-&lt;p&gt;&lt;strong&gt;1、打开终端 输入&lt;code&gt;diskutil list&lt;/code&gt; 回车&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2、&lt;code&gt;sudo nano /etc/fstab&lt;/code&gt; 复制到终端 回车,然后输入你管理员密码(开机密码)回车&lt;/strong&gt;&lt;/p&gt;
-
-&lt;!-- .slide vertical=true --&gt;
-
-&lt;p&gt;&lt;strong&gt;3、出现编辑页面&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;键入&lt;/strong&gt;
-&lt;strong&gt;&lt;code&gt;LABEL=分区名 none ntfs rw,auto,nobrowse&lt;/code&gt;&lt;/strong&gt;
-&lt;strong&gt;想挂几个就写几条&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4、ctrl+x 出现提示问你yes还是no,点Y确认,再回车&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;接下来使用mac自带的磁盘工具,在启动台里找,点卸载,然后点装载,使配置生效&lt;/strong&gt;&lt;/p&gt;
-
-&lt;!-- .slide vertical=true --&gt;
-
-&lt;p&gt;&lt;strong&gt;5、接下来在这个访达里shift+win+G,在弹出的前往文件夹中输入/Volumes回车,这时候你就能看到你能这几个磁盘分区了，在这几个磁盘分区的页面输入shift+win+T把Volumes固定到侧栏,以后用到分区直接点它就好。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;6、这时候已经成功的可以操作NTFS格式的磁盘了,到这里就结束了,U盘/移动硬盘也是同样的道理,给U盘移动硬盘命名然后添加进配置文件,在Volumes就能看到。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;!-- .slide --&gt;
-
-&lt;h2 id=&quot;轻松实现上述功能&quot;&gt;轻松实现上述功能&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;加油 💪！&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="黑苹果" /><summary type="html">1、打开终端 输入diskutil list 回车</summary></entry><entry><title type="html">清晨祷词</title><link href="http://localhost:4000/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D/" rel="alternate" type="text/html" title="清晨祷词" /><published>2021-11-19T00:00:00+08:00</published><updated>2021-11-19T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D</id><content type="html" xml:base="http://localhost:4000/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D/">&lt;p&gt;▲&lt;strong&gt;早祷词&lt;/strong&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><category term="windows" /><summary type="html">将程序作为服务启动的思路脚本</summary></entry><entry><title type="html">清晨祷词</title><link href="http://localhost:4000/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D/" rel="alternate" type="text/html" title="清晨祷词" /><published>2021-11-19T00:00:00+08:00</published><updated>2021-11-19T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D</id><content type="html" xml:base="http://localhost:4000/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D/">&lt;p&gt;▲&lt;strong&gt;早祷词&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;  天主将我从睡梦中唤醒，我要怀着喜悦的心情，来迎接这又一天的开始，向天主呈献我的赞美。&lt;/p&gt;
 
@@ -856,141 +856,123 @@ rem 添加注册表语法: reg add 注册表路径 /v 项名称 /t 值类型 /d 
 
 &lt;p&gt;▲&lt;strong&gt;圣母德叙祷文&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;启：天主矝怜我等&lt;/p&gt;
+&lt;p&gt;  启：天主矝怜我等  应：基利斯督矝怜我等。天主矝怜我等。&lt;/p&gt;
 
-&lt;p&gt;应：基利斯督矝怜我等。天主矝怜我等。&lt;/p&gt;
+&lt;p&gt;  启：基利斯督俯听我等  应：基利斯督垂允我等。&lt;/p&gt;
 
-&lt;p&gt;启：基利斯督俯听我等&lt;/p&gt;
+&lt;p&gt;  启：在天天主父者  应：矝怜我等。&lt;/p&gt;
 
-&lt;p&gt;应：基利斯督垂允我等。&lt;/p&gt;
+&lt;p&gt;    赎世天主子者&lt;/p&gt;
 
-&lt;p&gt;启：在天天主父者&lt;/p&gt;
+&lt;p&gt;    圣神天主者&lt;/p&gt;
 
-&lt;p&gt;应：矝怜我等。(下同)&lt;/p&gt;
+&lt;p&gt;    三位一体天主者&lt;/p&gt;
 
-&lt;p&gt;启：赎世天主子者&lt;/p&gt;
+&lt;p&gt;  启：圣玛利亚  应：为我等祈。&lt;/p&gt;
 
-&lt;p&gt;圣神天主者&lt;/p&gt;
+&lt;p&gt;    天主圣母&lt;/p&gt;
 
-&lt;p&gt;三位一体天主者&lt;/p&gt;
+&lt;p&gt;    童身之圣童身者&lt;/p&gt;
 
-&lt;p&gt;启：圣玛利亚&lt;/p&gt;
+&lt;p&gt;    基利斯督之母&lt;/p&gt;
 
-&lt;p&gt;应：为我等祈。(下同)&lt;/p&gt;
+&lt;p&gt;    天主宠爱之母&lt;/p&gt;
 
-&lt;p&gt;天主圣母&lt;/p&gt;
+&lt;p&gt;    至洁之母&lt;/p&gt;
 
-&lt;p&gt;童身之圣童身者&lt;/p&gt;
+&lt;p&gt;    至贞之母&lt;/p&gt;
 
-&lt;p&gt;基利斯督之母&lt;/p&gt;
+&lt;p&gt;    无损者母&lt;/p&gt;
 
-&lt;p&gt;天主宠爱之母&lt;/p&gt;
+&lt;p&gt;    无玷者母&lt;/p&gt;
 
-&lt;p&gt;至洁之母&lt;/p&gt;
+&lt;p&gt;    可爱者母&lt;/p&gt;
 
-&lt;p&gt;至贞之母&lt;/p&gt;
+&lt;p&gt;    可奇者母&lt;/p&gt;
 
-&lt;p&gt;无损者母&lt;/p&gt;
+&lt;p&gt;    善道之母&lt;/p&gt;
 
-&lt;p&gt;无玷者母&lt;/p&gt;
+&lt;p&gt;    造物之母&lt;/p&gt;
 
-&lt;p&gt;可爱者母&lt;/p&gt;
+&lt;p&gt;    救世之母&lt;/p&gt;
 
-&lt;p&gt;可奇者母&lt;/p&gt;
+&lt;p&gt;    极智者贞女&lt;/p&gt;
 
-&lt;p&gt;善导之母&lt;/p&gt;
+&lt;p&gt;    可敬者贞女&lt;/p&gt;
 
-&lt;p&gt;造物之母&lt;/p&gt;
+&lt;p&gt;    可颂者贞女&lt;/p&gt;
 
-&lt;p&gt;救世之母&lt;/p&gt;
+&lt;p&gt;    大能者贞女&lt;/p&gt;
 
-&lt;p&gt;极智者贞女&lt;/p&gt;
+&lt;p&gt;    宽仁者贞女&lt;/p&gt;
 
-&lt;p&gt;可敬者贞女&lt;/p&gt;
+&lt;p&gt;    大忠者贞女&lt;/p&gt;
 
-&lt;p&gt;可颂者贞女&lt;/p&gt;
+&lt;p&gt;    义德之镜&lt;/p&gt;
 
-&lt;p&gt;大能者贞女&lt;/p&gt;
+&lt;p&gt;    上智之座&lt;/p&gt;
 
-&lt;p&gt;宽仁者贞女&lt;/p&gt;
+&lt;p&gt;    吾乐之缘&lt;/p&gt;
 
-&lt;p&gt;大忠者贞女&lt;/p&gt;
+&lt;p&gt;    妙神之器&lt;/p&gt;
 
-&lt;p&gt;义德之镜&lt;/p&gt;
+&lt;p&gt;    可崇之器&lt;/p&gt;
 
-&lt;p&gt;上智之座&lt;/p&gt;
+&lt;p&gt;    圣情大器&lt;/p&gt;
 
-&lt;p&gt;吾乐之缘&lt;/p&gt;
+&lt;p&gt;    玄义玫瑰&lt;/p&gt;
 
-&lt;p&gt;妙神之器&lt;/p&gt;
+&lt;p&gt;    达味敌楼&lt;/p&gt;
 
-&lt;p&gt;可崇之器&lt;/p&gt;
+&lt;p&gt;    象牙宝塔&lt;/p&gt;
 
-&lt;p&gt;圣情大器&lt;/p&gt;
+&lt;p&gt;    黄金之殿&lt;/p&gt;
 
-&lt;p&gt;玄义玫瑰&lt;/p&gt;
+&lt;p&gt;    结约之柜&lt;/p&gt;
 
-&lt;p&gt;达味敌楼&lt;/p&gt;
+&lt;p&gt;    上天之门&lt;/p&gt;
 
-&lt;p&gt;象牙宝塔&lt;/p&gt;
+&lt;p&gt;    晓明之星&lt;/p&gt;
 
-&lt;p&gt;黄金之殿&lt;/p&gt;
+&lt;p&gt;    病人之痊&lt;/p&gt;
 
-&lt;p&gt;结约之柜&lt;/p&gt;
+&lt;p&gt;    罪人之托&lt;/p&gt;
 
-&lt;p&gt;上天之门&lt;/p&gt;
+&lt;p&gt;    忧苦之慰&lt;/p&gt;
 
-&lt;p&gt;晓明之星&lt;/p&gt;
+&lt;p&gt;    进教之佑&lt;/p&gt;
 
-&lt;p&gt;病人之痊&lt;/p&gt;
+&lt;p&gt;    诸天神之后&lt;/p&gt;
 
-&lt;p&gt;罪人之托&lt;/p&gt;
+&lt;p&gt;    诸圣祖之后&lt;/p&gt;
 
-&lt;p&gt;忧苦之慰&lt;/p&gt;
+&lt;p&gt;    诸先知之后&lt;/p&gt;
 
-&lt;p&gt;进教之佑&lt;/p&gt;
+&lt;p&gt;    诸宗徒之后&lt;/p&gt;
 
-&lt;p&gt;诸天使之后&lt;/p&gt;
+&lt;p&gt;    诸为义致命之后&lt;/p&gt;
 
-&lt;p&gt;诸圣祖之后&lt;/p&gt;
+&lt;p&gt;    诸精修之后&lt;/p&gt;
 
-&lt;p&gt;诸先知之后&lt;/p&gt;
+&lt;p&gt;    诸童身之后&lt;/p&gt;
 
-&lt;p&gt;诸宗徒之后&lt;/p&gt;
+&lt;p&gt;    诸圣人之后&lt;/p&gt;
 
-&lt;p&gt;诸为义致命之后&lt;/p&gt;
+&lt;p&gt;    无染原罪始胎之后&lt;/p&gt;
 
-&lt;p&gt;诸精修之后&lt;/p&gt;
+&lt;p&gt;    荣召升天之后&lt;/p&gt;
 
-&lt;p&gt;诸童身之后&lt;/p&gt;
+&lt;p&gt;    至圣玫瑰之后&lt;/p&gt;
 
-&lt;p&gt;诸圣人之后&lt;/p&gt;
+&lt;p&gt;    平安之后&lt;/p&gt;
 
-&lt;p&gt;无染原罪始胎之后&lt;/p&gt;
+&lt;p&gt;  启：除免世罪天主羔羊者  应：主赦我等&lt;/p&gt;
 
-&lt;p&gt;至圣玫瑰之后&lt;/p&gt;
+&lt;p&gt;  启：除免世罪天主羔羊者  应：主允我等&lt;/p&gt;
 
-&lt;p&gt;荣召升天之后&lt;/p&gt;
+&lt;p&gt;  启：除免世罪天主羔羊者  应：主怜我等&lt;/p&gt;
 
-&lt;p&gt;和平之后&lt;/p&gt;
-
-&lt;p&gt;中华之后&lt;/p&gt;
-
-&lt;p&gt;启：除免世罪天主羔羊者&lt;/p&gt;
-
-&lt;p&gt;应：主赦我等&lt;/p&gt;
-
-&lt;p&gt;启：除免世罪天主羔羊者&lt;/p&gt;
-
-&lt;p&gt;应：主允我等&lt;/p&gt;
-
-&lt;p&gt;启：除免世罪天主羔羊者&lt;/p&gt;
-
-&lt;p&gt;应：主怜我等&lt;/p&gt;
-
-&lt;p&gt;启：天使来报圣母玛利亚。&lt;/p&gt;
-
-&lt;p&gt;应：乃因圣神受孕。&lt;/p&gt;
+&lt;p&gt;  启：天神来报圣母玛利亚。  应：乃因圣神受孕。&lt;/p&gt;
 
 &lt;p&gt;  请大家祈祷：天主，求你把你的圣宠注入我们心中，我们即因天使的预报，得知你的圣子降生成人，亦愿赖着他的苦难及他的十字圣架，获享复活的光荣，因我们的主基督。阿们。&lt;/p&gt;
 
@@ -1032,7 +1014,229 @@ rem 添加注册表语法: reg add 注册表路径 /v 项名称 /t 值类型 /d 
 
 &lt;p&gt;▲&lt;strong&gt;圣号经&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;  因父，及子，及圣神之名。阿们。&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">▲夜祷词</summary></entry><entry><title type="html">计算机组成原理实验课课件</title><link href="http://localhost:4000/2020/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6/" rel="alternate" type="text/html" title="计算机组成原理实验课课件" /><published>2020-11-16T00:00:00+08:00</published><updated>2020-11-16T00:00:00+08:00</updated><id>http://localhost:4000/2020/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6</id><content type="html" xml:base="http://localhost:4000/2020/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6/">&lt;style&gt;
+&lt;p&gt;  因父，及子，及圣神之名。阿们。&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">▲夜祷词</summary></entry><entry><title type="html">炼狱祷文</title><link href="http://localhost:4000/2021/11/19/%E7%82%BC%E7%8B%B1%E7%A5%B7%E6%96%87/" rel="alternate" type="text/html" title="炼狱祷文" /><published>2021-11-19T00:00:00+08:00</published><updated>2021-11-19T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/19/%E7%82%BC%E7%8B%B1%E7%A5%B7%E6%96%87</id><content type="html" xml:base="http://localhost:4000/2021/11/19/%E7%82%BC%E7%8B%B1%E7%A5%B7%E6%96%87/">&lt;p&gt;▲&lt;strong&gt;炼狱祷文&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  启：天主矜怜我等。  应：基利斯督矜怜我等， 天主矜怜我等。&lt;/p&gt;
+
+&lt;p&gt;  启：基利斯督俯听我等。  应：基利斯督垂允我等。&lt;/p&gt;
+
+&lt;p&gt;  启：在天天主父者。  应：矜怜亡者。&lt;/p&gt;
+
+&lt;p&gt;    赎世天主子者。&lt;/p&gt;
+
+&lt;p&gt;    圣神天主者。&lt;/p&gt;
+
+&lt;p&gt;    三位一体天主者。&lt;/p&gt;
+
+&lt;p&gt;  启：圣玛利亚。  应：为亡者炼灵祈求。&lt;/p&gt;
+
+&lt;p&gt;    天主圣母。&lt;/p&gt;
+
+&lt;p&gt;    童身之圣童身者。&lt;/p&gt;
+
+&lt;p&gt;    圣弥额尔。&lt;/p&gt;
+
+&lt;p&gt;    圣嘉俾厄尔。&lt;/p&gt;
+
+&lt;p&gt;    圣辣法厄尔。&lt;/p&gt;
+
+&lt;p&gt;    诸圣奉使天神及宗使天神者。&lt;/p&gt;
+
+&lt;p&gt;    真福诸品天神者。&lt;/p&gt;
+
+&lt;p&gt;    圣若翰保弟斯大。&lt;/p&gt;
+
+&lt;p&gt;    圣若瑟。&lt;/p&gt;
+
+&lt;p&gt;    圣教古祖及诸先知者。&lt;/p&gt;
+
+&lt;p&gt;    圣伯多禄。&lt;/p&gt;
+
+&lt;p&gt;    圣保禄。&lt;/p&gt;
+
+&lt;p&gt;    圣安德肋。&lt;/p&gt;
+
+&lt;p&gt;    圣雅各伯。&lt;/p&gt;
+
+&lt;p&gt;    圣若望。&lt;/p&gt;
+
+&lt;p&gt;    圣多默。&lt;/p&gt;
+
+&lt;p&gt;    圣雅各伯。&lt;/p&gt;
+
+&lt;p&gt;    圣斐理伯。&lt;/p&gt;
+
+&lt;p&gt;    圣巴尔多禄茂。&lt;/p&gt;
+
+&lt;p&gt;    圣玛窦。&lt;/p&gt;
+
+&lt;p&gt;    圣西满。&lt;/p&gt;
+
+&lt;p&gt;    圣达陡。&lt;/p&gt;
+
+&lt;p&gt;    圣玛弟亚。&lt;/p&gt;
+
+&lt;p&gt;    圣巴尔纳伯。&lt;/p&gt;
+
+&lt;p&gt;    圣路加。&lt;/p&gt;
+
+&lt;p&gt;    圣玛尔谷。&lt;/p&gt;
+
+&lt;p&gt;    诸圣宗徒诸圣史者。&lt;/p&gt;
+
+&lt;p&gt;    吾主诸圣徒者。&lt;/p&gt;
+
+&lt;p&gt;    诸圣婴孩者。&lt;/p&gt;
+
+&lt;p&gt;    圣斯德望。&lt;/p&gt;
+
+&lt;p&gt;    圣老楞佐。&lt;/p&gt;
+
+&lt;p&gt;    圣味增德。&lt;/p&gt;
+
+&lt;p&gt;    圣法俾盎及圣巴斯弟盎。&lt;/p&gt;
+
+&lt;p&gt;    圣若望及圣保禄。&lt;/p&gt;
+
+&lt;p&gt;    圣葛斯默及圣达弥盎。&lt;/p&gt;
+
+&lt;p&gt;    圣热尔瓦削及圣玻罗大削。&lt;/p&gt;
+
+&lt;p&gt;    为天主致命诸圣人者。&lt;/p&gt;
+
+&lt;p&gt;    圣西尔物斯德肋。&lt;/p&gt;
+
+&lt;p&gt;    圣额我略。&lt;/p&gt;
+
+&lt;p&gt;    圣盎博罗削。&lt;/p&gt;
+
+&lt;p&gt;    圣奥斯定。&lt;/p&gt;
+
+&lt;p&gt;    圣热罗尼莫。&lt;/p&gt;
+
+&lt;p&gt;    圣玛尔定。&lt;/p&gt;
+
+&lt;p&gt;    圣尼各老。&lt;/p&gt;
+
+&lt;p&gt;    诸圣主教诸圣精修者。&lt;/p&gt;
+
+&lt;p&gt;    圣教会诸圣大师者。&lt;/p&gt;
+
+&lt;p&gt;    圣安当。&lt;/p&gt;
+
+&lt;p&gt;    圣本笃。&lt;/p&gt;
+
+&lt;p&gt;    圣伯尔纳多。&lt;/p&gt;
+
+&lt;p&gt;    圣多明我。&lt;/p&gt;
+
+&lt;p&gt;    圣方济各。&lt;/p&gt;
+
+&lt;p&gt;    诸圣主祭诸圣副祭者。&lt;/p&gt;
+
+&lt;p&gt;    诸圣会修诸圣隐修者。&lt;/p&gt;
+
+&lt;p&gt;    圣女玛大肋纳。&lt;/p&gt;
+
+&lt;p&gt;    圣女亚加大。&lt;/p&gt;
+
+&lt;p&gt;    圣女路济亚。&lt;/p&gt;
+
+&lt;p&gt;    圣女依搦斯。&lt;/p&gt;
+
+&lt;p&gt;    圣女则济利亚。&lt;/p&gt;
+
+&lt;p&gt;    圣女加大利纳。&lt;/p&gt;
+
+&lt;p&gt;    圣女亚纳大西亚。&lt;/p&gt;
+
+&lt;p&gt;    诸圣童女诸圣节妇者。&lt;/p&gt;
+
+&lt;p&gt;    天主诸圣人圣女者。&lt;/p&gt;
+
+&lt;p&gt;  启：望主垂怜。  应：主赦亡者炼灵。&lt;/p&gt;
+
+&lt;p&gt;  启：望主垂怜。  应：主允我为亡者炼灵祈求。&lt;/p&gt;
+
+&lt;p&gt;  启：于暂罚之狱牢。  应：主救亡者炼灵。&lt;/p&gt;
+
+&lt;p&gt;    于炼火之厉烈。&lt;/p&gt;
+
+&lt;p&gt;    于往罪之秽污。&lt;/p&gt;
+
+&lt;p&gt;    于离主之痛苦。&lt;/p&gt;
+
+&lt;p&gt;    为主降孕为人之奥。&lt;/p&gt;
+
+&lt;p&gt;    为主临格人世。&lt;/p&gt;
+
+&lt;p&gt;    为主圣诞。&lt;/p&gt;
+
+&lt;p&gt;    为主受洗及主圣斋。&lt;/p&gt;
+
+&lt;p&gt;    为主十字圣架及主万苦。&lt;/p&gt;
+
+&lt;p&gt;    为主死且葬。&lt;/p&gt;
+
+&lt;p&gt;    为主圣复活。&lt;/p&gt;
+
+&lt;p&gt;    为施慰圣神之降临。&lt;/p&gt;
+
+&lt;p&gt;    于审判之日。&lt;/p&gt;
+
+&lt;p&gt;  启：罪人等求天主子者。  应：主俯听我等，祈救亡者炼灵。&lt;/p&gt;
+
+&lt;p&gt;  启：除免世罪天主羔羊者  应：主赦亡者炼灵。&lt;/p&gt;
+
+&lt;p&gt;  启：除免世罪天主羔羊者  应：主允我为亡者炼灵祈求。&lt;/p&gt;
+
+&lt;p&gt;  启：除免世罪天主羔羊者  应：主怜亡者炼灵。&lt;/p&gt;
+
+&lt;p&gt;  启：天主矜怜我等，祈救亡者炼灵。&lt;/p&gt;
+
+&lt;p&gt;  应：基利斯督矜怜我等，祈救亡者炼灵。&lt;/p&gt;
+
+&lt;p&gt;    天主矜怜我等，祈救亡者炼灵。&lt;/p&gt;
+
+&lt;p&gt;  启：基利斯督俯听我等，祈救亡者炼灵。&lt;/p&gt;
+
+&lt;p&gt;  应：基利斯督垂允我等，祈救亡者炼灵。&lt;/p&gt;
+
+&lt;p&gt;  我们的天父，愿你的名受显扬；愿你的国来临；愿你的旨意奉行在人间，如同在天上。求你今天赏给我们日用的食粮；求你宽恕我们的罪过，如同我们宽恕别人一样；不要让我们陷于诱惑；但救我们免于凶恶。阿们。&lt;/p&gt;
+
+&lt;p&gt;  启：望主俯听我祷。  应：我号声上彻于主。&lt;/p&gt;
+
+&lt;p&gt;  请众同祷。全能无始无终者天主，诸信者之常安。恳祈俯听我等，为已亡诸信者炼狱灵魂。诸在世之罪，一切赐赦。以主慈佑，俾获安所，登之天堂，膺主洪恩。亦为是尔子耶稣基利斯督我等主，其偕尔，偕圣神，为一天主，世生世王。&lt;/p&gt;
+
+&lt;p&gt;  阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;为在教适亡者颂&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  至仁至慈天主，生养救赎吾侪（chái）。咸欲为得天上永福，恳求怜视某（亡者圣名）赦其在世时，凡有获罪于主，或思或言或行。&lt;/p&gt;
+
+&lt;p&gt;  命天神圣弥额尔，保护指引。于身后险路，使魔鬼不至肆害。免堕地狱，获升天堂，享主圣容。亦赐我将来同伊在天上，觐（jìn）主圣容，睹万善万乐之美好。&lt;/p&gt;
+
+&lt;p&gt;  阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;为在教已亡父母亲友恩人颂&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  吾主天主，命我孝敬父母，泛爱众人，图报恩人。&lt;/p&gt;
+
+&lt;p&gt;  又教我追思已亡，代为求主。我今念及父母亲友恩人，去世之灵魂，在世事主，遵从圣教。&lt;/p&gt;
+
+&lt;p&gt;  我虽无德无功，献主台前，求主洪慈裕容，赦我父母亲友恩人炼罪，速赐升天，永远享福。&lt;/p&gt;
+
+&lt;p&gt;  阿们。&lt;/p&gt;
+
+&lt;p&gt;▲&lt;strong&gt;为凡诸信者灵魂颂&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;  天主生人，欲人在世立功，膺（yīng）主预备之真福。&lt;/p&gt;
+
+&lt;p&gt;  我今为已亡炼狱众灵，在世识奉真主，信从圣教。求主垂悯宽赦，免其苦难，命天神庆报出期。&lt;/p&gt;
+
+&lt;p&gt;  又赐我今世痛悔往罪，不敢再犯，脱身后永苦，偕（xié）诸信者，享见天主圣容。&lt;/p&gt;
+
+&lt;p&gt;  阿们。&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">▲炼狱祷文</summary></entry><entry><title type="html">计算机组成原理实验课课件</title><link href="http://localhost:4000/2020/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6/" rel="alternate" type="text/html" title="计算机组成原理实验课课件" /><published>2020-11-16T00:00:00+08:00</published><updated>2020-11-16T00:00:00+08:00</updated><id>http://localhost:4000/2020/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6</id><content type="html" xml:base="http://localhost:4000/2020/11/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AF%BE%E8%AF%BE%E4%BB%B6/">&lt;style&gt;
   .reveal .slides { text-align: left; }
 &lt;/style&gt;
 
@@ -1634,336 +1838,4 @@ rem 添加注册表语法: reg add 注册表路径 /v 项名称 /t 值类型 /d 
 
 &lt;p&gt;一套搞下来是身心俱疲，总之还是学到了一点东西不是毫无收获吧…想着专注于博文内容，结果在奇奇怪怪的地方花的精力更多了。&lt;/p&gt;
 
-&lt;p&gt;（完）&lt;/p&gt;</content><author><name></name></author><category term="博客搭建" /><summary type="html">一年前我转投 Github Pages，开始了自己的新博客生活（详见一年前的一篇博客。由于 github page 原生支持 jekyll，在部署博客方面比较省心，我们只需要专注自己的博客内容即可。</summary></entry><entry><title type="html">基于Jekyll搭建个人博客</title><link href="http://localhost:4000/2020/07/07/%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="alternate" type="text/html" title="基于Jekyll搭建个人博客" /><published>2020-07-07T00:00:00+08:00</published><updated>2020-07-07T00:00:00+08:00</updated><id>http://localhost:4000/2020/07/07/%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2</id><content type="html" xml:base="http://localhost:4000/2020/07/07/%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">&lt;p&gt;最开始我是在&lt;a href=&quot;https://blog.csdn.net/w_weilan&quot;&gt;CSDN&lt;/a&gt;上写博客的。博客写了一年多，访问量勉强破万，感觉其中至少有三成是自己贡献的。而且 CSDN 上的广告是越来越多，网页编辑器也是越来越不好用。&lt;/p&gt;
-
-&lt;p&gt;十一月份，在青岛的 ICPC 区域赛失利之后，想要重新开始，和过去告别。也从此转移自己写博客的阵地。考虑过转投暂时还比较干净而且可以部分定义页面的&lt;a href=&quot;https://www.cnblogs.com/wu-kan/&quot;&gt;博客园&lt;/a&gt;，但是最终还是决定在&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;上搭建属于自己的博客。&lt;/p&gt;
-
-&lt;p&gt;然后，翻了一些网上的教程，用&lt;a href=&quot;https://hexo.io/zh-cn/&quot;&gt;Hexo&lt;/a&gt;框架和&lt;a href=&quot;https://github.com/theme-next/hexo-theme-next&quot;&gt;NexT&lt;/a&gt;主题搭了一个比较素雅的符合个人审美的博客。然而，Hexo 搭建的博客需要先在本地生成博客页面然后再上传到服务器上，每次发博客都需要在电脑重新生成页面并上传，感觉没有那么方便。在不同电脑上想要发博客更是十分困难，感觉如果胡乱操作后本地部署的文件发生了一定的错乱，恢复起来会十分麻烦。&lt;/p&gt;
-
-&lt;p&gt;后来发现，Github Pages 原生支持&lt;a href=&quot;https://www.jekyll.com.cn/&quot;&gt;Jekyll&lt;/a&gt;，因此如果只需要推送文章可以直接在 github 的仓库里做。于是决定在期末考试后用 Jekyll 重新搭建个人博客。原来的博客不再维护。&lt;/p&gt;
-
-&lt;h2 id=&quot;构思&quot;&gt;构思&lt;/h2&gt;
-
-&lt;p&gt;目前博客的 demo 如下：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://wu-kan.github.io/jekyll-theme-WuK/screenshot.png&quot; alt=&quot;demo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;想搭建一个足够干净、页面几乎不要有多余元素的博客，同时博客的功能还要足够丰富，满足我以下的需求：&lt;/p&gt;
-
-&lt;ul class=&quot;task-list&quot;&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;用 Markdown 写博客&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;支持 Latex 公式&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;支持 mermaid 等插件&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;个性化 Live2D&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;分享一些我在其他网站的个人账号&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;移动端适配&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;足够快的加载速度&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;访问量统计，评论互动&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;需求是会逐渐增长的！&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;其中，Live2D 是我某次访问别人的博客初次见到的，感觉非常吸引人。最终的目标是去掉网页上所有多余的元素，只剩下博文和 Live2D 看板娘，看板娘本身还可以作为博客访问的导航，感觉会十分有新意。&lt;/p&gt;
-
-&lt;h2 id=&quot;搭建过程不定期更新&quot;&gt;搭建过程（不定期更新）&lt;/h2&gt;
-
-&lt;p&gt;我目前读的专业是计科超算方向，所以软件工程专业相关方面的基础几乎为 0😌，大部分的内容都是参考网上教程慢慢摸索的，假如对某些过程有意见和建议欢迎向我提出！&lt;/p&gt;
-
-&lt;h3 id=&quot;开发环境&quot;&gt;开发环境&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;我的博客使用 bundle 作为版本管理！如果你的环境里已经有 bundle 了，可以跳过此步！&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这个学期选了一门 Linux 相关的公选课，感觉还不错，因此直接把开发环境是搭建在 Windows Subsystem for Linux（简称 WSL）上了，Windows 下也可以直接访问其中的环境，详见&lt;a href=&quot;https://wu-kan.cn/_posts/2018-12-14-Windows-Subsystem-for-Linux/&quot;&gt;这篇博客&lt;/a&gt;。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt install -y ruby ruby-dev make gcc g++ zlib1g-dev
-# gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
-sudo gem install bundler
-# bundle config mirror.https://rubygems.org https://gems.ruby-china.com
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;jekyll 博客是基于 ruby 语言开发的，要先将 ruby 装进来。此外，国内访问一些资源可能会很慢，推荐去掉上面的注释，使用国内镜像。&lt;/p&gt;
-
-&lt;h3 id=&quot;在本地运行博客&quot;&gt;在本地运行博客&lt;/h3&gt;
-
-&lt;p&gt;依次执行下述指令，可以自动下载并部署我博客的所有依赖。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;git clone https://github.com/wu-kan/wu-kan.github.io
-cd wu-kan.github.io
-bundle install
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果不想下载我的博文和图片，可以根据这个&lt;a href=&quot;https://github.com/wu-kan/wu-kan.github.io/issues/7&quot;&gt;issue&lt;/a&gt;，使用 svn 代替 git，从而快速下载必要的文件。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;svn checkout https://github.com/wu-kan/wu-kan.github.io/trunk/ --depth=files
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;github 上的 jekyll 和普通的 jekyll 是有一点点区别的，比如说只支持特定的插件。我希望与 github 保持兼容，因此配置的依赖是直接引入了 github 版本的 jekyll，安装时间略久。&lt;/p&gt;
-
-&lt;p&gt;我在一个全新的 Linux 中安装了一遍，需要的依赖已经在上面的「开发环境中列出来的」。如果&lt;code&gt;bundle install&lt;/code&gt;在你的机器上还是报错，要看报错信息，缺啥装啥。&lt;/p&gt;
-
-&lt;p&gt;运行下述指令，检验（我自己做的时候遇到了一个很奇怪的问题&lt;code&gt;jekyll 3.8.5 | Error: Operation not permitted @ apply2files&lt;/code&gt;，重开 WSL 终端就好了）：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;bundle exec jekyll s
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;由于我的博客已经达到了三百篇以上，在本地生成网页的速度有些慢，在我的机器上要跑三分钟（关掉配置项中的侧边栏总字数统计就快了，可达 25s）。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;    Server address: http://127.0.0.1:4000/
-  Server running... press ctrl-c to stop.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;看到如上内容时就成功了，本地访问&lt;a href=&quot;http://127.0.0.1:4000/&quot;&gt;http://127.0.0.1:4000/&lt;/a&gt;即可查看效果。&lt;/p&gt;
-
-&lt;h3 id=&quot;定制&quot;&gt;定制&lt;/h3&gt;
-
-&lt;p&gt;我把博客实现的的插件基本上都封装起来了，可以直接在浏览器按 F12 查看我是怎么引入的。如果你想增加新的渲染规则，可以新建&lt;code&gt;_layouts&lt;/code&gt;目录，将你自己的渲染规则放进去，见&lt;a href=&quot;http://jekyllcn.com/docs/structure/&quot;&gt;目录结构 -Jekyll&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h4 id=&quot;加入-live2d-看板娘&quot;&gt;加入 Live2D 看板娘&lt;/h4&gt;
-
-&lt;p&gt;参考了：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.fghrsh.net/post/123.html&quot;&gt;网页添加 Live2D 看板娘&lt;/a&gt;。&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://zhangshuqiao.org/2018-07/%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%E6%B7%BB%E5%8A%A0Live2D%E7%9C%8B%E6%9D%BF%E5%A8%98&quot;&gt;在网页中添加 Live2D 看板娘&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://paugram.com/coding/add-poster-girl-with-plugin.html&quot;&gt;给你的博客增加动态看板娘&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;由于 live2d 的协议是 GPL，这里我不把它的源码拷贝到自己的博客项目了，直接用链接引入。在 html 的任意位置，或是我博客对应的&lt;code&gt;append&lt;/code&gt;选项下插入下述 html 代码：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;link
-  rel=&quot;stylesheet&quot;
-  href=&quot;https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css&quot;
-/&amp;gt;
-&amp;lt;script
-  defer=&quot;defer&quot;
-  src=&quot;https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js&quot;
-&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script
-  defer=&quot;defer&quot;
-  src=&quot;https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.js&quot;
-  onload=&apos;
-    if (screen.width &amp;gt; screen.height)
-    {
-      let pio_container = document.createElement(&quot;div&quot;);
-      pio_container.classList.add(&quot;pio-container&quot;);
-      pio_container.classList.add(&quot;right&quot;);
-      document.body.insertAdjacentElement(&quot;beforeend&quot;, pio_container);
-      let pio_action = document.createElement(&quot;div&quot;);
-      pio_action.classList.add(&quot;pio-action&quot;);
-      pio_container.insertAdjacentElement(&quot;beforeend&quot;, pio_action);
-      let pio_canvas = document.createElement(&quot;canvas&quot;);
-      pio_canvas.id = &quot;pio&quot;;
-      pio_canvas.style.width = &quot;14rem&quot;;
-      pio_canvas.width = &quot;600&quot;;
-      pio_canvas.height = &quot;800&quot;;
-      pio_container.insertAdjacentElement(&quot;beforeend&quot;, pio_canvas);
-      let pio = new Paul_Pio({
-        &quot;mode&quot;: &quot;draggable&quot;,
-        &quot;hidden&quot;: true,
-        &quot;content&quot;: {
-          &quot;skin&quot;: [&quot;要换成我的朋友吗？&quot;, &quot;让她放个假吧~&quot;],
-          &quot;custom&quot;: [{
-            &quot;selector&quot;: &quot;a&quot;,
-            &quot;type&quot;: &quot;link&quot;,
-          }, {
-            &quot;selector&quot;: &quot;.sidebar-toggle&quot;,
-            &quot;text&quot;: &quot;打开侧边栏叭~&quot;
-          }, {
-            &quot;selector&quot;: &quot;.effect-info&quot;,
-            &quot;text&quot;: &quot;哇，你发现了什么！&quot;
-          }, {
-            &quot;selector&quot;: &quot;#sidebar-search-input&quot;,
-            &quot;text&quot;: &quot;想搜索什么呢？很多干货哦！&quot;
-          }, {
-            &quot;selector&quot;: &quot;#toc&quot;,
-            &quot;text&quot;: &quot;这是目录~&quot;
-          }, {
-            &quot;selector&quot;: &quot;.page-title&quot;,
-            &quot;text&quot;: &quot;这是标题~&quot;
-          }, {
-            &quot;selector&quot;: &quot;.v&quot;,
-            &quot;text&quot;: &quot;评论没有审核，要对自己的发言负责哦~&quot;
-          }]
-        },
-        &quot;model&quot;: [
-          &quot;https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/33/model.2018.bls-winter.json&quot;,
-          &quot;https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/platelet-2/model.json&quot;,
-          &quot;https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/xiaomai/xiaomai.model.json&quot;,
-          &quot;https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/mashiro/seifuku.model.json&quot;,
-          &quot;https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/seele/model.json&quot;,
-          &quot;https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/Violet/14.json&quot;,
-          &quot;https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/Kobayaxi/Kobayaxi.model.json&quot;,
-          &quot;https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/mikoto/mikoto.model.json&quot;,
-          &quot;https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/uiharu/uiharu.model.json&quot;]
-      });
-    }&apos;
-&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;自定义参数见&lt;a href=&quot;https://github.com/Dreamer-Paul/Pio&quot;&gt;Dreamer-Paul/Pio&lt;/a&gt;，模型收集自&lt;a href=&quot;https://github.com/imuncle/live2d&quot;&gt;imuncle/live2d&lt;/a&gt;和&lt;a href=&quot;https://github.com/xiaoski/live2d_models_collection&quot;&gt;xiaoski/live2d_models_collection&lt;/a&gt;，。&lt;/p&gt;
-
-&lt;h4 id=&quot;katex&quot;&gt;$\KaTeX$&lt;/h4&gt;
-
-&lt;p&gt;参考：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/f2b28954d902&quot;&gt;使用 KaTeX 代替 MathJax 渲染公式&lt;/a&gt;。&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://katex.org/docs/autorender.html&quot;&gt;Auto-render Extension · Katex&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;link
-  rel=&quot;stylesheet&quot;
-  href=&quot;//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css&quot;
-/&amp;gt;
-&amp;lt;script
-  src=&quot;//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js&quot;
-  defer=&quot;defer&quot;
-&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script
-  src=&quot;//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js&quot;
-  defer=&quot;defer&quot;
-  onload=&apos;renderMathInElement(document.body, { delimiters: [{left: &quot;$$&quot;, right: &quot;$$&quot;, display: true}, { left: &quot;$&quot;, right: &quot;$&quot;, display: false }, {left: &quot;\\(&quot;, right: &quot;\\)&quot;, display: false}, {left: &quot;\\[&quot;, right: &quot;\\]&quot;, display: true}]})&apos;
-&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;不过这样仅能显示 $E=mc^2$ 这样的行间公式，行内公式是没有办法显示的（&lt;a href=&quot;https://github.com/wu-kan/wu-kan.github.io/issues/1&quot;&gt;issue&lt;/a&gt;）。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-tex&quot;&gt;$$
-E=mc^2
-$$
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;一种方法是引入 mathjax 进行渲染，但是这样做就失去了用 katex 的初心了。后来我发现 katex 有对应的插件可以解决这一问题。在上面代码后补充如下代码：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;script
-  src=&quot;//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/mathtex-script-type.min.js&quot;
-  defer=&quot;defer&quot;
-&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;效果如下。&lt;/p&gt;
-
-\[E=mc^2\]
-
-&lt;p&gt;可以在&lt;a href=&quot;https://katex.org/docs/libs.html&quot;&gt;这个页面&lt;/a&gt;查看一些别的插件，比如化学方程式的插件等等，都是可以引入的。&lt;/p&gt;
-
-&lt;h4 id=&quot;mermaid-图&quot;&gt;mermaid 图&lt;/h4&gt;
-
-&lt;p&gt;我希望自己能按照 markdown 代码块扩展的规则来写 mermaid 流程图：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;```mermaid
-sequenceDiagram
-Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&amp;gt;&amp;gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&amp;gt;&amp;gt;Alice: Great!
-John-&amp;gt;&amp;gt;Bob: How about you?
-Bob--&amp;gt;&amp;gt;John: Jolly good!
-```
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;其效果如下。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;sequenceDiagram
-Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&amp;gt;&amp;gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&amp;gt;&amp;gt;Alice: Great!
-John-&amp;gt;&amp;gt;Bob: How about you?
-Bob--&amp;gt;&amp;gt;John: Jolly good!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;因此需要插入如下内容（将代码块隐藏，并在原位置插入 mermaid 图）：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;style&amp;gt;
-  pre.language-mermaid,
-  code.language-mermaid {
-    display: none;
-  }
-&amp;lt;/style&amp;gt;
-&amp;lt;script
-  src=&quot;https://cdn.jsdelivr.net/npm/mermaid@8.7.0/dist/mermaid.min.js&quot;
-  defer=&quot;defer&quot;
-  onload=&apos;
-    for(let x of document.getElementsByClassName(&quot;language-mermaid&quot;))
-      if(x.nodeName==&quot;CODE&quot;)
-      {
-        let m = document.createElement(&quot;div&quot;);
-        m.classList.add(&quot;mermaid&quot;);
-        m.textContent = x.textContent;
-        x.parentNode.insertAdjacentElement(&quot;beforebegin&quot;, m);
-      }&apos;
-&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&quot;prism-代码高亮&quot;&gt;prism 代码高亮&lt;/h4&gt;
-
-&lt;p&gt;默认的代码高亮器&lt;code&gt;rouge&lt;/code&gt;渲染出来的效果一般，同时代码行号效果非常差。这里使用了 prismjs 来进行代码渲染。它的好处是模块化程度非常高，且支持自定义插件。&lt;/p&gt;
-
-&lt;p&gt;这里我引入了四个插件（代码行号、动态代码高亮、工具栏、括号匹配，且自己写了一个选中全部代码的按钮）作为例子，也可以像我一样自己定制。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;link
-  rel=&quot;stylesheet&quot;
-  href=&quot;https://cdn.jsdelivr.net/combine/npm/prismjs@1.21.0/plugins/line-numbers/prism-line-numbers.min.css,npm/prismjs@1.21.0/plugins/toolbar/prism-toolbar.min.css,npm/prismjs@1.21.0/plugins/match-braces/prism-match-braces.min.css,npm/prism-themes@1.4.0/themes/prism-nord.min.css&quot;
-/&amp;gt;
-&amp;lt;script
-  src=&quot;https://cdn.jsdelivr.net/combine/npm/prismjs@1.21.0/components/prism-core.min.js,npm/prismjs@1.21.0/plugins/autoloader/prism-autoloader.min.js,npm/prismjs@1.21.0/plugins/line-numbers/prism-line-numbers.min.js,npm/prismjs@1.21.0/plugins/toolbar/prism-toolbar.min.js,npm/prismjs@1.21.0/plugins/match-braces/prism-match-braces.min.js&quot;
-  async=&quot;async&quot;
-  data-autoloader-path=&quot;https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/&quot;
-  onload=&apos;
-    document.body.classList.add(&quot;line-numbers&quot;,&quot;match-braces&quot;);
-    Prism.plugins.toolbar.registerButton(&quot;select-code&quot;, function (env) {
-      let button = document.createElement(&quot;button&quot;);
-      button.textContent = &quot;select this &quot; + env.language;
-      button.addEventListener(&quot;click&quot;, function () {
-        if (document.body.createTextRange) {
-          let range = document.body.createTextRange();
-          range.moveToElementText(env.element);
-          range.select();
-        } else if (window.getSelection) {
-          let selection = window.getSelection();
-          let range = document.createRange();
-          range.selectNodeContents(env.element);
-          selection.removeAllRanges();
-          selection.addRange(range);
-        }
-      });
-      return button;
-    })&apos;
-&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&quot;评论系统&quot;&gt;评论系统&lt;/h4&gt;
-
-&lt;p&gt;配置详见&lt;a href=&quot;https://utteranc.es/&quot;&gt;https://utteranc.es/&lt;/a&gt;。请使用你自己的 repo！&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;script
-  repo=&quot;wu-kan/utterances-storage&quot;
-  src=&quot;https://utteranc.es/client.js&quot;
-  issue-term=&quot;url&quot;
-  theme=&quot;github-light&quot;
-  crossorigin=&quot;anonymous&quot;
-  async=&quot;async&quot;
-&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;下一步计划&quot;&gt;下一步计划&lt;/h2&gt;
-
-&lt;p&gt;详细的开发计划及建站内容详见&lt;a href=&quot;https://jekyll-theme-WuK.wu-kan.cn/&quot;&gt;主题详情页&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;从&lt;a href=&quot;https://magical-girl.site/&quot;&gt;这个页面&lt;/a&gt;得到的灵感，目标是博客上除了文章和作为导航的 Live2D 之外不出现其他的模块，尽量的干净、快速。&lt;/p&gt;
-
-&lt;h2 id=&quot;参考资料&quot;&gt;参考资料&lt;/h2&gt;
-
-&lt;p&gt;大部分的参考链接已在原文给出，同时搭建本博客的过程中还参考了以下内容，感谢作者们：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/9f198d5779e6&quot;&gt;Jekyll + Github Pages 博客搭建入门&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/ds19991999/article/details/81516568&quot;&gt;Jekyll 博客 Next 主题超深度配置&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/bb184f61c9ae&quot;&gt;【应用软件】Jekyll 配置&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="博客搭建" /><summary type="html">最开始我是在CSDN上写博客的。博客写了一年多，访问量勉强破万，感觉其中至少有三成是自己贡献的。而且 CSDN 上的广告是越来越多，网页编辑器也是越来越不好用。</summary></entry></feed>
+&lt;p&gt;（完）&lt;/p&gt;</content><author><name></name></author><category term="博客搭建" /><summary type="html">一年前我转投 Github Pages，开始了自己的新博客生活（详见一年前的一篇博客。由于 github page 原生支持 jekyll，在部署博客方面比较省心，我们只需要专注自己的博客内容即可。</summary></entry></feed>
