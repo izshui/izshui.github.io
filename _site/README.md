@@ -6,18 +6,29 @@
 
 <!-- .slide -->
 
-## 个人介绍
+## 网站介绍
 
-- 地址
-  - 中国香港九龙区
+- 主题
+  - 人生活不只靠饼，而也靠天主口中所发的一切言语。——玛4:4
 - 主页
   - **<https://izshui.github.io>**
-- [Resume](https://izshui.github.io/resume/resume.pdf)
+
+<!-- .slide -->
+
+### 培尼尔神父弥撒讲道分享
+
+- [2022年04月份弥撒讲道分享](https://izshui.github.io/2122/04/01/%E5%9F%B9%E5%B0%BC%E5%B0%94%E7%A5%9E%E7%88%B622%E5%B9%B404%E6%9C%88%E4%BB%BD%E5%BC%A5%E6%92%92%E8%AE%B2%E9%81%93%E5%88%86%E4%BA%AB/)
+- [2022年03月份弥撒讲道分享](https://izshui.github.io/2122/03/01/%E5%9F%B9%E5%B0%BC%E5%B0%94%E7%A5%9E%E7%88%B622%E5%B9%B403%E6%9C%88%E4%BB%BD%E5%BC%A5%E6%92%92%E8%AE%B2%E9%81%93%E5%88%86%E4%BA%AB/)
+- [2022年02月份弥撒讲道分享](https://izshui.github.io/2122/02/01/%E5%9F%B9%E5%B0%BC%E5%B0%94%E7%A5%9E%E7%88%B622%E5%B9%B402%E6%9C%88%E4%BB%BD%E5%BC%A5%E6%92%92%E8%AE%B2%E9%81%93%E5%88%86%E4%BA%AB/)
+- [2022年01月份弥撒讲道分享](https://izshui.github.io/2122/01/01/%E5%9F%B9%E5%B0%BC%E5%B0%94%E7%A5%9E%E7%88%B622%E5%B9%B401%E6%9C%88%E4%BB%BD%E5%BC%A5%E6%92%92%E8%AE%B2%E9%81%93%E5%88%86%E4%BA%AB/)
+- [2021年12月份弥撒讲道分享](https://izshui.github.io/2121/12/01/%E5%9F%B9%E5%B0%BC%E5%B0%94%E7%A5%9E%E7%88%B621%E5%B9%B412%E6%9C%88%E4%BB%BD%E5%BC%A5%E6%92%92%E8%AE%B2%E9%81%93%E5%88%86%E4%BA%AB/)
 
 <!-- .slide vertical=true -->
 
+## 联系方式
+
 - 手机
-  - **+86 17070670710**
+  - **+86 17531195109**
 - 微信
   - **Esauoo**
 - 邮箱
@@ -26,27 +37,7 @@
 
 <!-- .slide -->
 
-## 教育
-
-<!-- .slide vertical=true -->
-
-香港中文大学
-
-- 香港中文大学（The Chinese University of Hong Kong），简称港中大（CUHK），是一所亚洲顶尖、享誉国际的公立研究型综合大学，是环太平洋大学联盟、世界大学联盟、松联盟、中国大学校长联谊会成员，亚洲首家AACSB认证成员，香港互联网交换中心所在地。
-
-<!-- .slide -->
-
-## 项目
-
-<!-- .slide vertical=true -->
-
-- [jekyll-theme-WuK](https://jekyll-theme-WuK.wu-kan.cn/)[![Star](https://img.shields.io/github/stars/wu-kan/wu-kan.github.io.svg)](https://github.com/wu-kan/wu-kan.github.io)[![Fork](https://img.shields.io/github/forks/wu-kan/wu-kan.github.io.svg)](https://github.com/wu-kan/wu-kan.github.io/fork)
-  - A static blog system with content-first, sliding sidebar theme.
-  - Powered by Jekyll.
-
-<!-- .slide -->
-
-## 博客
+## 其他
 
 - [清晨祷词](https://izshui.github.io/2021/11/19/%E6%B8%85%E6%99%A8%E7%A5%B7%E8%AF%8D/)
 - [晚祷词](https://izshui.github.io/2021/11/19/%E6%99%9A%E7%A5%B7%E8%AF%8D/)
@@ -55,17 +46,3 @@
 <!-- .slide vertical=true -->
 
 - [基于 Jekyll 搭建个人博客](https://izshui.github.io/2020/07/07/%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)
-- [我的算法竞赛模板](https://wu-kan.cn/2019/02/04/%E6%88%91%E7%9A%84%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E6%A8%A1%E6%9D%BF/)
-- [这一年的一点感想](https://wu-kan.cn/2019/07/18/%E8%BF%99%E4%B8%80%E5%B9%B4%E7%9A%84%E4%B8%80%E7%82%B9%E6%84%9F%E6%83%B3/)
-
-<!-- .slide -->
-
-## 工具链
-
-<!-- .slide vertical=true -->
-
-- **C/C++**, Familiar
-  - **CUDA/HIP/ROCm**, Familiar&Learning
-  - **MPI**, Familiar
-  - **OpenMP**, Familiar
-- **Python**, Familiar
