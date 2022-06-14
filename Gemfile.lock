@@ -208,6 +208,8 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     multi_json (1.15.0)
+    nokogiri (1.13.6-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.6-x86_64-darwin)
       racc (~> 1.4)
     octokit (4.23.0)
@@ -251,6 +253,7 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
+  universal-darwin-21
   x86_64-darwin-19
 
 DEPENDENCIES
@@ -261,4 +264,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.3.11
+   2.3.15
