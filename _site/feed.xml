@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-10-12T09:56:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Manna</title><subtitle>玛纳之粮&lt;br/&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-10-24T15:05:14+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Manna</title><subtitle>玛纳之粮&lt;br/&gt;
 拓跋煜&lt;br/&gt;
 天主是爱&lt;br/&gt;
 &lt;a href=&quot;mailto:jhonguo@126.com&quot;&gt;
@@ -30,7 +30,80 @@
   &lt;li&gt;&lt;a href=&quot;[培尼尔神父弥撒讲道分享 &amp;middot; Manna](https://izshui.github.io/2121/12/01/%E5%9F%B9%E5%B0%BC%E5%B0%94%E7%A5%9E%E7%88%B6%E5%BC%A5%E6%92%92%E8%AE%B2%E9%81%93%E5%88%86%E4%BA%AB/)&quot;&gt;更多其它月份讲道分享&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;主佑平安&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">在起初已有圣言，圣言与天主同在，圣言就是天主。圣言在起初就与天主同在。万物是藉着他而造成的；凡受造的，没有一样不是由他而造成的。在他内有生命，这生命是人的光。光在黑暗中照耀，黑暗决不能胜过他。——若1:1-5</summary></entry><entry><title type="html">2022年黑苹果硬件配置推荐表</title><link href="http://localhost:4000/2022/07/28/2022%E5%B9%B4%E9%BB%91%E8%8B%B9%E6%9E%9C%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE%E6%8E%A8%E8%8D%90%E8%A1%A8/" rel="alternate" type="text/html" title="2022年黑苹果硬件配置推荐表" /><published>2022-07-28T00:00:00+08:00</published><updated>2022-07-28T00:00:00+08:00</updated><id>http://localhost:4000/2022/07/28/2022%E5%B9%B4%E9%BB%91%E8%8B%B9%E6%9E%9C%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE%E6%8E%A8%E8%8D%90%E8%A1%A8</id><content type="html" xml:base="http://localhost:4000/2022/07/28/2022%E5%B9%B4%E9%BB%91%E8%8B%B9%E6%9E%9C%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE%E6%8E%A8%E8%8D%90%E8%A1%A8/">&lt;h4 id=&quot;前言&quot;&gt;前言&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;主佑平安&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">在起初已有圣言，圣言与天主同在，圣言就是天主。圣言在起初就与天主同在。万物是藉着他而造成的；凡受造的，没有一样不是由他而造成的。在他内有生命，这生命是人的光。光在黑暗中照耀，黑暗决不能胜过他。——若1:1-5</summary></entry><entry><title type="html">OpenCore Configurator版本对应关系</title><link href="http://localhost:4000/2022/10/24/OpenCore-Configurator%E7%89%88%E6%9C%AC%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB/" rel="alternate" type="text/html" title="OpenCore Configurator版本对应关系" /><published>2022-10-24T00:00:00+08:00</published><updated>2022-10-24T00:00:00+08:00</updated><id>http://localhost:4000/2022/10/24/OpenCore%20Configurator%E7%89%88%E6%9C%AC%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB</id><content type="html" xml:base="http://localhost:4000/2022/10/24/OpenCore-Configurator%E7%89%88%E6%9C%AC%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB/">&lt;h1 id=&quot;opencore-configurator版本对应关系&quot;&gt;OpenCore Configurator版本对应关系&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mackie100projects.altervista.org/download-opencore-configurator/&quot;&gt;OpenCore Configurator下载&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2022-09-07更新至2.62.1.0-适配0.8.4-09-06正式版与0.8.5-09-07编译版&lt;/li&gt;
+  &lt;li&gt;2022-08-12更新至2.62.0.0-适配0.8.3-08-01正式版与0.8.4-08-12编译版&lt;/li&gt;
+  &lt;li&gt;2022-06-15更新至2.61.2.0-适配0.8.2-07-05正式版与0.8.3-07-23编译版&lt;/li&gt;
+  &lt;li&gt;2022-06-11更新至2.61.1.0-适配0.8.1-06-06正式版与0.8.2-06-12编译版&lt;/li&gt;
+  &lt;li&gt;2022-06-06更新至2.61.0.0-适配0.8.0-04-19正式版与0.8.1-06-06正式版&lt;/li&gt;
+  &lt;li&gt;2022-04-27更新至2.60.0.1-适配0.8.0-04-19正式版与0.8.1-04-27编译版&lt;/li&gt;
+  &lt;li&gt;2022-04-19更新至2.60.0.0-适配0.8.0-04-19正式版与0.8.1-04-20编译版&lt;/li&gt;
+  &lt;li&gt;2022-03-27更新至2.59.0.0-适配0.7.9-03-08正式版与0.8.0-03-23编译版&lt;/li&gt;
+  &lt;li&gt;2022-03-03更新至2.58.0.0-适配0.7.8-02-08正式版与0.7.9-03-03编译版&lt;/li&gt;
+  &lt;li&gt;2022-02-13更新至2.57.0.0-适配0.7.8-02-08正式版与0.7.9-02-13编译版&lt;/li&gt;
+  &lt;li&gt;2022-01-14更新至2.56.0.0-适配0.7.7-01-11正式版与0.7.8-01-13编译版&lt;/li&gt;
+  &lt;li&gt;2022-01-03更新至2.55.0.0-适配0.7.6-12-07正式版与0.7.7-01-04编译版&lt;/li&gt;
+  &lt;li&gt;2021-12-10更新至2.54.1.0-适配0.7.6-12-07正式版与0.7.7-12-10编译版&lt;/li&gt;
+  &lt;li&gt;2021-12-06更新至2.54.0.0-适配0.7.5-11-02正式版与0.7.6-12-06编译版&lt;/li&gt;
+  &lt;li&gt;2021-11-08更新至2.53.0.0-适配0.7.5-11-02正式版与0.7.6-11-08编译版&lt;/li&gt;
+  &lt;li&gt;2021-10-29更新至2.52.0.1-适配0.7.4-10-05正式版与0.7.5-10-29编译版&lt;/li&gt;
+  &lt;li&gt;2021-10-15更新至2.52.0.0-适配0.7.4-10-05正式版与0.7.5-10-13编译版&lt;/li&gt;
+  &lt;li&gt;2021-10-07更新至2.51.0.0-适配0.7.4-10-05正式版与0.7.5-10-07编译版&lt;/li&gt;
+  &lt;li&gt;2021-09-23更新至2.50.0.0-适配0.7.3-09-07正式版与0.7.4-09-23编译版&lt;/li&gt;
+  &lt;li&gt;2021-09-15更新至2.49.0.2-适配0.7.3-09-07正式版与0.7.4-09-15编译版&lt;/li&gt;
+  &lt;li&gt;2021-09-13更新至2.49.0.1-适配0.7.3-09-07正式版与0.7.4-09-13编译版&lt;/li&gt;
+  &lt;li&gt;2021-09-11更新至2.49.0.0-适配0.7.3-09-07正式版与0.7.4-09-11编译版&lt;/li&gt;
+  &lt;li&gt;2021-08-19更新至2.48.1.0-适配0.7.2-08-03正式版与0.7.3-08-19编译版&lt;/li&gt;
+  &lt;li&gt;2021-08-05更新至2.48.0.0-适配0.7.2-08-03正式版与0.7.3-08-05编译版&lt;/li&gt;
+  &lt;li&gt;2021-07-22更新至2.47.1.0-适配0.7.1-07-06正式版与0.7.2-07-22编译版&lt;/li&gt;
+  &lt;li&gt;2021-07-18更新至2.47.0.0-适配0.7.1-07-06正式版与0.7.2-07-18编译版&lt;/li&gt;
+  &lt;li&gt;2021-07-12更新至2.46.1.0-适配0.7.1-07-06正式版与0.7.2-07-12编译版&lt;/li&gt;
+  &lt;li&gt;2021-07-08更新至2.46.0.0-适配0.7.1-07-06正式版与0.7.2-07-08编译版&lt;/li&gt;
+  &lt;li&gt;2021-06-24更新至2.45.0.0-适配0.7.0-06-08正式版与0.7.1-06-24编译版&lt;/li&gt;
+  &lt;li&gt;2021-06-12更新至2.44.0.0-适配0.7.0-06-08正式版与0.7.1-06-12编译版&lt;/li&gt;
+  &lt;li&gt;2021-06-10更新至2.43.0.0-适配0.7.0-06-08正式版与0.7.1-06-10编译版&lt;/li&gt;
+  &lt;li&gt;2021-06-05更新至2.42.0.0-适配0.6.9-05-04正式版与0.7.0-06-05编译版&lt;/li&gt;
+  &lt;li&gt;2021-06-01更新至2.41.0.0-适配0.6.9-05-04正式版与0.7.0-06-01编译版&lt;/li&gt;
+  &lt;li&gt;2021-05-28更新至2.40.0.1-适配0.6.9-05-04正式版与0.7.0-05-28编译版&lt;/li&gt;
+  &lt;li&gt;2021-05-26更新至2.40.0.0-适配0.6.9-05-04正式版与0.7.0-05-26编译版&lt;/li&gt;
+  &lt;li&gt;2021-05-22更新至2.39.0.0-适配0.6.9-05-04正式版与0.7.0-05-22编译版&lt;/li&gt;
+  &lt;li&gt;2021-05-20更新至2.38.0.0-适配0.6.9-05-04正式版与0.7.0-05-20编译版&lt;/li&gt;
+  &lt;li&gt;2021-05-14更新至2.37.0.0-适配0.6.9-05-04正式版与0.7.0-05-14编译版&lt;/li&gt;
+  &lt;li&gt;2021-05-06更新至2.36.1.0-适配0.6.9-05-04正式版与0.7.0-05-06编译版&lt;/li&gt;
+  &lt;li&gt;2021-05-05更新至2.36.0.0-适配0.6.9-05-04正式版与0.7.0编译版&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="黑苹果" /><summary type="html">OpenCore Configurator版本对应关系</summary></entry><entry><title type="html">黑苹果双系统时间不统一解决方案</title><link href="http://localhost:4000/2022/10/24/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4%E4%B8%8D%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" rel="alternate" type="text/html" title="黑苹果双系统时间不统一解决方案" /><published>2022-10-24T00:00:00+08:00</published><updated>2022-10-24T00:00:00+08:00</updated><id>http://localhost:4000/2022/10/24/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4%E4%B8%8D%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88</id><content type="html" xml:base="http://localhost:4000/2022/10/24/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4%E4%B8%8D%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">&lt;h1 id=&quot;黑苹果双系统时间不统一解决方案&quot;&gt;黑苹果双系统时间不统一解决方案&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;安装Windows/macOS 双系统后，双系统时间不同步。具体表现是，一旦进入过 macOS 系统，Windows 中的时间就会比实际时间慢8个小时（以国内为准）。问题的成因是Windows和macOS处理时间的方式不同：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Windows把系统硬件时间当作本地时间（Local Time），即操作系统中显示的时间和 BIOS 中显示的时间是一样的；&lt;/p&gt;
+
+&lt;p&gt;macOS 则把硬件时间当作 UTC，操作系统中显示的时间是硬件时间经过换算得来的，例如：假设 macOS 中设置了东八区时区，系统显示时间早上9:00，实际硬件储存时间就是UTC 1:00。这个时候重启进入 Windows，时间就变成了早上1:00。&lt;/p&gt;
+
+&lt;h2 id=&quot;解决办法&quot;&gt;解决办法&lt;/h2&gt;
+
+&lt;p&gt;第一种、window7用户开始-&amp;gt;运行-&amp;gt;输入CMD&lt;br /&gt;
+window8/10用户 WIN+x 选择管理员模式进入CMD&lt;br /&gt;
+输入下面命令并回车 代码:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后重启电脑，进入WIN后同步一下时间，OK。&lt;/p&gt;
+
+&lt;p&gt;第二种、在 macOS 下打开终端，执行以下命令：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo sh -c &quot;$(curl -kfsSL https://raw.githubusercontent.com/hieplpvip/LocalTime-Toggle/master/fix_time_osx.sh)&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注：该命令是从 GitHub 拉取一个 sh 脚本，因此需要能正常链接到 GitHub 的网络。&lt;/p&gt;</content><author><name></name></author><category term="黑苹果" /><summary type="html">黑苹果双系统时间不统一解决方案</summary></entry><entry><title type="html">2022年黑苹果硬件配置推荐表</title><link href="http://localhost:4000/2022/07/28/2022%E5%B9%B4%E9%BB%91%E8%8B%B9%E6%9E%9C%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE%E6%8E%A8%E8%8D%90%E8%A1%A8/" rel="alternate" type="text/html" title="2022年黑苹果硬件配置推荐表" /><published>2022-07-28T00:00:00+08:00</published><updated>2022-07-28T00:00:00+08:00</updated><id>http://localhost:4000/2022/07/28/2022%E5%B9%B4%E9%BB%91%E8%8B%B9%E6%9E%9C%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE%E6%8E%A8%E8%8D%90%E8%A1%A8</id><content type="html" xml:base="http://localhost:4000/2022/07/28/2022%E5%B9%B4%E9%BB%91%E8%8B%B9%E6%9E%9C%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE%E6%8E%A8%E8%8D%90%E8%A1%A8/">&lt;h4 id=&quot;前言&quot;&gt;前言&lt;/h4&gt;
 
 &lt;p&gt;本文最后更新：2022年 6 月 13 日&lt;/p&gt;
 
@@ -973,31 +1046,7 @@ hostname = *.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com
 
 &lt;p&gt;销售，为什么选择我们的产品，是因为信任我们，有了信任感事情才可行；&lt;/p&gt;
 
-&lt;p&gt;方案一般写两种，一种是高大上的，一&lt;strong&gt;种是性价比高的；&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="随笔" /><summary type="html">1、秘密吸引力法则</summary></entry><entry><title type="html">慈悲串经</title><link href="http://localhost:4000/2021/12/14/%E6%85%88%E6%82%B2%E4%B8%B2%E7%BB%8F/" rel="alternate" type="text/html" title="慈悲串经" /><published>2021-12-14T00:00:00+08:00</published><updated>2021-12-14T00:00:00+08:00</updated><id>http://localhost:4000/2021/12/14/%E6%85%88%E6%82%B2%E4%B8%B2%E7%BB%8F</id><content type="html" xml:base="http://localhost:4000/2021/12/14/%E6%85%88%E6%82%B2%E4%B8%B2%E7%BB%8F/">&lt;p&gt;▲划十字圣号，开始时念：&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;▲&lt;a href=&quot;http://www.ccwiki.cn/Knowledge/84.html&quot;&gt;天主经&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;我们的天父，愿祢的名受显扬，愿祢的国来临，愿祢的旨意奉行在人间，如同在天上。求祢今天赏给我们日用的食粮，求祢宽恕我们的罪过，如同我们宽恕别人一样，不要让我们陷于诱惑，但救我们免于凶恶。阿们&lt;/p&gt;
-
-&lt;p&gt;▲&lt;a href=&quot;http://www.ccwiki.cn/Prayer/1521.html&quot;&gt;圣母经&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;万福玛利亚，您充满圣宠！主与您同在。您在妇女中受赞颂，您的亲子耶稣同受赞颂。天主圣母玛利亚，求您现在和我们临终时，爲我们罪人祈求天主。阿们&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;▲信经&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;我信全能的天主父,天地万物的创造者。我信父的唯一子,我们的主耶稣基督。祂因圣神降孕,由童贞玛利亚诞生。祂在比拉多执政时蒙难,被钉在十字架上,死而安葬。祂下降阴府,第三日自死者中复活。祂升了天,坐在全能天主父的右边。祂要从天降下,审判生者死者。我信圣神。我信圣而公教会,诸圣的相通。罪过的赦免。肉身的复活。永恒的生命。阿们。&lt;/p&gt;
-
-&lt;p&gt;（在每粒大珠上念） （共五粒，念五遍）&lt;/p&gt;
-
-&lt;p&gt;“永生之父，我把你至爱之子，我们的主耶稣基督的圣体、圣血、灵魂及天主性奉献给你，以赔补我们及普世的罪过。”&lt;/p&gt;
-
-&lt;p&gt;（在每十粒小珠上念） （共念五十遍）&lt;/p&gt;
-
-&lt;p&gt;“因他的至悲惨苦难，求你垂怜我们及普世。”&lt;/p&gt;
-
-&lt;p&gt;（总结尾时念三次）：&lt;/p&gt;
-
-&lt;p&gt;“至圣天主，至圣强有力者，至圣常存者，求你垂怜我们及普世。”&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">▲划十字圣号，开始时念：</summary></entry><entry><title type="html">常用命令及脚本</title><link href="http://localhost:4000/2021/12/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC/" rel="alternate" type="text/html" title="常用命令及脚本" /><published>2021-12-14T00:00:00+08:00</published><updated>2021-12-14T00:00:00+08:00</updated><id>http://localhost:4000/2021/12/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC</id><content type="html" xml:base="http://localhost:4000/2021/12/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC/">&lt;h4 id=&quot;1火狐浏览器各版本下载地址&quot;&gt;1、火狐浏览器各版本下载地址&lt;/h4&gt;
+&lt;p&gt;方案一般写两种，一种是高大上的，一&lt;strong&gt;种是性价比高的；&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="随笔" /><summary type="html">1、秘密吸引力法则</summary></entry><entry><title type="html">常用命令及脚本</title><link href="http://localhost:4000/2021/12/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC/" rel="alternate" type="text/html" title="常用命令及脚本" /><published>2021-12-14T00:00:00+08:00</published><updated>2021-12-14T00:00:00+08:00</updated><id>http://localhost:4000/2021/12/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC</id><content type="html" xml:base="http://localhost:4000/2021/12/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC/">&lt;h4 id=&quot;1火狐浏览器各版本下载地址&quot;&gt;1、火狐浏览器各版本下载地址&lt;/h4&gt;
 
 &lt;p&gt;https://download-installer.cdn.mozilla.net/火狐浏览器各版本下载地址&lt;/p&gt;
 
@@ -1079,668 +1128,28 @@ killall Dock
 
 &lt;p&gt;/Users/⽤户名/Library/Application Support/Adobe/&lt;/p&gt;
 
-&lt;p&gt;找到 com.adobe.ARMDCHelper 并删除。&lt;/p&gt;</content><author><name></name></author><category term="技术文档" /><summary type="html">1、火狐浏览器各版本下载地址</summary></entry><entry><title type="html">要理问答（卷一）</title><link href="http://localhost:4000/2021/11/30/%E8%A6%81%E7%90%86%E9%97%AE%E7%AD%94-%E5%8D%B7%E4%B8%80/" rel="alternate" type="text/html" title="要理问答（卷一）" /><published>2021-11-30T00:00:00+08:00</published><updated>2021-11-30T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/30/%E8%A6%81%E7%90%86%E9%97%AE%E7%AD%94(%E5%8D%B7%E4%B8%80)</id><content type="html" xml:base="http://localhost:4000/2021/11/30/%E8%A6%81%E7%90%86%E9%97%AE%E7%AD%94-%E5%8D%B7%E4%B8%80/">&lt;p&gt;▲&lt;strong&gt;卷一  当信的道理&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;找到 com.adobe.ARMDCHelper 并删除。&lt;/p&gt;</content><author><name></name></author><category term="技术文档" /><summary type="html">1、火狐浏览器各版本下载地址</summary></entry><entry><title type="html">慈悲串经</title><link href="http://localhost:4000/2021/12/14/%E6%85%88%E6%82%B2%E4%B8%B2%E7%BB%8F/" rel="alternate" type="text/html" title="慈悲串经" /><published>2021-12-14T00:00:00+08:00</published><updated>2021-12-14T00:00:00+08:00</updated><id>http://localhost:4000/2021/12/14/%E6%85%88%E6%82%B2%E4%B8%B2%E7%BB%8F</id><content type="html" xml:base="http://localhost:4000/2021/12/14/%E6%85%88%E6%82%B2%E4%B8%B2%E7%BB%8F/">&lt;p&gt;▲划十字圣号，开始时念：&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;小引&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;▲&lt;a href=&quot;http://www.ccwiki.cn/Knowledge/84.html&quot;&gt;天主经&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;1 问 你为什么生在世上？&lt;/p&gt;
+&lt;p&gt;我们的天父，愿祢的名受显扬，愿祢的国来临，愿祢的旨意奉行在人间，如同在天上。求祢今天赏给我们日用的食粮，求祢宽恕我们的罪过，如同我们宽恕别人一样，不要让我们陷于诱惑，但救我们免于凶恶。阿们&lt;/p&gt;
 
-&lt;p&gt;答 为恭敬天主，救自己的灵魂。 (谷：捌，三六)&lt;/p&gt;
+&lt;p&gt;▲&lt;a href=&quot;http://www.ccwiki.cn/Prayer/1521.html&quot;&gt;圣母经&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;2 问 什么是恭敬天主？&lt;/p&gt;
+&lt;p&gt;万福玛利亚，您充满圣宠！主与您同在。您在妇女中受赞颂，您的亲子耶稣同受赞颂。天主圣母玛利亚，求您现在和我们临终时，爲我们罪人祈求天主。阿们&lt;/p&gt;
 
-&lt;p&gt;答 就是认识、爱慕、事奉天主。 (若：拾柒，三；谷：拾贰，三十：玛：柒，二一)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;▲信经&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;3 问 什么是救灵魂？&lt;/p&gt;
+&lt;p&gt;我信全能的天主父,天地万物的创造者。我信父的唯一子,我们的主耶稣基督。祂因圣神降孕,由童贞玛利亚诞生。祂在比拉多执政时蒙难,被钉在十字架上,死而安葬。祂下降阴府,第三日自死者中复活。祂升了天,坐在全能天主父的右边。祂要从天降下,审判生者死者。我信圣神。我信圣而公教会,诸圣的相通。罪过的赦免。肉身的复活。永恒的生命。阿们。&lt;/p&gt;
 
-&lt;p&gt;答 就是死后免下地狱，得升天堂。 (玛：拾捌，八 ─ 九)&lt;/p&gt;
+&lt;p&gt;（在每粒大珠上念） （共五粒，念五遍）&lt;/p&gt;
 
-&lt;p&gt;4 问 该什么样恭敬天主？&lt;/p&gt;
+&lt;p&gt;“永生之父，我把你至爱之子，我们的主耶稣基督的圣体、圣血、灵魂及天主性奉献给你，以赔补我们及普世的罪过。”&lt;/p&gt;
 
-&lt;p&gt;答 该奉天主所立的圣教，全信天主传示的道理，遵守又主所立的戒命，善用天主所定的得神恩的法子。 (玛：贰捌，十八 ─ 二十；路：拾，十六；希：拾壹，六)&lt;/p&gt;
+&lt;p&gt;（在每十粒小珠上念） （共念五十遍）&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;天主&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“因他的至悲惨苦难，求你垂怜我们及普世。”&lt;/p&gt;
 
-&lt;p&gt;5 问 你信天主吗？&lt;/p&gt;
+&lt;p&gt;（总结尾时念三次）：&lt;/p&gt;
 
-&lt;p&gt;答 信天主。&lt;/p&gt;
-
-&lt;p&gt;6 问 天主是谁？&lt;/p&gt;
-
-&lt;p&gt;答 造天地、造神人、造万物的真主宰。 (哥：壹，十六 ─ 十七)&lt;/p&gt;
-
-&lt;p&gt;7 问 天主是神不是神？&lt;/p&gt;
-
-&lt;p&gt;答 是无形无像的纯神。 (若：肆,二四)&lt;/p&gt;
-
-&lt;p&gt;8 问 天主是怎么样有的？&lt;/p&gt;
-
-&lt;p&gt;答 天主是无始无终,是自有的。 （默：壹，八；三，十四）&lt;/p&gt;
-
-&lt;p&gt;9 问　天主有什么美善福乐？&lt;/p&gt;
-
-&lt;p&gt;答 有万万美善，万万福乐。 （智：拾三，三）&lt;/p&gt;
-
-&lt;p&gt;10 问　天主在那里？&lt;/p&gt;
-
-&lt;p&gt;答　无所不在，处处都在。 （咏：壹三捌，七 ─ 十）&lt;/p&gt;
-
-&lt;p&gt;11 问　样样的事情，天主都知道么？&lt;/p&gt;
-
-&lt;p&gt;答　全知道：无论过去的，现在的，将来的事情，连人心里隐密的情念，天主都知道。 （德：肆贰，十九 ─ 二十；希：肆，十三）&lt;/p&gt;
-
-&lt;p&gt;12 问　天主有什么能？&lt;/p&gt;
-
-&lt;p&gt;答　有全能：天主愿意什么，一命就成。 （咏：壹三肆，六；路：壹，三七）&lt;/p&gt;
-
-&lt;p&gt;13 问　天主是全善的么？&lt;/p&gt;
-
-&lt;p&gt;答　是全善的：喜欢一总的善事，厌恶一总的恶事。 （肋：拾玖，一 ─ 二；咏：伍，五）&lt;/p&gt;
-
-&lt;p&gt;14 问　天主是至公义的么？&lt;/p&gt;
-
-&lt;p&gt;答　是至公义的：有善必赏，有恶必罚，不在生前，必在死后。 （多：三，二；玛：拾，四二）&lt;/p&gt;
-
-&lt;p&gt;15 问　天主是至仁慈的么？&lt;/p&gt;
-
-&lt;p&gt;答　是至仁慈的：凡真心侮过的罪人，天主都乐意宽赦。 （咏：壹零贰，八；路：拾伍）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;三位一体&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;16 问　天主有几个？&lt;/p&gt;
-
-&lt;p&gt;答　只有一个。 （谷：拾贰，二九；申：肆，三五）&lt;/p&gt;
-
-&lt;p&gt;17 问　一个天主包含有几位？&lt;/p&gt;
-
-&lt;p&gt;答　有三位。 （玛：贰捌，十九；若：拾肆，十六 ─ 十七）&lt;/p&gt;
-
-&lt;p&gt;18 问　三位叫什么名字？&lt;/p&gt;
-
-&lt;p&gt;答　第一位叫圣父，第二位叫圣子，第三位叫圣神。 （玛：贰捌，十九）&lt;/p&gt;
-
-&lt;p&gt;19 问　三位有大小先后的分别么？&lt;/p&gt;
-
-&lt;p&gt;答　无大无小，无先无后，三位共是一性、一体、一个天主。 （若：伍，十八；格前：三，十六）&lt;/p&gt;
-
-&lt;p&gt;20 问　这样三位就没有分别了么？&lt;/p&gt;
-
-&lt;p&gt;答　论体没有分别，论位各有分别。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;造成天地&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;21 问　怎么说天主造成​​天地呢？&lt;/p&gt;
-
-&lt;p&gt;答　因为天地万物，都是天主从无中一命就有的。 （创：壹，一 ─ 二七）&lt;/p&gt;
-
-&lt;p&gt;22 问　天主为什么造成天地万物呢？&lt;/p&gt;
-
-&lt;p&gt;答　为发显自己的光荣，又为相帮人恭敬天主，救灵魂。 （咏：拾捌，二；德：拾柒，七 ─ 八）&lt;/p&gt;
-
-&lt;p&gt;23 问　天主造了万物，还须天主保存么？&lt;/p&gt;
-
-&lt;p&gt;答　还须天主保存，顷刻不能间断。 （宗：拾柒，二八）&lt;/p&gt;
-
-&lt;p&gt;24 问　天主也掌握天地么？&lt;/p&gt;
-
-&lt;p&gt;答　不单天地，凡世间的万事万物，人类的生死祸福，都由天主掌管。 （玛：陆，二六 ─ 三十；伍，四五）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;天神&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;25 问　天主造的万物当中，什么是最尊贵的？&lt;/p&gt;
-
-&lt;p&gt;答　天神和世人是最尊贵的。 （哥：壹，十六 ─ 十七）&lt;/p&gt;
-
-&lt;p&gt;26 问　天神的本性是怎么样的？&lt;/p&gt;
-
-&lt;p&gt;答　是无形无像的，不死不灭的神体，聪明才华都是奇妙的。 （伯后：贰，十一；路：壹，十一）&lt;/p&gt;
-
-&lt;p&gt;27 问　天神受造后，立刻得了天堂么？&lt;/p&gt;
-
-&lt;p&gt;答　没有，天主愿意他们先立功劳，然后才赏他们升天堂。&lt;/p&gt;
-
-&lt;p&gt;28 问　一总的天神都立了功劳么？&lt;/p&gt;
-
-&lt;p&gt;答　没有，其中一部份生了骄傲，妄想同天主相比。 （伯后：贰，四）&lt;/p&gt;
-
-&lt;p&gt;29 问　天主怎么样罚了他们？&lt;/p&gt;
-
-&lt;p&gt;答　罚他们下了地狱，变成丑陋的魔鬼。 （犹：六）&lt;/p&gt;
-
-&lt;p&gt;30 问　立了功劳的天神得了什么赏？&lt;/p&gt;
-
-&lt;p&gt;答　得了天堂，常见天主，永享万福。 （玛：拾捌，十）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;护守天神&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;31 问　什么是护守天神？&lt;/p&gt;
-
-&lt;p&gt;答　是天主所派的天神，为保护世人灵魂肉身，一生不离。 （玛：拾捌，十；多：拾贰；希：壹，十四）&lt;/p&gt;
-
-&lt;p&gt;32 问　我们对于护守天神有什么本分？&lt;/p&gt;
-
-&lt;p&gt;答　该敬爱、感谢他，在危险的时候，该依靠、呼求他。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;原祖父母&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;33 问　谁是人类的原祖？&lt;/p&gt;
-
-&lt;p&gt;答　亚当、厄娃二人，是人类的原祖。 （创：贰，十八 ─ 二四）&lt;/p&gt;
-
-&lt;p&gt;34 问　天主怎么样造了原祖？&lt;/p&gt;
-
-&lt;p&gt;答　天主给他们造了一个肉身，又赋给他们一个灵魂。 （创：贰，七；壹，二七）&lt;/p&gt;
-
-&lt;p&gt;35 问　灵魂是什么？&lt;/p&gt;
-
-&lt;p&gt;答　是无形无像，不死不灭，与肉身给合的神体。 （训：拾贰，七；玛：拾，二八）&lt;/p&gt;
-
-&lt;p&gt;36 问　灵魂肉身那样尊重？&lt;/p&gt;
-
-&lt;p&gt;答　灵魂是天主的肖像，比肉身尊贵万倍，人既使得了天下的万福，也不可丧失灵魂。 （谷：捌，三六 ─ 三七）&lt;/p&gt;
-
-&lt;p&gt;37 问　天主赏了原祖什么另外的恩典？&lt;/p&gt;
-
-&lt;p&gt;答　赏了他们宠爱，得做天主的义子，安置他们在地堂里，私欲忧苦一概全无，长生不死，末后，灵魂肉身同升天堂。 （罗：伍，十九；伍，十二；创：三，十七 ─ 十九；三；七）&lt;/p&gt;
-
-&lt;p&gt;38 问　这些恩典，天主单赏了原祖二人么？&lt;/p&gt;
-
-&lt;p&gt;答　不单赏了原祖二人，也愿意他们传与后代子孙。&lt;/p&gt;
-
-&lt;p&gt;39 问　我们为什么没得这些恩典呢？&lt;/p&gt;
-
-&lt;p&gt;答　因为我们的原祖背违了天主的命，顺了魔鬼的诱感，吃了禁果，犯了大罪。 （创：贰，十六 ─ 十七；三；一 ─ 六）&lt;/p&gt;
-
-&lt;p&gt;40 问　什么是原罪？&lt;/p&gt;
-
-&lt;p&gt;答　就是原祖背天主命令的罪，遗留到我们身上，就叫原罪。 （罗：伍，十二 ─ 十九）&lt;/p&gt;
-
-&lt;p&gt;41 问　原罪有什么后果？&lt;/p&gt;
-
-&lt;p&gt;答　不仅原祖被天主赶出地堂，失了一切超性的恩典，而且我们一生到世上，就都没有天主的宠爱，并遭受私欲偏情，死亡痛苦，及别的一切祸患。 （创：三，十九，二三 ─ 二四；罗：伍，十二；创：捌，二一）&lt;/p&gt;
-
-&lt;p&gt;42 问　众人都染原罪么？&lt;/p&gt;
-
-&lt;p&gt;答　除了圣母以外，众人都染原罪。 （创：三，十五；罗：伍，十九）&lt;/p&gt;
-
-&lt;p&gt;43 问　天主见人受了原罪的害，没有发慈悲的心么？&lt;/p&gt;
-
-&lt;p&gt;答　大发了慈悲的心，当时就许下将来要救赎的人类，使人再得升天堂的盼望。 （创：三，十五）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;天主降生&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;44 问　天主怎么样来救赎人类？&lt;/p&gt;
-
-&lt;p&gt;答　天主第二位圣子降生成人。 （玛：壹，二十 ─ 二一；若：三，十六 ─ 十七）&lt;/p&gt;
-
-&lt;p&gt;45 问　「降生」二字有什么意思？&lt;/p&gt;
-
-&lt;p&gt;答　就是说：天主第二位取了人性，同自己的天主性给合，成了一位。 （路：壹，三十 ─ 三五：若：壹，十四；罗：玖，五）&lt;/p&gt;
-
-&lt;p&gt;46 问　天主降生了叫什么名字？&lt;/p&gt;
-
-&lt;p&gt;答　叫「耶稣」，解说救世者，又叫「基利斯督」或「基督」，解说品位至尊贵者。 （玛：壹，二五；路：壹，三一 ─ 三三）&lt;/p&gt;
-
-&lt;p&gt;47 问　耶稣是天主么？&lt;/p&gt;
-
-&lt;p&gt;答　是天主。 （玛：贰陆，六三 ─ 六四；谷：贰，三 ─ 十二；玛：拾贰，三九 ─ 四十）&lt;/p&gt;
-
-&lt;p&gt;48 问　耶稣是人么？&lt;/p&gt;
-
-&lt;p&gt;答　真是人。 （路：壹，三十 ─ 三二；斐：贰，七）&lt;/p&gt;
-
-&lt;p&gt;49 问　耶稣怎样是人？&lt;/p&gt;
-
-&lt;p&gt;答　有灵魂，又有肉身，故此是人。 （玛：贰陆，三八；若：肆，六 ─ 七；玛：肆，二；捌，二四）&lt;/p&gt;
-
-&lt;p&gt;50 问　耶稣是怎么样的天主？&lt;/p&gt;
-
-&lt;p&gt;答　有天主的本性本体，故此是真天主。 （哥：壹，十五 ─ 十七；希：壹，二 ─ 四）&lt;/p&gt;
-
-&lt;p&gt;51 问　耶稣是我等主么？&lt;/p&gt;
-
-&lt;p&gt;答　是我等主。&lt;/p&gt;
-
-&lt;p&gt;52 问　为什么是我等主？&lt;/p&gt;
-
-&lt;p&gt;答　因为耶稣是造成我们的天主，救赎我们的恩主，又是将来审判我们的大主。 （若：壹，三；哥，十四；玛：贰伍，三一 ─ 四六）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;圣母玛利亚卒世童贞&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;53 问　天主怎样降生？&lt;/p&gt;
-
-&lt;p&gt;答　拣选了童贞玛利亚为母降生。 （路：壹，二六 ─ 三八）&lt;/p&gt;
-
-&lt;p&gt;54 问　童贞女怎么样生耶稣呢？&lt;/p&gt;
-
-&lt;p&gt;答　因为天主圣神的全能，以圣母净血成胎，碍不着圣母的童贞。 （路：壹，二六 ─ 三八；玛：壹，十八 ─ 二五）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;耶稣的行实&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;55 问　耶稣在那里诞生？&lt;/p&gt;
-
-&lt;p&gt;答　在如德亚白冷郡，很贫寒的光景里诞生；因为耶稣愿意从一入世，就补赎我们的罪，又为叫人轻看世物。 （路：贰，一 ─ 七）&lt;/p&gt;
-
-&lt;p&gt;56 问　耶稣怎么过了幼年的时候？&lt;/p&gt;
-
-&lt;p&gt;答　隐居纳匝肋，听圣母圣约瑟的命，立孝顺勤劳的美表。 （路：贰，三九 ─ 四十，五一 ─ 五二）&lt;/p&gt;
-
-&lt;p&gt;57 问　耶稣过了三十岁，做些什么？&lt;/p&gt;
-
-&lt;p&gt;答　出外传教，讲了天国的道理，立了各样德行的表样，又显示了许多圣迹，证明自己是天主圣子，是天主预许的救世者。 （路：三，二三）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;耶稣苦难&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;58 问　耶稣怎么样救赎了众人的罪？&lt;/p&gt;
-
-&lt;p&gt;答　甘心受苦受难，被钉十字架上死。 （玛：贰柒，三三 ─ 五十；铎：贰，十四）&lt;/p&gt;
-
-&lt;p&gt;59 问　无始无终的天主，怎么能受苦受难呢？&lt;/p&gt;
-
-&lt;p&gt;答　因为耶稣不仅有天主性，也有人性，故此能受苦受难。 （玛：贰陆，三八；若：肆，六；玛：肆，二；捌，二四）&lt;/p&gt;
-
-&lt;p&gt;60 问　耶稣死后，肉身埋葬了没有？&lt;/p&gt;
-
-&lt;p&gt;答　埋葬了。 （玛：贰柒，五七 ─ 六十）&lt;/p&gt;
-
-&lt;p&gt;61 问　耶稣死后，祂的圣灵魂往那里去？&lt;/p&gt;
-
-&lt;p&gt;答　往古圣所里去了。 （伯前：三，十八 ─ 十九；路：贰三，四三）&lt;/p&gt;
-
-&lt;p&gt;62 问　去那里做什么？&lt;/p&gt;
-
-&lt;p&gt;答　救古圣人的灵魂。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;耶稣复活升天&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;63 问　耶稣死后，复活了没有？&lt;/p&gt;
-
-&lt;p&gt;答　死后第三日，从死者之中，自己复活了。 （谷：拾陆，六；路：玖，二一 ─ 二二）&lt;/p&gt;
-
-&lt;p&gt;64 问　耶稣升天了没有？&lt;/p&gt;
-
-&lt;p&gt;答　复活后第四十日升天，坐在天主圣父的右边。 （路：贰肆，五十 ─ 五一；宗：壹，三 ─ 九）&lt;/p&gt;
-
-&lt;p&gt;65 问　坐在天主圣父的右边，是什么意思？&lt;/p&gt;
-
-&lt;p&gt;答　是表明耶稣升天后，同天主圣父一样尊荣，安享永福。 （玛：贰捌，十八；若：伍，二六 ─ 二七；拾捌，三七）&lt;/p&gt;
-
-&lt;p&gt;66 问　耶稣升天后，就不在世上了么？&lt;/p&gt;
-
-&lt;p&gt;答　耶稣论天主性，无所不在；论人性，也在天，也在圣体内。&lt;/p&gt;
-
-&lt;p&gt;67 问　耶稣升天去了，还来不来？&lt;/p&gt;
-
-&lt;p&gt;答　日后世界穷尽，还从天上降来。 （玛：贰肆，三十）&lt;/p&gt;
-
-&lt;p&gt;68 问　降来做什么？&lt;/p&gt;
-
-&lt;p&gt;答　审判生者死者。 （玛：拾陆，二七；若：伍，二二；宗：拾，四二）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;圣神降临&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;69 问　耶稣升天的时候，许了门徙们什么大恩？&lt;/p&gt;
-
-&lt;p&gt;答　许下圣神降临。 （宗：壹，四 ─ 五）&lt;/p&gt;
-
-&lt;p&gt;70 问　圣神是谁？&lt;/p&gt;
-
-&lt;p&gt;答　是天主第三位，圣父圣子从无始共发的，同圣父圣子是一性一体的真天主。 （若：拾伍，二六；三，五）&lt;/p&gt;
-
-&lt;p&gt;71 问　天主圣神什么时候显然降临了？&lt;/p&gt;
-
-&lt;p&gt;答　耶稣升天后第十日，天主圣神借猛风的声，火舌的形，显然降临了。 （宗：贰，一 ─ 四）&lt;/p&gt;
-
-&lt;p&gt;72 问　圣神降临的时候，赏了门徙们什么的恩典？&lt;/p&gt;
-
-&lt;p&gt;答　坚固宗徙们的心，赏了他们富裕的恩宠，使能宣布耶稣的道理，传扬圣教于普世。 （宗：贰，十四）&lt;/p&gt;
-
-&lt;p&gt;73 问　天主圣神也在信友的心中么？&lt;/p&gt;
-
-&lt;p&gt;答　也在信友的心中，赏赐圣宠与恩典，光照明悟，感动爱欲，使凝欣勤修德，勉励成圣，将来得永远的真福。 （若：拾肆，十六 ─ 十七；格前：三，十六；铎：三，四 ─ 七）&lt;/p&gt;
-
-&lt;p&gt;74 问　圣神在圣教会内，施行什么德能？&lt;/p&gt;
-
-&lt;p&gt;答　圣神如同圣教会的灵魂，与她亲密给合，使她生活，指引她在真理及圣德道路上前进，永无错误。 （若：拾陆，十三 ─ 十四）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;圣教会&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;75 问　圣教会是什么？&lt;/p&gt;
-
-&lt;p&gt;答　是吾主耶稣亲自立的，普天下奉教人共成一会，​​犹如一身。 （玛：拾陆，十八 ─ 二十；若：拾，十四 ─ 十六；格前：拾贰，十二 ─ 二七）&lt;/p&gt;
-
-&lt;p&gt;76 问　耶稣为什么创立圣教会呢？&lt;/p&gt;
-
-&lt;p&gt;答　为使圣教会继续办理耶稣在世时所作的工程，并将救赎的功效，分给普世万民，直至世界穷尽。 （玛：贰捌，十八 ─ 二十）&lt;/p&gt;
-
-&lt;p&gt;77 问　圣教会与别的会有什么分别？&lt;/p&gt;
-
-&lt;p&gt;答　圣教会是至一、至圣、至公、从宗徙传下来的，与别的会大有分别。 （弗：肆，四─ 六；若：贰壹，十五─ 十七；铎：贰，十三─ 十四；谷：拾陆，十五─ 十六；玛：拾陆，十八─ 十九）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;圣教会的统制&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;78 问　谁是圣教会的元首？&lt;/p&gt;
-
-&lt;p&gt;答　现在看不见的，是天主耶稣；看得见的，是接圣伯多禄位的教宗。 （玛：贰捌，二十；贰壹，十五 ─ 十七）&lt;/p&gt;
-
-&lt;p&gt;79 问　耶稣付给了圣教会什么权柄？&lt;/p&gt;
-
-&lt;p&gt;答　付给了教训万民，管理教友，行圣事献圣祭，三样权柄。 （谷：拾陆，十五；路：拾，十六；若：贰拾，二一 ─ 二三；路：贰贰，十九）&lt;/p&gt;
-
-&lt;p&gt;80 问　教宗训导教友的时候，能错不能错？&lt;/p&gt;
-
-&lt;p&gt;答　教宗若用自己为圣教首领的权柄，教训天下的教友，论断当信的道理，当守的规矩，万不能错。&lt;/p&gt;
-
-&lt;p&gt;81 问　为什么不能错？&lt;/p&gt;
-
-&lt;p&gt;答　因为是耶稣自许的，天主圣神又常保护默佑。 （路：贰贰，三一 ─ 三二；玛：拾陆，十八）&lt;/p&gt;
-
-&lt;p&gt;82 问　圣教会各级的人，彼此有什么本分？&lt;/p&gt;
-
-&lt;p&gt;答　教友该听神父的教训，神父该听主教的教训，主教该听教宗的教训，这样彼此连合，按吾主耶稣的话，同归一栈，共属一牧。 （若：拾，十六）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;诸圣相通功&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;83 问　圣教中人，能彼此相通功么？&lt;/p&gt;
-
-&lt;p&gt;答　能彼此相通功：我若行了善工，别人也有份儿，；若别人行了善工，也有我的份儿。 （弗：贰，十八，一二二；弟前：贰，一 ─ 二；雅：伍，十六）&lt;/p&gt;
-
-&lt;p&gt;84 问　犯了大罪的人，还能全相通功么？&lt;/p&gt;
-
-&lt;p&gt;答　不能全相通功：若妥当告解了，或发了上等痛悔，又能全相通功。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;圣教会有赦罪的权柄&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;85 问　圣教会有赦罪的权柄么？&lt;/p&gt;
-
-&lt;p&gt;答　有赦罪的权柄。 （若：贰拾，二一 ─ 二三）&lt;/p&gt;
-
-&lt;p&gt;86 问　在什么时候赦人的罪？&lt;/p&gt;
-
-&lt;p&gt;答　一在授洗的时候，一在解罪的时候。&lt;/p&gt;
-
-&lt;p&gt;87 问　圣教会以外，别的教会也有赦罪的权柄么？&lt;/p&gt;
-
-&lt;p&gt;答　没有，因为天主耶稣，把赦罪的权柄，只交了自己立的圣教会。 （玛：拾柒，十八 ─ 十九）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;万民四末&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;88 问　什么是万民四末？&lt;/p&gt;
-
-&lt;p&gt;答　就是死亡、审判、天堂、地狱。&lt;/p&gt;
-
-&lt;p&gt;89 问　常想万民四末，有什么好处？&lt;/p&gt;
-
-&lt;p&gt;答　能警醒自己，躲避罪过。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;私审判&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;90 问　审判有几条？&lt;/p&gt;
-
-&lt;p&gt;答　有两样：就是私审判，公审判。&lt;/p&gt;
-
-&lt;p&gt;91 问　什么是私审判呢？&lt;/p&gt;
-
-&lt;p&gt;答　人的灵魂一离了肉身，就独自到了天主台前，听审判，有功的受赏，有罪的受罚。 （德：拾壹，二八 ─ 二九；希：玖，二七；格后：伍，八 ─ 十）&lt;/p&gt;
-
-&lt;p&gt;92 问　私审判以后，灵魂往那里去？&lt;/p&gt;
-
-&lt;p&gt;答　有大罪的下地狱；有宠爱，又没有小罪和罪罚的升天堂；有宠爱，尚有小罪或罪罚的下炼狱。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;肉身复活&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;93 问　肉身死了还复活么？&lt;/p&gt;
-
-&lt;p&gt;答　天地终穷的时候，死过的众人，一齐复活。 （格前：拾伍，五一 ─ 五三）&lt;/p&gt;
-
-&lt;p&gt;94 问　善人的肉身复活后，得什么恩典？&lt;/p&gt;
-
-&lt;p&gt;答　得四大奇恩：就是神光、神速、神透、神健。 （格前：拾伍，四二 ─ 四四）&lt;/p&gt;
-
-&lt;p&gt;95 问　恶人的肉身复活后是什么情形？&lt;/p&gt;
-
-&lt;p&gt;答　同善人大不一样，十分丑陋，十分污秽。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;公审判&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;96 问　后活起来的人往那里去？&lt;/p&gt;
-
-&lt;p&gt;答　都到天主台前听公审判。&lt;/p&gt;
-
-&lt;p&gt;97 问　什么是公审判呢？&lt;/p&gt;
-
-&lt;p&gt;答　天主耶稣在众人面前，审判各人的善工罪过：善者灵魂肉身同升天堂，享无穷之乐；恶者灵魂肉身同下地狱，受无穷之苦。 （玛：贰伍，三一 ─ 四六）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;天　堂&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;98 问　天堂是什么？&lt;/p&gt;
-
-&lt;p&gt;答　是天主和天神圣人永远享福的所在。 （玛：贰伍，三四）&lt;/p&gt;
-
-&lt;p&gt;99 问　善人在天堂上，享什么福乐？&lt;/p&gt;
-
-&lt;p&gt;答　善人在天堂享见天主，同吾主耶稣、童贞圣母玛利亚、及一切天神圣人，永享万福万乐，再无丝毫困苦，畏惧扰乱。 （格前：拾三，十二 ─ 十三；贰，九）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;地　狱&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;100 问　地狱是什么？&lt;/p&gt;
-
-&lt;p&gt;答　是魔鬼及恶人永远受苦的所在。 （玛：贰伍，四一；得后：壹，八 ─ 九）&lt;/p&gt;
-
-&lt;p&gt;101 问　恶人在地狱里受什么苦？&lt;/p&gt;
-
-&lt;p&gt;答　恶人在地狱里永远不能见天主；同魔鬼一齐受烈火及别的各样痛苦。 （玛：贰伍，四一；谷：玖，四五 ─ 四八；路：拾三，二八）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;炼　狱&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;102 问　炼狱是什么？&lt;/p&gt;
-
-&lt;p&gt;答　是人死后，炼净灵魂，做补赎受暂罚的所在。 （加下：拾贰，三九 ─ 四六；玛：拾贰，三二；格前：三，十 ─ 十五）&lt;/p&gt;
-
-&lt;p&gt;103 问　炼狱里有什么苦？&lt;/p&gt;
-
-&lt;p&gt;答　就是暂时不得见天主的圣容，不得享天堂的福乐以外，灵魂还得受别的苦。&lt;/p&gt;
-
-&lt;p&gt;104 问　炼狱灵魂什么时候可以出来？&lt;/p&gt;
-
-&lt;p&gt;答　罪罚补赎完了，就可以出来。&lt;/p&gt;
-
-&lt;p&gt;105 问　我们也能救助炼灵么？&lt;/p&gt;
-
-&lt;p&gt;答　定能救助，这是圣教会历代所讲的道理。&lt;/p&gt;
-
-&lt;p&gt;106 问　我们也该救助炼灵么？&lt;/p&gt;
-
-&lt;p&gt;答　自然该当，因为炼灵受苦，不能自救，他们又是天主可爱的儿女，是我们理当亲爱的。&lt;/p&gt;
-
-&lt;p&gt;107 问　我们能怎么救助炼狱灵魂呢？&lt;/p&gt;
-
-&lt;p&gt;答　能为他们祈祷、行哀矜、献弥撒、得恩赦、或行别的善工。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://izshui.github.io/2021/11/30/%E8%A6%81%E7%90%86%E9%97%AE%E7%AD%94-%E5%8D%B7%E4%BA%8C/&quot;&gt;要理问答（卷二）&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">▲卷一  当信的道理</summary></entry><entry><title type="html">要理问答（附录）</title><link href="http://localhost:4000/2021/11/30/%E8%A6%81%E7%90%86%E9%97%AE%E7%AD%94-%E9%99%84%E5%BD%95/" rel="alternate" type="text/html" title="要理问答（附录）" /><published>2021-11-30T00:00:00+08:00</published><updated>2021-11-30T00:00:00+08:00</updated><id>http://localhost:4000/2021/11/30/%E8%A6%81%E7%90%86%E9%97%AE%E7%AD%94(%E9%99%84%E5%BD%95)</id><content type="html" xml:base="http://localhost:4000/2021/11/30/%E8%A6%81%E7%90%86%E9%97%AE%E7%AD%94-%E9%99%84%E5%BD%95/">&lt;p&gt;▲&lt;strong&gt;要理问答  附录&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;告解规式&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;省察的要式&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;第一诫　不念经，做异端。&lt;/p&gt;
-
-&lt;p&gt;第二诫　骂天主，骂天，骂地。&lt;/p&gt;
-
-&lt;p&gt;第三诫　主日或当守瞻日上不望弥撒，或望的不完全，不停工。&lt;/p&gt;
-
-&lt;p&gt;第四诫　不听父母的命，不听长上的命，父母不叫儿女上学，不管是好儿女和佣人。&lt;/p&gt;
-
-&lt;p&gt;第五诫　打人，骂人，恨人，不肯和睦，立坏表样，吸大烟等。&lt;/p&gt;
-
-&lt;p&gt;第六诫　行邪淫的事，说邪淫的话。&lt;/p&gt;
-
-&lt;p&gt;第七诫　偷人家财物，买卖欺骗，壤人家的庄稼，拾的东西不还。&lt;/p&gt;
-
-&lt;p&gt;第八诫　说谎，冤枉人，毁谤人。&lt;/p&gt;
-
-&lt;p&gt;第九诫　想邪淫，愿意邪淫。&lt;/p&gt;
-
-&lt;p&gt;第十诫　想偷东西。&lt;/p&gt;
-
-&lt;p&gt;圣教四规　不守大小斋。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;七罪宗&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;骄傲，悭吝，迷色，嫉妒，贪饕，忿怒，懒惰。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;告解规程&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;求天主圣神的宠佑相帮我省察自己的罪。&lt;/p&gt;
-
-&lt;p&gt;省察完了，即发真心痛悔及定改。念上等痛悔经，和认罪经。&lt;/p&gt;
-
-&lt;p&gt;到神父面前，画十字架说：「求神父降福，准罪人办神工。」&lt;/p&gt;
-
-&lt;p&gt;说明上次告解以来有多少时间：「我办神工有（一，二个…）星期了 (大约………天了）。」&lt;/p&gt;
-
-&lt;p&gt;把省察出来的罪，告说明白，也说明犯罪的次数及犯罪的光景，若有怕告或不知怎么告的罪，要说：「我还有不会告的事景，求神父相帮， 」讲完了就念：「若有忘记的罪，或别人因我犯的罪，都求神父罚我赦我。」&lt;/p&gt;
-
-&lt;p&gt;听神父的教训：若有要问的事，不要害怕，神父是天主的代表，就是为相帮你办告解。&lt;/p&gt;
-
-&lt;p&gt;神父念赦罪经时，你还要发一次痛悔，热心并慢慢的念「吾主耶稣基利斯督………。」在神父赦罪画圣号时。你也要画圣号。等神父念完了赦罪经，就说：「谢谢神父。」然后回去。&lt;/p&gt;
-
-&lt;p&gt;念补赎经，并感谢天主赦罪之恩。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;付洗仪式&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;领洗时间简单问答&lt;/p&gt;
-
-&lt;p&gt;问：你向圣教会求什么？&lt;/p&gt;
-
-&lt;p&gt;答：求信德。&lt;/p&gt;
-
-&lt;p&gt;问：信德能给你什么？&lt;/p&gt;
-
-&lt;p&gt;答：常生。 （食圣盐，牵圣带「或拉手」念信经、天主经。）&lt;/p&gt;
-
-&lt;p&gt;问：你弃绝魔鬼么？&lt;/p&gt;
-
-&lt;p&gt;答：弃绝。&lt;/p&gt;
-
-&lt;p&gt;问：你弃绝魔鬼的一切恶行么？&lt;/p&gt;
-
-&lt;p&gt;答：弃绝。&lt;/p&gt;
-
-&lt;p&gt;问：你弃绝魔鬼的一切虚荣么？&lt;/p&gt;
-
-&lt;p&gt;答：弃绝。&lt;/p&gt;
-
-&lt;p&gt;问：你信全能的天主圣父代成天地么？&lt;/p&gt;
-
-&lt;p&gt;答：信。&lt;/p&gt;
-
-&lt;p&gt;问：你信祂的惟一圣子耶稣基督我等主、曾由童贞玛利亚诞生和受苦受难么？&lt;/p&gt;
-
-&lt;p&gt;答：信。&lt;/p&gt;
-
-&lt;p&gt;问：你信圣神，圣而公教会，诸圣相通功，罪之赦，肉身的复活和常生么？&lt;/p&gt;
-
-&lt;p&gt;答：信。&lt;/p&gt;
-
-&lt;p&gt;问：你愿意领洗么？&lt;/p&gt;
-
-&lt;p&gt;答：愿意。&lt;/p&gt;
-
-&lt;p&gt;念「上等痛悔经」，求天主赦我从出世到现在本身所犯的罪过。领洗后一连望弥撒、领圣体八天。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;付洗重要礼节&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;遇临终危险之人，切愿领洗，该讲明要理，看其坚信痛悔前罪，才可用水倒他头上，俱该同付洗经文一齐起止，依圣教会之意念云：&lt;/p&gt;
-
-&lt;p&gt;我洗尔，因父、及子、及圣神之名。&lt;/p&gt;
-
-&lt;p&gt;未开明悟孩童危险时，不拘何人，可念以上经文付洗。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;古史略撮要&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;一　天主创造世界&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;天主从无一命就造成了天神天地世人，赐给人类的原祖，亚当厄娃居于地堂享受安乐。原祖食禁果背命，被天主赶出地堂。天主预许救世者。加音杀亚伯尔。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;二　天主以洪水惩罚世人&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;原祖子孙越传越多，渐变为恶。独有诺厄一家是善的，天主命他造成大船，乃降洪水罚世。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;三　天主特选一个民族&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;亚巴郎：亚巴郎奉命杀独子祭献天主，天主许他要作救世之祖。&lt;/p&gt;
-
-&lt;p&gt;雅各伯：雅各伯诡得长子的名分，避长子的报仇，在远方婚配，有子十二人。&lt;/p&gt;
-
-&lt;p&gt;若瑟：若瑟是雅伯各之子，被嫉妒的兄弟卖往埃及。因解国王的梦，选为宰相，救济兄弟，迎养老父同居埃及。&lt;/p&gt;
-
-&lt;p&gt;梅瑟：在埃及作奴仆的希伯来人。梅瑟遇救。梅瑟奉天主的命，救出百姓，罚埃及九年大灾殃，命众人食巴斯卦羔羊，领希伯来人过红海，经旷野。在西乃山上接受天主十诫。他因怀疑天主不能达到福地，让若苏厄继任领袖。&lt;/p&gt;
-
-&lt;p&gt;若苏厄：希伯来人到了福地，若苏厄分疆各族，但须向邻近民族作战。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;四　天主之民成国独立&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;撒乌耳：天主梦告撒慕耳，将罚爱莅司祭，后果丧亡，撒乌耳被选为希伯来首位国王；但后渐渐轻忽终受主罚。&lt;/p&gt;
-
-&lt;p&gt;达味：达味被视视圣为主，打败仇敌的巨人。撒乌耳败仗自杀，达味升王，犯罪做补赎，受太子亚撒隆的叛逆；临终劝嘱子撒罗满遵守主诫。&lt;/p&gt;
-
-&lt;p&gt;撒罗满：求智得智，审判奇案，建立圣殿，晚年朝拜邪神。&lt;/p&gt;
-
-&lt;p&gt;厄利叟先知：厄利亚升天，留下衣服使厄利叟能行圣迹。厄利叟救济寡妇，复活死孩。&lt;/p&gt;
-
-&lt;p&gt;多俾亚：行爱德，双目失明，教子孝敬父母，恢复眼明。&lt;/p&gt;
-
-&lt;p&gt;依撒尔分裂：依撒尔民族分两独立的国家。依撒亚先知预言救世主要生自童贞女胎中。&lt;/p&gt;
-
-&lt;p&gt;敌人大胆地进攻：敌军压境，厄则纪亚赴圣殿求助，主派天神退敌人。玛纳色因敬邪神失败，囚于巴比伦。热肋米亚预言耶路撒冷的毁灭。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;五　天主之民被掳至巴比伦&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;达尼尔：任巴比伦首相。三个青年不拜金像处火刑，主遣天神救出。达尼厄尔投入狮圈，天神救他。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;六　救世主降生的近预备&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;厄则纪尔：预言天地终穷，及众人复活听公审判。&lt;/p&gt;
-
-&lt;p&gt;爱来亚济：为天主致命，鼓励了母子八人殉教。&lt;/p&gt;
-
-&lt;p&gt;如达斯玛加伯：为主打仗，深信炼灵可得救助，并重要建殿，为护国卫教光荣遭死。罗马帝国占据犹太国，托王位于黑落德。&lt;/p&gt;
-
-&lt;p&gt;▲&lt;strong&gt;新史略撮要&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;一　天主降生&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;玛利亚领报。救世主诞生于马槽，牧童及三王来朝拜。圣母献耶稣于主堂。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;二　耶稣的青年&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;黑落德怕耶稣为王，下令杀死白冷两岁以下之婴孩。圣家避往埃及。耶稣十二岁时在圣堂讲道。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;三　耶稣开始传教&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;若翰讲道。耶稣受洗。到旷野去守严斋。在加纳婚筵变水为酒。若翰坐牢后致命。耶稣驱贩卖者出圣殿。讲真福八端，拣选十二位宗徙，责法利塞人伪善。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;四　耶稣行圣迹&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;耶稣医治麻风病者，百夫长的仆人；复活雅依洛的女儿，寡妇的儿子；以五饼二鱼食饱五千人；开明胎瞽，复活拉匝禄。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;五　耶稣的比喻&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;亡羊，荡子回头，十个智愚童女，富翁等喻。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;六　耶稣的预言&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;耶稣在山上显圣容，预言自己及难受死，第三日复活，将来公审判的情形。法利塞人聚议谋杀耶稣。耶稣光荣进耶路撒冷城。与宗徒吃最后晚餐时，预言犹达斯卖主，伯多禄背主三次，立圣体圣事。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;七　耶稣受难&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;在山园祈祷，被犹达斯负卖于法利塞人。伯多禄背主，犹达斯失望吊死。比拉多判耶稣死罪，背十字架上加尔瓦略山。右盗悔改。耶稣托付圣母于若望，在十字架上死。士兵穿透耶稣圣心。天上的奇迹。士兵警备耶稣的坟墓。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;八　耶稣光荣复活及升天&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;第三日大地震动，耶稣从死者之中自己复活。显现于宗徙，于玛大肋纳，于怀疑的多默宗徙。耶稣立伯多禄为圣教会之首，打发宗徒教训万民，然后升天。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;九　圣神降临&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;宗徒拣选玛弟亚补犹达斯的缺位。圣神降临。伯多禄讲道感化三千人。初期圣教会的热心，宗徙的圣迹。犹太人煽动民众起风波：斯德望致命，伯多禄入狱被天神救出。保禄宗徒归化后到处传扬福音。耶路撒冷的公会议。圣伯多禄及保禄致命。依耶稣的预言，敌军灭耶路撒冷，打退犹太人。圣教会在教难中日渐发扬光大。&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">▲要理问答  附录</summary></entry></feed>
+&lt;p&gt;“至圣天主，至圣强有力者，至圣常存者，求你垂怜我们及普世。”&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">▲划十字圣号，开始时念：</summary></entry></feed>
