@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-13T08:50:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Manna</title><subtitle>玛纳之粮&lt;br/&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-13T09:06:51+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Manna</title><subtitle>玛纳之粮&lt;br/&gt;
 拓跋煜&lt;br/&gt;
 天主是爱&lt;br/&gt;
 &lt;a href=&quot;mailto:jhonguo@126.com&quot;&gt;
@@ -38,7 +38,47 @@
   &lt;li&gt;&lt;a href=&quot;https://izshui.github.io/2021.12/2121/12/01/%E5%9F%B9%E5%B0%BC%E5%B0%94%E7%A5%9E%E7%88%B621%E5%B9%B412%E6%9C%88%E4%BB%BD%E5%BC%A5%E6%92%92%E8%AE%B2%E9%81%93%E5%88%86%E4%BA%AB/&quot;&gt;2021年12月份弥撒讲道分享&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;主佑平安&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">在起初已有圣言，圣言与天主同在，圣言就是天主。圣言在起初就与天主同在。万物是藉着他而造成的；凡受造的，没有一样不是由他而造成的。在他内有生命，这生命是人的光。光在黑暗中照耀，黑暗决不能胜过他。——若1:1-5</summary></entry><entry><title type="html">玫瑰经</title><link href="http://localhost:4000/2023/01/13/%E7%8E%AB%E7%91%B0%E7%BB%8F/" rel="alternate" type="text/html" title="玫瑰经" /><published>2023-01-13T00:00:00+08:00</published><updated>2023-01-13T00:00:00+08:00</updated><id>http://localhost:4000/2023/01/13/%E7%8E%AB%E7%91%B0%E7%BB%8F</id><content type="html" xml:base="http://localhost:4000/2023/01/13/%E7%8E%AB%E7%91%B0%E7%BB%8F/">&lt;h1 id=&quot;玫瑰经常用二十端&quot;&gt;&lt;strong&gt;玫瑰经（常用二十端）&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;主佑平安&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="日常祈祷" /><summary type="html">在起初已有圣言，圣言与天主同在，圣言就是天主。圣言在起初就与天主同在。万物是藉着他而造成的；凡受造的，没有一样不是由他而造成的。在他内有生命，这生命是人的光。光在黑暗中照耀，黑暗决不能胜过他。——若1:1-5</summary></entry><entry><title type="html">技嘉X3V7黑苹果调试记录</title><link href="http://localhost:4000/2023/01/13/%E6%8A%80%E5%98%89X3V7%E9%BB%91%E8%8B%B9%E6%9E%9C%E8%B0%83%E8%AF%95%E8%AE%B0%E5%BD%95/" rel="alternate" type="text/html" title="技嘉X3V7黑苹果调试记录" /><published>2023-01-13T00:00:00+08:00</published><updated>2023-01-13T00:00:00+08:00</updated><id>http://localhost:4000/2023/01/13/%E6%8A%80%E5%98%89X3V7%E9%BB%91%E8%8B%B9%E6%9E%9C%E8%B0%83%E8%AF%95%E8%AE%B0%E5%BD%95</id><content type="html" xml:base="http://localhost:4000/2023/01/13/%E6%8A%80%E5%98%89X3V7%E9%BB%91%E8%8B%B9%E6%9E%9C%E8%B0%83%E8%AF%95%E8%AE%B0%E5%BD%95/">&lt;h1 id=&quot;技嘉x3v7黑苹果调试记录&quot;&gt;&lt;strong&gt;技嘉X3V7黑苹果调试记录&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;h2 id=&quot;一dp定制&quot;&gt;&lt;strong&gt;一、DP定制&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;索引  总线ID  通道  类型   标识符 
+0        00         8        LVDS
+2         04      10            HDMI
+3         06        10         DP
+-1        00&lt;/p&gt;
+
+&lt;p&gt;hdmi 00080000
+dp 00040000&lt;/p&gt;
+
+&lt;p&gt;标识符 87010000&lt;/p&gt;
+
+&lt;p&gt;索引1—con0
+索引2—con1
+索引3—con2&lt;/p&gt;
+
+&lt;p&gt;con1        02040A00    00080000   87010000&lt;br /&gt;
+                    01/02/03/05/06&lt;/p&gt;
+
+&lt;p&gt;con2     03010A00    00080000   87010000
+                  02//03/04//05/06&lt;/p&gt;
+
+&lt;p&gt;con0        01010A00    00080000   87010000  (黑屏，无法进系统)
+                     02&lt;/p&gt;
+
+&lt;p&gt;备注：最终没有调试好，谁有办法可以联系我，一块沟通交流，谢谢！&lt;/p&gt;
+
+&lt;h2 id=&quot;二realtek----alc255alc3234-声卡定制&quot;&gt;&lt;strong&gt;二、Realtek    ALC255/ALC3234 声卡定制&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;layout 
+3, 麦克风正常，扬声器没声音，内置扬声器
+11, 麦克风异常，扬声器正常，线路输出；
+12, 麦克风异常，两个内置扬声器，一个有声音，一个没声音
+13, 均异常，内置扬声器
+15, 麦克风两个，内置麦克风正常、线路输入不正常，麦克风无声音
+17, 麦克风正常，扬声器没声音，内置扬声器
+18, 麦克风正常、扬声器正常 内置
+20, 21, 22, 27, 28, 29, 30, 31, 66, 71, 82, 86, 96, 99, 100, 255&lt;/p&gt;</content><author><name></name></author><category term="黑苹果" /><summary type="html">技嘉X3V7黑苹果调试记录</summary></entry><entry><title type="html">玫瑰经</title><link href="http://localhost:4000/2023/01/13/%E7%8E%AB%E7%91%B0%E7%BB%8F/" rel="alternate" type="text/html" title="玫瑰经" /><published>2023-01-13T00:00:00+08:00</published><updated>2023-01-13T00:00:00+08:00</updated><id>http://localhost:4000/2023/01/13/%E7%8E%AB%E7%91%B0%E7%BB%8F</id><content type="html" xml:base="http://localhost:4000/2023/01/13/%E7%8E%AB%E7%91%B0%E7%BB%8F/">&lt;h1 id=&quot;玫瑰经常用二十端&quot;&gt;&lt;strong&gt;玫瑰经（常用二十端）&lt;/strong&gt;&lt;/h1&gt;
 
 &lt;p&gt;星期一、六：欢喜五端&lt;/p&gt;
 
@@ -1386,86 +1426,4 @@ hostname = *.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com
 
 &lt;p&gt;销售，为什么选择我们的产品，是因为信任我们，有了信任感事情才可行；&lt;/p&gt;
 
-&lt;p&gt;方案一般写两种，一种是高大上的，一&lt;strong&gt;种是性价比高的；&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="随笔" /><summary type="html">1、秘密吸引力法则</summary></entry><entry><title type="html">常用命令及脚本</title><link href="http://localhost:4000/2021/12/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC/" rel="alternate" type="text/html" title="常用命令及脚本" /><published>2021-12-14T00:00:00+08:00</published><updated>2021-12-14T00:00:00+08:00</updated><id>http://localhost:4000/2021/12/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC</id><content type="html" xml:base="http://localhost:4000/2021/12/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC/">&lt;h4 id=&quot;1火狐浏览器各版本下载地址&quot;&gt;1、火狐浏览器各版本下载地址&lt;/h4&gt;
-
-&lt;p&gt;https://download-installer.cdn.mozilla.net/火狐浏览器各版本下载地址&lt;/p&gt;
-
-&lt;p&gt;https://download-installer.cdn.mozilla.net/pub/firefox/releases/95.0/mac/zh-CN/Firefox%2095.0.dmg 示例&lt;/p&gt;
-
-&lt;h4 id=&quot;2mac系统写入u盘镜像&quot;&gt;2、mac系统写入u盘镜像&lt;/h4&gt;
-
-&lt;p&gt;&lt;code&gt;sudo dd if=/Users/esau/Downloads/BIOSCD-n10ur24w.iso of=/dev/rdisk4 bs=1m&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;3mac系统下读写ntfs格式磁盘&quot;&gt;3、mac系统下读写ntfs格式磁盘&lt;/h4&gt;
-
-&lt;p&gt;&lt;code&gt;LABEL=Windows10 none ntfs rw,auto,nobrowse&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;LABEL=Iohannes none ntfs rw,auto,nobrowse&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;4jekyll启动命令&quot;&gt;4、jekyll启动命令&lt;/h4&gt;
-
-&lt;p&gt;&lt;code&gt;bundle install&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;bundle exec jekyll s&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;5mac系统调整启动台图标多少&quot;&gt;5、mac系统调整启动台图标多少&lt;/h4&gt;
-
-&lt;p&gt;具体方法如下：&lt;/p&gt;
-
-&lt;p&gt;在&lt;strong&gt;Terminal&lt;/strong&gt;下执行一下命令：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;defaults write com.apple.dock springboard-columns -int 10
-
-defaults write com.apple.dock springboard-rows -int 8
-
-defaults write com.apple.dock ResetLaunchPad -bool TRUE
-
-killall Dock
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt;）调整每一列显示图标数量，&lt;strong&gt;10&lt;/strong&gt;表示每一列显示&lt;strong&gt;10&lt;/strong&gt;个，比较不错，可根据个人喜好进行设置。 &lt;strong&gt;&lt;code&gt;defaults write com.apple.dock springboard-rows -int 10&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2&lt;/strong&gt;）调整多少行显示图标数量，这里我用的是&lt;strong&gt;8&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;defaults write com.apple.dock springboard-rows -int 8&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3&lt;/strong&gt;）重置&lt;strong&gt;Launchpad&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;defaults write com.apple.dock ResetLaunchPad -bool TRUE&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4&lt;/strong&gt;）重启&lt;strong&gt;Dock&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;killall Dock&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;再次进入&lt;strong&gt;Launchpad&lt;/strong&gt;，美观大方。&lt;/p&gt;
-
-&lt;p&gt;恢复默认设置的方法。&lt;/p&gt;
-
-&lt;p&gt;以下是恢复默认大小的命令（在&lt;strong&gt;Terminal&lt;/strong&gt;执行即可）：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;defaults write com.apple.dock springboard-rows Default
-
-defaults write com.apple.dock springboard-columns Default
-
-defaults write com.apple.dock ResetLaunchPad -bool TRUE
-
-killall Dock
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&quot;6mac系统虚拟pdf输出路径&quot;&gt;6、&lt;strong&gt;Mac&lt;/strong&gt;系统，虚拟&lt;strong&gt;pdf&lt;/strong&gt;输出路径&lt;/h4&gt;
-
-&lt;p&gt;&lt;code&gt;/private/var/spool/pdfwriter&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;7mac挂载u盘&quot;&gt;7、mac挂载u盘&lt;/h4&gt;
-
-&lt;p&gt;&lt;code&gt;diskutil list&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo diskutil mount disk1s1&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;8禁止adobe-acrobat更新&quot;&gt;8、禁止adobe acrobat更新&lt;/h4&gt;
-
-&lt;p&gt;打开 Finder ，点击上⽅菜单栏 前往 &amp;gt; 前往⽂件夹 ，复制下⾯路径粘贴，⽤户名要修改成你的电脑⽤户名。&lt;/p&gt;
-
-&lt;p&gt;/Users/⽤户名/Library/Application Support/Adobe/&lt;/p&gt;
-
-&lt;p&gt;找到 com.adobe.ARMDCHelper 并删除。&lt;/p&gt;</content><author><name></name></author><category term="技术文档" /><summary type="html">1、火狐浏览器各版本下载地址</summary></entry></feed>
+&lt;p&gt;方案一般写两种，一种是高大上的，一&lt;strong&gt;种是性价比高的；&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="随笔" /><summary type="html">1、秘密吸引力法则</summary></entry></feed>
