@@ -209,8 +209,6 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     multi_json (1.15.0)
-    nokogiri (1.13.6-arm64-darwin)
-      racc (~> 1.4)
     nokogiri (1.13.6-x64-mingw-ucrt)
       racc (~> 1.4)
     nokogiri (1.13.6-x86_64-darwin)
@@ -260,6 +258,7 @@ PLATFORMS
   universal-darwin-21
   x64-mingw-ucrt
   x86_64-darwin-19
+  x86_64-darwin-20
 
 DEPENDENCIES
   github-pages
